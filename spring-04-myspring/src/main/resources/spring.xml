@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+
+    <!-- bean就由spring容器创建好的对象 -->
+    <!-- 指定可以做为spring容器管理的对象的包 -->
+    <component-scan base-package="com.yc.spring"/>
+    <bean id="p" class="com.yc.spring.Person">
+    	<property name="name" value="小工"/>
+    </bean>
+    <bean id="mobile" class="com.yc.spring.Mobile">
+    	<property name="brand" value="t1"/>
+    	<property name="phoneNumber" value="18075895475"/>
+    	<property name="person" ref="p"/>
+    </bean>
+</beans>
