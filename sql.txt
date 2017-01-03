@@ -1,0 +1,104 @@
+管理员表
+
+Admin(
+		a_id Integer primary key,
+		a_name varchar2(20),
+		a_password varchar2(40),
+		a_root Integer ,
+		
+)
+
+用户表
+user(
+		u_id Integer primary key,
+		u_name varchar2(20),
+		u_password varchar2(40),
+		u_sex varchar2(4),
+		idcard varchar2(18),
+		u_phone varchar2(11),
+		email varchar2(40),
+		u_root,
+		block
+
+	)
+地址	
+address(
+		addr_id Integer ,
+		introduce varchar2(50),
+		u_id Integer references.
+)
+
+店铺
+shop(
+		s_id ,
+		s_name,
+		u_id,
+		s_birthday,
+		s_status,
+)
+
+店铺申请信息表
+applyshop(
+		ap_id,
+		u_id,
+		ap_rsn,
+		ap_date
+)
+
+
+类型表
+type(
+		t_id,
+		t_name,
+		t_fid,
+)
+
+商品
+product(
+		p_id,
+		p_name,
+		s_id,
+		t_id
+		properties1,
+		
+)
+
+购物车
+shoppingBakcet(
+	sh_id,
+	u_id,	
+)
+
+购物车详情
+shdetail(
+	sht_id,
+	sh_id,
+	p_id,	
+	sht_detail
+)
+
+订单
+order(
+	o_id,
+	u_id,
+	date,
+)
+
+订单详情
+orderdetail(
+	odd_id,
+	p_id,
+	odd_detail,
+	odd_status
+)
+
+评论表
+comments(
+	com_id,
+	u_id,
+	f_id,
+	content,
+	com_type,
+	com_date	
+)
+
