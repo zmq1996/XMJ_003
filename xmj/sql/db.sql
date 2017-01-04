@@ -1,4 +1,4 @@
---¹ÜÀíÔ±±í
+--ç®¡ç†å‘˜è¡¨
 
 create table Admin(
 		a_id Integer primary key,
@@ -10,7 +10,7 @@ create table Admin(
 )
 select * from ADMIN;
 
---ÓÃ»§±í
+--ç”¨æˆ·è¡¨
 create table users(
 		u_id Integer primary key,
 		u_name varchar2(20),
@@ -25,7 +25,7 @@ create table users(
 )
 select * from users;
 
---µØÖ·	
+--åœ°å€	
 drop table address;
 create table address(
 		addr_id Integer primary key ,
@@ -35,7 +35,7 @@ create table address(
 		obligate2 varchar2(20)
 )
 select * from address;
---µêÆÌ
+--åº—é“º
 create table shop(
 		s_id int primary key ,
 		s_name varchar2(20),
@@ -47,8 +47,8 @@ create table shop(
 )
 select * from shop;
 
-drop table messages
---µêÆÌÉêÇëĞÅÏ¢±í
+drop table applyshop;
+--åº—é“ºç”³è¯·ä¿¡æ¯è¡¨
 create table messages(
 		m_id int primary key,
 		speaker int ,
@@ -59,9 +59,9 @@ create table messages(
 		obligate1 varchar2(20),
 		obligate2 varchar2(20)
 )
-select * from messages
+select * from applyshop;
 
---ÀàĞÍ±í
+--ç±»å‹è¡¨
 drop table type;
 create table type(
 		t_id int primary key ,
@@ -72,7 +72,7 @@ create table type(
 )
 select * from type;
 
---ÉÌÆ·
+--å•†å“
 create table product(
 		p_id int primary key ,
 		p_name varchar2(20) not null,
@@ -84,7 +84,7 @@ create table product(
 		
 )
 
---¹ºÎï³µ
+--è´­ç‰©è½¦
 create table shoppingBakcet(
 		sh_id int primary key,
 		u_id int references users(u_id),
@@ -92,7 +92,7 @@ create table shoppingBakcet(
 		obligate2 varchar2(20)
 )
 
---¹ºÎï³µÏêÇé
+--è´­ç‰©è½¦è¯¦æƒ…
 create table shdetail(
 		sht_id int primary key,
 		sh_id references shoppingBakcet(sh_id),
@@ -102,7 +102,7 @@ create table shdetail(
 		obligate2 varchar2(20)
 )
 
---¶©µ¥
+--è®¢å•
 create table order(
 	o_id int primary key,
 	u_id references users(u_id),
@@ -111,7 +111,7 @@ create table order(
 	obligate2 varchar2(20)
 )
 
---¶©µ¥ÏêÇé
+--è®¢å•è¯¦æƒ…
 create table orderdetail(
 	odd_id int primary key,
 	p_id int references product(p_id),
@@ -121,7 +121,7 @@ create table orderdetail(
 	obligate2 varchar2(20)
 )
 
---ÆÀÂÛ±í
+--è¯„è®ºè¡¨
 create table comments(
 	com_id int primary key,
 	u_id references users(u_id), 
@@ -134,11 +134,11 @@ create table comments(
 )
 
 
-{	ÑÕÉ«:À¶,ºì;
-	³ß´ç:M,L,S;
-	Í¼Æ¬:...,...;
-	À¶¿â´æ:10,9,8;
-	ºì¿â´æ:11,10,3;
+{	é¢œè‰²:è“,çº¢;
+	å°ºå¯¸:M,L,S;
+	å›¾ç‰‡:...,...;
+	è“åº“å­˜:10,9,8;
+	çº¢åº“å­˜:11,10,3;
 	
 }
 
