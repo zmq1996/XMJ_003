@@ -129,7 +129,7 @@ body {
 
 .mod_lazyload {
 	background-image:
-		url(//misc.360buyimg.com/mtd/pc/index/gb/images/lazyload.gif)
+		url(image/lazyload.gif)
 }
 
 .loading, .mod_lazyload, .mod_loading {
@@ -139,7 +139,7 @@ body {
 
 .loading, .mod_loading {
 	background-image:
-		url(//misc.360buyimg.com/mtd/pc/index/gb/images/loading.gif)
+		url(image/loading.gif)
 }
 
 @media only screen and (-o-min-device-pixel-ratio:3/2) , only screen and
@@ -148,12 +148,12 @@ body {
 	(min-device-pixel-ratio:1.5) {
 	.mod_lazyload {
 		background-image:
-			url(//misc.360buyimg.com/mtd/pc/index/gb/images/lazyload@2x.gif);
+			url(image/lazyload@2x.gif);
 		background-size: 100px 90px
 	}
 	.loading, .mod_loading {
 		background-image:
-			url(//misc.360buyimg.com/mtd/pc/index/gb/images/loading@2x.gif);
+			url(image/loading@2x.gif);
 		background-size: 25px 25px
 	}
 }
@@ -258,7 +258,7 @@ body {
 
 .box_subtit_arrow, .coupon_entry_btn_ico {
 	background-image:
-		url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_index@1x.png);
+		url(image/sprite_index@1x.png);
 	background-position: -154px -40px;
 	background-size: 218px 188px;
 	background-repeat: no-repeat;
@@ -271,7 +271,7 @@ body {
 	width: 100%;
 	height: 100%;
 	background-image:
-		url(//misc.360buyimg.com/mtd/pc/index/home/images/errtips@1x.png);
+		url(image/errtips@1x.png);
 	background-position: 50%;
 	background-repeat: no-repeat
 }
@@ -282,7 +282,7 @@ body {
 	(min-device-pixel-ratio:1.5) {
 	.box_subtit_arrow, .coupon_entry_btn_ico {
 		background-image:
-			url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_index@2x.png);
+			url(image/sprite_index@2x.png);
 		background-position: -76px -130px;
 		background-size: 170px 158px;
 		background-repeat: no-repeat;
@@ -291,7 +291,7 @@ body {
 	}
 	.errtips {
 		background-image:
-			url(//misc.360buyimg.com/mtd/pc/index/home/images/errtips@2x.png);
+			url(image/errtips@2x.png);
 		background-size: 50% 50%
 	}
 }
@@ -370,7 +370,7 @@ body {
 }
 
 .img-error {
-	background: url(//misc.360buyimg.com/lib/skin/e/i/error-jd.gif)
+	background: url(image/error-jd.gif)
 		no-repeat 50% 50%
 }
 
@@ -714,7 +714,7 @@ body {
 .icon-plus-state0 .icon-plus-dropdown, .icon-plus-state0 .icon-plus-nickname
 	{
 	background-image:
-		url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_badage.png);
+		url(image/sprite_badage.png);
 	background-repeat: no-repeat;
 	height: 16px
 }
@@ -732,7 +732,7 @@ body {
 .icon-plus-state1 .icon-plus-dropdown, .icon-plus-state1 .icon-plus-nickname
 	{
 	background-image:
-		url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_badage.png);
+		url(image/sprite_badage.png);
 	background-repeat: no-repeat;
 	height: 16px
 }
@@ -750,7 +750,7 @@ body {
 .icon-plus-state2 .icon-plus-dropdown, .icon-plus-state2 .icon-plus-nickname
 	{
 	background-image:
-		url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_badage.png);
+		url(image/sprite_badage.png);
 	background-repeat: no-repeat;
 	height: 16px
 }
@@ -768,7 +768,7 @@ body {
 .icon-plus-state3 .icon-plus-dropdown, .icon-plus-state3 .icon-plus-nickname
 	{
 	background-image:
-		url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_badage.png);
+		url(image/sprite_badage.png);
 	background-repeat: no-repeat;
 	height: 16px
 }
@@ -786,7 +786,7 @@ body {
 .icon-plus-state4 .icon-plus-dropdown, .icon-plus-state4 .icon-plus-nickname
 	{
 	background-image:
-		url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_badage.png);
+		url(image/sprite_badage.png);
 	background-repeat: no-repeat;
 	height: 16px
 }
@@ -813,7 +813,7 @@ body {
 
 .icobadage_plus, .icobadage_zymyf {
 	background-image:
-		url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_badage.png);
+		url(image/sprite_badage.png);
 	background-repeat: no-repeat;
 	width: 54px;
 	height: 54px
@@ -829,7 +829,7 @@ body {
 
 .icobadage_pjjl, .icobadage_shfw {
 	background-image:
-		url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_badage.png);
+		url(image/sprite_badage.png);
 	background-repeat: no-repeat;
 	width: 54px;
 	height: 54px
@@ -845,7 +845,7 @@ body {
 
 .icobadage_hytj, .icobadage_zjfw {
 	background-image:
-		url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_badage.png);
+		url(image/sprite_badage.png);
 	background-repeat: no-repeat;
 	width: 54px;
 	height: 54px
@@ -861,7 +861,7 @@ body {
 
 .icobadage_srlb, .icobadage_zxlb {
 	background-image:
-		url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_badage.png);
+		url(image/sprite_badage.png);
 	background-repeat: no-repeat;
 	width: 54px;
 	height: 54px
@@ -877,7 +877,7 @@ body {
 
 .icobadage_gbzx, .icobadage_yfq {
 	background-image:
-		url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_badage.png);
+		url(image/sprite_badage.png);
 	background-repeat: no-repeat;
 	width: 54px;
 	height: 54px
@@ -893,7 +893,7 @@ body {
 
 .u-dis .icobadage_plus, .u-dis .icobadage_zymyf {
 	background-image:
-		url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_badage.png);
+		url(image/sprite_badage.png);
 	background-repeat: no-repeat;
 	width: 54px;
 	height: 54px
@@ -909,7 +909,7 @@ body {
 
 .u-dis .icobadage_pjjl, .u-dis .icobadage_shfw {
 	background-image:
-		url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_badage.png);
+		url(image/sprite_badage.png);
 	background-repeat: no-repeat;
 	width: 54px;
 	height: 54px
@@ -925,7 +925,7 @@ body {
 
 .u-dis .icobadage_hytj, .u-dis .icobadage_zjfw {
 	background-image:
-		url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_badage.png);
+		url(image/sprite_badage.png);
 	background-repeat: no-repeat;
 	width: 54px;
 	height: 54px
@@ -941,7 +941,7 @@ body {
 
 .u-dis .icobadage_srlb, .u-dis .icobadage_zxlb {
 	background-image:
-		url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_badage.png);
+		url(image/sprite_badage.png);
 	background-repeat: no-repeat;
 	width: 54px;
 	height: 54px
@@ -957,7 +957,7 @@ body {
 
 .u-dis .icobadage_gbzx, .u-dis .icobadage_yfq {
 	background-image:
-		url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_badage.png);
+		url(image/sprite_badage.png);
 	background-repeat: no-repeat;
 	width: 54px;
 	height: 54px
@@ -978,7 +978,7 @@ body {
 	.icon-plus-state0 .icon-plus-dropdown, .icon-plus-state0 .icon-plus-nickname
 		{
 		background-image:
-			url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_badage@2x.png);
+			url(image/sprite_badage@2x.png);
 		background-size: 310px 272px;
 		background-repeat: no-repeat;
 		height: 16px
@@ -994,7 +994,7 @@ body {
 	.icon-plus-state1 .icon-plus-dropdown, .icon-plus-state1 .icon-plus-nickname
 		{
 		background-image:
-			url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_badage@2x.png);
+			url(image/sprite_badage@2x.png);
 		background-size: 310px 272px;
 		background-repeat: no-repeat;
 		height: 16px
@@ -1010,7 +1010,7 @@ body {
 	.icon-plus-state2 .icon-plus-dropdown, .icon-plus-state2 .icon-plus-nickname
 		{
 		background-image:
-			url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_badage@2x.png);
+			url(image/sprite_badage@2x.png);
 		background-size: 310px 272px;
 		background-repeat: no-repeat;
 		height: 16px
@@ -1026,7 +1026,7 @@ body {
 	.icon-plus-state3 .icon-plus-dropdown, .icon-plus-state3 .icon-plus-nickname
 		{
 		background-image:
-			url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_badage@2x.png);
+			url(image/sprite_badage@2x.png);
 		background-size: 310px 272px;
 		background-repeat: no-repeat;
 		height: 16px
@@ -1042,7 +1042,7 @@ body {
 	.icon-plus-state4 .icon-plus-dropdown, .icon-plus-state4 .icon-plus-nickname
 		{
 		background-image:
-			url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_badage@2x.png);
+			url(image/sprite_badage@2x.png);
 		background-size: 310px 272px;
 		background-repeat: no-repeat;
 		height: 16px
@@ -1056,7 +1056,7 @@ body {
 	}
 	.icobadage_plus, .icobadage_zymyf {
 		background-image:
-			url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_badage@2x.png);
+			url(image/sprite_badage@2x.png);
 		background-size: 310px 272px;
 		background-repeat: no-repeat;
 		width: 54px;
@@ -1070,7 +1070,7 @@ body {
 	}
 	.icobadage_pjjl, .icobadage_shfw {
 		background-image:
-			url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_badage@2x.png);
+			url(image/sprite_badage@2x.png);
 		background-size: 310px 272px;
 		background-repeat: no-repeat;
 		width: 54px;
@@ -1084,7 +1084,7 @@ body {
 	}
 	.icobadage_hytj, .icobadage_zjfw {
 		background-image:
-			url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_badage@2x.png);
+			url(image/sprite_badage@2x.png);
 		background-size: 310px 272px;
 		background-repeat: no-repeat;
 		width: 54px;
@@ -1098,7 +1098,7 @@ body {
 	}
 	.icobadage_srlb, .icobadage_zxlb {
 		background-image:
-			url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_badage@2x.png);
+			url(image/sprite_badage@2x.png);
 		background-size: 310px 272px;
 		background-repeat: no-repeat;
 		width: 54px;
@@ -1112,7 +1112,7 @@ body {
 	}
 	.icobadage_gbzx, .icobadage_yfq {
 		background-image:
-			url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_badage@2x.png);
+			url(image/sprite_badage@2x.png);
 		background-size: 310px 272px;
 		background-repeat: no-repeat;
 		width: 54px;
@@ -1126,7 +1126,7 @@ body {
 	}
 	.u-dis .icobadage_plus, .u-dis .icobadage_zymyf {
 		background-image:
-			url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_badage@2x.png);
+			url(image/sprite_badage@2x.png);
 		background-size: 310px 272px;
 		background-repeat: no-repeat;
 		width: 54px;
@@ -1140,7 +1140,7 @@ body {
 	}
 	.u-dis .icobadage_pjjl, .u-dis .icobadage_shfw {
 		background-image:
-			url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_badage@2x.png);
+			url(image/sprite_badage@2x.png);
 		background-size: 310px 272px;
 		background-repeat: no-repeat;
 		width: 54px;
@@ -1154,7 +1154,7 @@ body {
 	}
 	.u-dis .icobadage_hytj, .u-dis .icobadage_zjfw {
 		background-image:
-			url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_badage@2x.png);
+			url(image/sprite_badage@2x.png);
 		background-size: 310px 272px;
 		background-repeat: no-repeat;
 		width: 54px;
@@ -1168,7 +1168,7 @@ body {
 	}
 	.u-dis .icobadage_srlb, .u-dis .icobadage_zxlb {
 		background-image:
-			url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_badage@2x.png);
+			url(image/sprite_badage@2x.png);
 		background-size: 310px 272px;
 		background-repeat: no-repeat;
 		width: 54px;
@@ -1182,7 +1182,7 @@ body {
 	}
 	.u-dis .icobadage_gbzx, .u-dis .icobadage_yfq {
 		background-image:
-			url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_badage@2x.png);
+			url(image/sprite_badage@2x.png);
 		background-size: 310px 272px;
 		background-repeat: no-repeat;
 		width: 54px;
@@ -1317,7 +1317,7 @@ body {
 	vertical-align: middle;
 	margin-left: 5px;
 	background:
-		url(//img13.360buyimg.com/uba/jfs/t3484/9/128280995/3519/c85623fa/58004db6Na4b20277.gif)
+		url(image/58004db6Na4b20277.gif)
 }
 
 #ttbar-myjd .user-level2 {
@@ -1453,7 +1453,7 @@ body {
 	width: 190px;
 	height: 170px;
 	background-image:
-		url(//misc.360buyimg.com/mtd/pc/index/home/images/logo.v2.png);
+		url(image/logo.v2.png);
 	background-repeat: no-repeat;
 	text-indent: -999px
 }
@@ -1582,7 +1582,7 @@ to {
 	width: 125px;
 	height: 40px;
 	background-image:
-		url(//misc.360buyimg.com/mtd/pc/index/home/images/logo_s.v2.png);
+		url(image/logo_s.v2.png);
 	background-repeat: no-repeat;
 	text-indent: -999px
 }
@@ -1610,12 +1610,12 @@ to {
 	(min-device-pixel-ratio:1.5) {
 	.logo_tit_lk {
 		background-image:
-			url(//misc.360buyimg.com/mtd/pc/index/home/images/logo.v2@2x.png);
+			url(image/logo.v2@2x.png);
 		background-size: 190px 170px
 	}
 	.search-fix .search-m .search_logo_lk {
 		background-image:
-			url(//misc.360buyimg.com/mtd/pc/index/home/images/logo_s.v2@2x.png);
+			url(image/logo_s.v2@2x.png);
 		background-size: 125px 40px
 	}
 }
@@ -1895,7 +1895,7 @@ to {
 	width: 56px;
 	height: 49px;
 	background-image:
-		url(//img11.360buyimg.com/uba/jfs/t3571/299/131233948/1117/a1196554/58004d6dN2927f0f7.png)
+		url(image/58004d6dN2927f0f7.png)
 }
 
 #settleup-content {
@@ -2743,7 +2743,7 @@ to {
 
 .service_ico_huafei, .service_ico_jipiao {
 	background-image:
-		url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_fs@1x.png);
+		url(image/sprite_fs@1x.png);
 	background-size: 156px 148px;
 	background-repeat: no-repeat;
 	width: 24px;
@@ -2760,7 +2760,7 @@ to {
 
 .service_ico_dianying, .service_ico_youxi {
 	background-image:
-		url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_fs@1x.png);
+		url(image/sprite_fs@1x.png);
 	background-size: 156px 148px;
 	background-repeat: no-repeat;
 	width: 24px;
@@ -2777,7 +2777,7 @@ to {
 
 .service_ico_jiayou, .service_ico_qyg {
 	background-image:
-		url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_fs@1x.png);
+		url(image/sprite_fs@1x.png);
 	background-size: 156px 148px;
 	background-repeat: no-repeat;
 	width: 24px;
@@ -2794,7 +2794,7 @@ to {
 
 .service_ico_huoche, .service_ico_jiudian {
 	background-image:
-		url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_fs@1x.png);
+		url(image/sprite_fs@1x.png);
 	background-size: 156px 148px;
 	background-repeat: no-repeat;
 	width: 24px;
@@ -2811,7 +2811,7 @@ to {
 
 .service_ico_licai, .service_ico_zhongchou {
 	background-image:
-		url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_fs@1x.png);
+		url(image/sprite_fs@1x.png);
 	background-size: 156px 148px;
 	background-repeat: no-repeat;
 	width: 24px;
@@ -2828,7 +2828,7 @@ to {
 
 .service_ico_baitiao, .service_ico_lipin {
 	background-image:
-		url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_fs@1x.png);
+		url(image/sprite_fs@1x.png);
 	background-size: 156px 148px;
 	background-repeat: no-repeat;
 	width: 24px;
@@ -2845,7 +2845,7 @@ to {
 	(min-device-pixel-ratio:1.5) {
 	.mobile_btn_ico {
 		background-image:
-			url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_fs@2x.png);
+			url(image/sprite_fs@2x.png);
 		background-position: 0 -102px;
 		background-size: 126px 118px;
 		background-repeat: no-repeat;
@@ -2857,7 +2857,7 @@ to {
 	}
 	.service_ico_huafei, .service_ico_jipiao {
 		background-image:
-			url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_fs@2x.png);
+			url(image/sprite_fs@2x.png);
 		background-size: 126px 118px;
 		background-repeat: no-repeat;
 		width: 24px;
@@ -2871,7 +2871,7 @@ to {
 	}
 	.service_ico_dianying, .service_ico_youxi {
 		background-image:
-			url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_fs@2x.png);
+			url(image/sprite_fs@2x.png);
 		background-size: 126px 118px;
 		background-repeat: no-repeat;
 		width: 24px;
@@ -2885,7 +2885,7 @@ to {
 	}
 	.service_ico_jiayou, .service_ico_qyg {
 		background-image:
-			url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_fs@2x.png);
+			url(image/sprite_fs@2x.png);
 		background-size: 126px 118px;
 		background-repeat: no-repeat;
 		width: 24px;
@@ -2899,7 +2899,7 @@ to {
 	}
 	.service_ico_huoche, .service_ico_jiudian {
 		background-image:
-			url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_fs@2x.png);
+			url(image/sprite_fs@2x.png);
 		background-size: 126px 118px;
 		background-repeat: no-repeat;
 		width: 24px;
@@ -2913,7 +2913,7 @@ to {
 	}
 	.service_ico_licai, .service_ico_zhongchou {
 		background-image:
-			url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_fs@2x.png);
+			url(image/sprite_fs@2x.png);
 		background-size: 126px 118px;
 		background-repeat: no-repeat;
 		width: 24px;
@@ -2927,7 +2927,7 @@ to {
 	}
 	.service_ico_baitiao, .service_ico_lipin {
 		background-image:
-			url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_fs@2x.png);
+			url(image/sprite_fs@2x.png);
 		background-size: 126px 118px;
 		background-repeat: no-repeat;
 		width: 24px;
@@ -3002,7 +3002,7 @@ to {
 	width: 40px;
 	height: 26px;
 	background:
-		url(//img14.360buyimg.com/da/jfs/t3568/2/2188562657/3489/60c8c4ea/58468238Ne2f150f4.png)
+		url(image/58468238Ne2f150f4.png)
 		no-repeat 0 0;
 }
 
@@ -3037,7 +3037,7 @@ to {
 	min-device-pixel-ratio:1.5 ) {
 	.o2_happy .pt_ico1212 {
 		background-image:
-			url(//img13.360buyimg.com/da/jfs/t3988/289/275026536/10066/a813e052/58468373N6ad49845.png);
+			url(image/58468373N6ad49845.png);
 		background-size: 40px 26px;
 	}
 }
@@ -3065,7 +3065,7 @@ to {
 	width: 52px;
 	height: 52px;
 	background: #f6f6f6
-		url(//misc.360buyimg.com/mtd/pc/index/home/images/mobile_qrcode.png)
+		url(image/mobile_qrcode.png)
 		50% no-repeat
 }
 
@@ -3075,7 +3075,7 @@ to {
 	(min-device-pixel-ratio:1.5) {
 	.mobile_static_qrcode {
 		background:
-			url(//misc.360buyimg.com/mtd/pc/index/home/images/mobile_qrcode@2x.png)
+			url(image/mobile_qrcode@2x.png)
 			50% no-repeat;
 		background-size: 50px
 	}
