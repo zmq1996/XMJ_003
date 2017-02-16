@@ -6,6 +6,7 @@
 <head>
   <meta charset="UTF-8">
   <title>晓米佳</title>
+  <base href="/xmj/">
   <meta name="description" content="专业的综合网上购物商城,销售家电、数码通讯、电脑、家居百货、服装服饰、母婴、图书、食品等数万个品牌优质商品.便捷、诚信的服务，为您提供愉悦的网上购物体验!" />
   <meta name="Keywords" content="网上购物,网上商城,手机,笔记本,电脑,MP3,CD,VCD,DV,相机,数码,配件,手表,存储卡,京东" />
 
@@ -152,7 +153,7 @@ body {
 		background-size: 100px 90px
 	}
 	.loading, .mod_loading {
-		background-image:
+		background:
 			url(image/loading@2x.gif);
 		background-size: 25px 25px
 	}
@@ -273,7 +274,7 @@ body {
 	background-image:
 		url(image/errtips@1x.png);
 	background-position: 50%;
-	background-repeat: no-repeat
+	background-repeat: no-repeat;
 }
 
 @media only screen and (-o-min-device-pixel-ratio:3/2) , only screen and
@@ -1452,9 +1453,8 @@ body {
 	display: block;
 	width: 190px;
 	height: 170px;
-	background-image:
-		url(image/logo.v2.png);
-	background-repeat: no-repeat;
+	background:
+		url(image/logov2.png) no-repeat;
 	text-indent: -999px
 }
 
