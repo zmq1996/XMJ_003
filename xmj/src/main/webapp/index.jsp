@@ -3145,12 +3145,12 @@ to {
         </li>
         <li class="spacer"></li>
         <li class="fore3 dorpdown" id="ttbar-myjd" clstag="h|keycount|2016|01d">
-          <div class="dt cw-icon"><a target="_blank" href="//home.jd.com/">我的京东</a><i class="iconfont">&#xe605;</i><i class="ci-right"><s>◇</s></i></div>
+          <div class="dt cw-icon"><a target="_blank" href="//home.jd.com/">我的晓米佳</a><i class="iconfont">&#xe605;</i><i class="ci-right"><s>◇</s></i></div>
           <div class="dd dorpdown-layer"></div>
         </li>
         <li class="spacer"></li>
         <li class="fore4" clstag="h|keycount|2016|01e">
-          <div class="dt"><a target="_blank" href="//vip.jd.com/">京东会员</a></div>
+          <div class="dt"><a target="_blank" href="//vip.jd.com/">晓米佳会员</a></div>
         </li>
         <li class="spacer"></li>
         <li class="fore5" clstag="h|keycount|2016|01f">
@@ -3168,7 +3168,7 @@ to {
         </li>
         <li class="spacer"></li>
         <li class="fore10 mobile" id="J_mobile" clstag="h|keycount|2016|01i">
-        	<div class="dt mobile_txt">手机京东</div>
+        	<div class="dt mobile_txt">手机晓米佳</div>
         		<div class="mobile_static">
                     <div class="mobile_static_qrcode"></div>
                 </div>
@@ -3182,15 +3182,15 @@ to {
   <div id="header">
     <div class="w">
       <div id="logo" class="logo" clstag="h|keycount|2016|02a">
-        <h1 class="logo_tit"><a href="//www.jd.com" class="logo_tit_lk">京东</a></h1>
-        <h2 class="logo_subtit">京东,多快好省</h2>
+        <h1 class="logo_tit"><a href="//www.jd.com" class="logo_tit_lk">晓米佳</a></h1>
+        <h2 class="logo_subtit">晓米佳,多快好省</h2>
         <div class="logo_extend"></div>
       </div>
 
       <div id="search">
         <div class="search-m">
           <div class="search_logo">
-            <a href="//www.jd.com" class="search_logo_lk" clstag="h|keycount|2016|02b">京东，多快好省</a>
+            <a href="//www.jd.com" class="search_logo_lk" clstag="h|keycount|2016|02b">晓米佳，多快好省</a>
           </div>
           <ul id="shelper" style="display: none"></ul>
 
@@ -3242,7 +3242,7 @@ to {
 				<a target="_blank" href="https://channel.jd.com/fashion.html">服装城</a>
 			</li>
 			<li clstag="h|keycount|2016|05f" class="fore2" >
-				<a target="_blank" href="//chaoshi.jd.com/">京东超市</a>
+				<a target="_blank" href="//chaoshi.jd.com/">晓米佳超市</a>
 			</li>
 			<li clstag="h|keycount|2016|05g" class="fore3" >
 				<a target="_blank" href="//fresh.jd.com/">生鲜</a>
@@ -3254,7 +3254,7 @@ to {
 		<div class="spacer"></div>
 		<ul id="navitems-group3">
 			<li clstag="h|keycount|2016|05i" class="fore1" >
-				<a target="_blank" href="//jr.jd.com/">京东金融</a>
+				<a target="_blank" href="//jr.jd.com/">晓米佳金融</a>
 			</li>
 		</ul>
     </div>
@@ -3369,7 +3369,7 @@ pageConfig.tplLoadTimeout = 5000;
 pageConfig.dataLoadTimeout = 5000;
 pageConfig.miaoshaAdwords = '总有你想不到的低价';
 </script>
-<div class="J_f J_lazyload J_sk mod_lazyload need_ani sk" id="seckill" data-tpl="seckill_tpl" data-custom="true">
+<!-- <div class="J_f J_lazyload J_sk mod_lazyload need_ani sk" id="seckill" data-tpl="seckill_tpl" data-custom="true">
 </div>
 <div class="J_f J_lazyload mod_lazyload need_ani coupon" id="coupon_lazy" data-tpl="floor_coupon_tpl" data-backup="coupons" data-source="cms:coupons">
 </div>
@@ -3414,9 +3414,9 @@ pageConfig.miaoshaAdwords = '总有你想不到的低价';
 <div class="J_f J_lazyload mod_lazyload need_ani entry entry_c7 entry_2" id="entry_2" data-backup="special_2" data-source="cms:special_2" data-tpl="entry_tpl">
 
 </div>
-<div class="J_f J_lazyload mod_lazyload rec" id="rec_4" data-backup="banner_4" data-source="cms:banner_4" data-tpl="rec_tpl">
+ <div class="J_f J_lazyload mod_lazyload rec" id="rec_4" data-backup="banner_4" data-source="cms:banner_4" data-tpl="rec_tpl">
 
-</div>
+</div> -->
 <div class="J_f J_lazyload J_f_lift mod_lazyload more J_more" id="more" data-custom="true" data-tpl="more_tpl">
 
 </div>
