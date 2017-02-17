@@ -1,8 +1,9 @@
-
+<%@ page contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="GBK"/>
+    <!-- <meta charset="GBK"/> -->
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
     <title>京东-欢迎登录</title>
     <link rel="icon" href="//www.jd.com/favicon.ico"/>
@@ -49,13 +50,13 @@
                     <div class="mc">
                         <div class="form">
                             <form id="formlogin" method="post" onsubmit="return false;">
-								<input type="hidden" id="uuid" name="uuid" value="cc596ed8-557e-49d5-b9a2-5f1fb6d71b27"/>
+								<input type="hidden" id="uuid" name="uuid" value="72b3b824-3a8f-4f32-9d65-b134a6e0d539"/>
                                 <input type="hidden" name="eid" id="eid" value="" class="hide"/>
                                 <input type="hidden" name="fp" id="sessionId" value="" class="hide"/>
-                                <input type="hidden" name="_t" id="token" value="_ntuAjBj" class="hide"/>
+                                <input type="hidden" name="_t" id="token" value="_ntXubuv" class="hide"/>
                                 <input type="hidden" name="loginType" id="loginType" value="c" class="hide"/>
                                 <input type="hidden" name="pubKey" id="pubKey" value="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDlOJu6TyygqxfWT7eLtGDwajtNFOb9I5XRb6khyfD1Yt3YiCgQWMNW649887VGJiGr/L5i2osbl8C9+WJTeucF+S76xFxdU6jE0NQ+Z+zEdhUTooNRaY5nZiu5PgDB0ED/ZKBUSLKL7eibMxZtMlUDHjm4gwQco1KRMDSmXSMkDwIDAQAB" class="hide"/>
-                                                                <input type="hidden" name="blMRgIWAYM" value="uEeYJ"/>
+                                                                <input type="hidden" name="npXPeINZhM" value="NdZUX"/>
                                                                 <div class="item item-fore1">
                                     <label for="loginname" class="login-label name-label"></label>
                                     <input id="loginname" type="text" class="itxt" name="loginname" tabindex="1"
@@ -78,8 +79,8 @@
                                      class="item item-vcode item-fore3  hide ">
                                     <input id="authcode" type="text" class="itxt itxt02" name="authcode" tabindex="3">
                                     <img id="JD_Verification1" class="verify-code"
-                                                                                  src2="//authcode.jd.com/verify/image?a=1&amp;acid=cc596ed8-557e-49d5-b9a2-5f1fb6d71b27&amp;uid=cc596ed8-557e-49d5-b9a2-5f1fb6d71b27"
-                                                                                      onclick="this.src= document.location.protocol +'//authcode.jd.com/verify/image?a=1&amp;acid=cc596ed8-557e-49d5-b9a2-5f1fb6d71b27&amp;uid=cc596ed8-557e-49d5-b9a2-5f1fb6d71b27&amp;yys='+new Date().getTime();$('#authcode').val('');"/>
+                                                                                  src2="//authcode.jd.com/verify/image?a=1&amp;acid=72b3b824-3a8f-4f32-9d65-b134a6e0d539&amp;uid=72b3b824-3a8f-4f32-9d65-b134a6e0d539"
+                                                                                      onclick="this.src= document.location.protocol +'//authcode.jd.com/verify/image?a=1&amp;acid=72b3b824-3a8f-4f32-9d65-b134a6e0d539&amp;uid=72b3b824-3a8f-4f32-9d65-b134a6e0d539&amp;yys='+new Date().getTime();$('#authcode').val('');"/>
                                     <a href="javascript:void(0)" onclick="$('#JD_Verification1').click();">看不清换一张</a>
                                 </div>
 								
