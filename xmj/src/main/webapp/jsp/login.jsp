@@ -35,17 +35,14 @@
     <div class="login-wrap">
 		<div class="w">
             <div class="login-form">
-                <div class="login-tab login-tab-l">
-                    <a href="javascript:void(0)" clstag="pageclick|keycount|201607144|1"> 扫码登录</a>
-                </div>
                 <div class="login-tab login-tab-r">
-                    <a href="javascript:void(0)" clstag="pageclick|keycount|201607144|2">账户登录</a>
+                    <a href="javascript:void(0)">账户登录</a>
                 </div>
                 <div class="login-box">
                     <div class="mt tab-h">
                     </div>
                     <div class="msg-wrap">
-													<div class="msg-warn hide"><b></b>公共场所不建议自动登录，以防账号丢失</div>
+													<div class="msg-warn hide"><b></b></div>
 						                        <div class="msg-error hide"><b></b></div>
                     </div>
                     <div class="mc">
@@ -88,10 +85,6 @@
 								<div class="item item-fore4">
 									<div class="safe">
 										<span>
-                                                                                   <!-- <input id="autoLogin" name="chkRememberMe" type="checkbox"
-                                                   class="jdcheckbox" tabindex="3"
-                                                   clstag="pageclick|keycount|20150112ABD|6">
-                                             <label for="">自动登录</label> -->
                                                                              	</span>
 										<span class="forget-pw-safe">
 											<a href="/uc/links?tag=safe" class="" target="_blank"
@@ -108,77 +101,10 @@
                                 </div>
                             </form>
                         </div>
+                    </div>          
                     </div>
                 </div>
-
-                <div class="qrcode-login">
-                    <div class="mc">
-                        <div class="qrcode-error-2016">
-                            <div class="qrcode-error-mask">
-                            </div>
-                            <p class="err-cont">服务器出错</p>
-                            <a href="javascript:void(0)" class="refresh-btn">刷新</a>
-                        </div>
-                        <div class="qrcode-main">
-                            <div class="qrcode-img">
-                                <img src="//img14.360buyimg.com/da/jfs/t559/51/841097244/15946/f4ff9e8/548faf09N1acc240e.png" alt="">
-                            </div>
-                            <div class="qrcode-help" style="display: none; "></div>
-                        </div>
-                        <div class="qrcode-panel">
-                            <ul>
-                                <li class="fore1">
-									<span>打开</span>
-                                    <a href="/uc/links?tag=apps" target="_blank"
-										clstag="pageclick|keycount|201607144|9">
-									<span class="red">手机晓米佳</span></a>
-                                </li>
-								<li>扫描二维码</li>
-                            </ul>
-                        </div>
-                        <div class="coagent qr-coagent" id="qrCoagent">
-                            <ul>
-                                <li><b></b><em>免输入</em></li>
-                                <li><b class="faster"></b><em>更快&nbsp;</em></li>
-                                <li><b class="more-safe"></b><em>更安全</em></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-				             <div class="coagent" id="kbCoagent">
-                    <ul>
-                        						                        <li>
-                             <!-- <b></b>
-                            <a href="javascript:void(0)"
-                               onclick="window.location='//qq.jd.com/new/qq/login.aspx'+window.location.search;return false;"
-                               clstag="pageclick|keycount|201607144|6" class="pdl"><b
-                                    class="QQ-icon"></b><span>QQ</span></a>
-                                                        <span class="line">|</span>
-                                                    </li>
-                                                                        <li>
-                            <a href="javascript:void(0)"
-                               onclick="window.location='//qq.jd.com/new/wx/login.action'+window.location.search;return false;"
-                               clstag="pageclick|keycount|201607144|7" class="pdl"><b
-                                    class="weixin-icon"></b><span>微信</span></a>
-								                        </li>
-                                                                                                <li class="extra-r">
-                            <div>
-                               <div class="regist-link"><a
-                                        href="//reg.jd.com/reg/person?ReturnUrl=http%3A%2F%2Fwww.jd.com"
-                                        clstag="pageclick|keycount|201607144|8"
-                                        target="_blank"><b></b>立即注册</a></div>
-                            </div> -->
-                        </li>
-                    </ul>
-                </div>            </div>
-        </div>
-        <div class="login-banner" clstag="pageclick|keycount|20150112ABD|46">
-            <div class="w">
-                <div id="banner-bg" class="i-inner"
-                     >
-                </div>
-            </div>
-        </div>
+				             <div class="coagent" id="kbCoagent"></div>  
     </div>
 </div>
 <div class="w">
@@ -205,7 +131,7 @@
             </a>
             |
             <a rel="nofollow" target="_blank" href="//app.jd.com/">
-                手机京东
+                手机晓米佳
             </a>
             |
             <a target="_blank" href="/links.vm/club.jd.com/links.aspx">
