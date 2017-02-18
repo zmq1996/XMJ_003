@@ -128,10 +128,10 @@ body {
 	font-size: 0
 }
 
-.mod_lazyload {
+/* .mod_lazyload {
 	background-image:
 		url(image/lazyload.gif)
-}
+} */
 
 .loading, .mod_lazyload, .mod_loading {
 	background-repeat: no-repeat;
@@ -2460,7 +2460,7 @@ to {
 .news {
 	overflow: hidden;
 	padding: 0 15px;
-	height: 154px
+	height: 364px
 }
 
 .news .mod_tab_head {
@@ -2990,7 +2990,7 @@ to {
 
 .more {
 	margin-bottom: 30px;
-	min-height: 300px
+	min-height: 100px
 }
 
 .pt_ico1212 {
@@ -3137,7 +3137,7 @@ to {
 
       <ul class="fr">
         <li class="fore1" id="ttbar-login" clstag="h|keycount|2016|01b">
-          <a target="_blank" href="javascript:login();" class="link-login">你好，请登录</a>&nbsp;&nbsp;<a href="javascript:regist();" class="link-regist style-red">免费注册</a>
+          <a target="_blank" href="page/login.jsp" class="link-login">你好，请登录</a>&nbsp;&nbsp;<a href="page/register.jsp" class="link-regist style-red">免费注册</a>
         </li>
         <li class="spacer"></li>
         <li class="fore2" clstag="h|keycount|2016|01c">
@@ -3149,14 +3149,14 @@ to {
           <div class="dd dorpdown-layer"></div>
         </li>
         <li class="spacer"></li>
-        <li class="fore4" clstag="h|keycount|2016|01e">
+        <!-- <li class="fore4" clstag="h|keycount|2016|01e">
           <div class="dt"><a target="_blank" href="//vip.jd.com/">晓米佳会员</a></div>
         </li>
-        <li class="spacer"></li>
-        <li class="fore5" clstag="h|keycount|2016|01f">
+        <li class="spacer"></li> -->
+        <!-- <li class="fore5" clstag="h|keycount|2016|01f">
           <div class="dt"><a target="_blank" href="//b.jd.com/">企业采购</a></div>
         </li>
-        <li class="spacer"></li>
+        <li class="spacer"></li> -->
         <li class="fore8 dorpdown" id="ttbar-serv" clstag="h|keycount|2016|01g">
           <div class="dt cw-icon">客户服务<i class="iconfont">&#xe605;</i><i class="ci-right"><s>◇</s></i></div>
           <div class="dd dorpdown-layer"></div>
@@ -3182,7 +3182,7 @@ to {
   <div id="header">
     <div class="w">
       <div id="logo" class="logo" clstag="h|keycount|2016|02a">
-        <h1 class="logo_tit"><a href="//www.jd.com" class="logo_tit_lk">晓米佳</a></h1>
+        <h1 class="logo_tit"><a href="/xmj/index.jsp" class="logo_tit_lk">晓米佳</a></h1>
         <h2 class="logo_subtit">晓米佳,多快好省</h2>
         <div class="logo_extend"></div>
       </div>
@@ -3293,7 +3293,9 @@ to {
 </div><!--index_ok-->
       <div class="fs_col2">
         <div class="J_slider slider">
-          <div class="J_slider_main slider_main"></div>
+          <div class="J_slider_main slider_main">
+          	
+          </div>
           <div class="J_slider_extend slider_extend clearfix"></div>
         </div>
       </div>
@@ -3359,9 +3361,13 @@ to {
   </div>
 
 
-
-    
 <script type="text/javascript">
+	function login(){
+		location.href = 'page/login.jsp'
+	}
+</script>
+    
+<!-- <script type="text/javascript">
 window['_REPORT_']['FS'] = new Date();
 pageConfig.O2_REPORT = 100;
 pageConfig.O2_ERROR_REPORT = 20;
@@ -3369,7 +3375,7 @@ pageConfig.tplLoadTimeout = 5000;
 pageConfig.dataLoadTimeout = 5000;
 pageConfig.miaoshaAdwords = '总有你想不到的低价';
 </script>
-<!-- <div class="J_f J_lazyload J_sk mod_lazyload need_ani sk" id="seckill" data-tpl="seckill_tpl" data-custom="true">
+<div class="J_f J_lazyload J_sk mod_lazyload need_ani sk" id="seckill" data-tpl="seckill_tpl" data-custom="true">
 </div>
 <div class="J_f J_lazyload mod_lazyload need_ani coupon" id="coupon_lazy" data-tpl="floor_coupon_tpl" data-backup="coupons" data-source="cms:coupons">
 </div>
@@ -3421,7 +3427,6 @@ pageConfig.miaoshaAdwords = '总有你想不到的低价';
 
 </div>
 <div class="J_f J_lazyload mod_lazyload mod_footer" id="footer" data-tpl="mod_footer_tpl">
-
 </div>
 <div class="J_f J_lazyload J_lift mod_lazyload lift" id="lift" data-tpl="elevator_tpl" data-forcerender="true">
 
