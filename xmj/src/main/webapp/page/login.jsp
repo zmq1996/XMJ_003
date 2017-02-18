@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
     <title>晓米佳-欢迎登录</title>
     <link type="text/css" rel="stylesheet"
-          href="/xmj/css/login.css"
+          href="/xmj/css/buyerLogin.css"
           source="widget"/>  
     <script type="text/javascript" src="/xmj/easyui/jquery.min.js"></script>
 	<!-- <script type="text/javascript">
