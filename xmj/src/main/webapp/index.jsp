@@ -309,7 +309,7 @@ pageConfig.miaoshaAdwords = '总有你想不到的低价';
 </div>
  <div class="J_f J_lazyload mod_lazyload rec" id="rec_4" data-backup="banner_4" data-source="cms:banner_4" data-tpl="rec_tpl">
 
-</div> -->
+</div> 
 <div class="J_f J_lazyload J_f_lift mod_lazyload more J_more" id="more" data-custom="true" data-tpl="more_tpl">
 
 </div>
@@ -317,7 +317,7 @@ pageConfig.miaoshaAdwords = '总有你想不到的低价';
 </div>
 <div class="J_f J_lazyload J_lift mod_lazyload lift" id="lift" data-tpl="elevator_tpl" data-forcerender="true">
 
-</div>
+</div>-->
 
 </body>
 </html><!--index_ok-->

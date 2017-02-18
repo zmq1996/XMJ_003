@@ -12,15 +12,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>订单结算页 -晓米佳商城</title>
 	<!--结算页面样式-->	
-	<link rel="stylesheet" href="//sp.jd.com/payment/1.2.0/css/bankList.css" charset="utf-8">
-						<link type="text/css" rel="stylesheet"  href="//misc.360buyimg.com/user/purchase/2.0.0/widget/??common/common.css,header-2015/header-2015.css,consignee-scroll/consignee-scroll.css,payment-step/payment-step.css,presale-step/presale-step.css,shopping-list/shopping-list.css,invoice-step/invoice-step.css,order-virtual/order-virtual.css,order-summary/order-summary.css,checkout-floatbar/checkout-floatbar.css,paypwd/paypwd.css,backpanel/backpanel.css" source="widget"/>
-				<link type="text/css" rel="stylesheet"  href="//misc.360buyimg.com/jdf/1.0.0/unit/??ui-base/1.0.0/ui-base.css,shortcut/2.0.0/shortcut.css,global-header/1.0.0/global-header.css,myjd/2.0.0/myjd.css,nav/2.0.0/nav.css,shoppingcart/2.0.0/shoppingcart.css,global-footer/1.0.0/global-footer.css,service/1.0.0/service.css"/>
-		<script type="text/javascript" src="//misc.360buyimg.com/jdf/lib/jquery-1.6.4.js"></script>
-		<script type="text/javascript" src="//misc.360buyimg.com/jdf/1.0.0/unit/??base/1.0.0/base.js,basePatch/1.0.0/basePatch.js"></script>
-		<script type="text/javascript" src="//misc.360buyimg.com/user/purchase/2.0.0/js/cookieTrack_v4.js"></script>
-	
-	<script type="text/javascript" src="//trade.jd.com/shopping/misc/js/order.common.js?r=20161128"></script>
-	<script type="text/javascript" src="//trade.jd.com/shopping/misc/js/jquery.checkout.js?v=0112"></script>
+	<link rel="stylesheet" href="../css/bankList.css" charset="utf-8">
+	<link type="text/css" rel="stylesheet"  href="../css/backpanel2.css" source="widget"/>
+	<link type="text/css" rel="stylesheet"  href="../css/service2.css"/>
+	<script type="text/javascript" src="../easyui/jquery.min.js"></script>
 </head>	<body id="mainframe">
 		<div id="shortcut-2014">
 	<div class="w">
@@ -28,25 +23,25 @@
     		<li class="dorpdown" id="ttbar-mycity"></li>
     	</ul>
     	<ul class="fr">
-			<li class="fore1" id="ttbar-login">
+			<!-- <li class="fore1" id="ttbar-login">
 				<a href="javascript:login();" class="link-login">你好，请登录</a>&nbsp;&nbsp;<a href="javascript:regist();" class="link-regist style-red">免费注册</a>
 			</li>
-			<li class="spacer"></li>
+			<li class="spacer"></li> 
 			<li class="fore2">
 				<div class="dt">
 					<a target="_blank" href="http://order.jd.com/center/list.action">我的订单</a>
 				</div>
 			</li>
-			<li class="spacer"></li>
+			<li class="spacer"></li>-->
 			<li class="fore3 dorpdown" id="ttbar-myjd">
 				<div class="dt cw-icon">
-					<i class="ci-right"><s>◇</s></i>
-					<a target="_blank" href="http://home.jd.com/">我的京东</a>
+					<i class="ci-right"> </i>
+					<a target="_blank" href="http://home.jd.com/">我的晓米佳</a>
 				</div>
 				<div class="dd dorpdown-layer"></div>
 			</li>
 			<li class="spacer"></li>
-			<li class="fore4">
+			<!-- <li class="fore4">
 				<div class="dt">
 					<a target="_blank" href="http://vip.jd.com/">京东会员</a>
 				</div>
@@ -57,21 +52,21 @@
 					<a target="_blank" href="http://b.jd.com/">企业采购</a>
 				</div>
 			</li>
-			<li class="spacer"></li>
-			<li class="fore6 dorpdown" id="ttbar-apps">
+			<li class="spacer"></li> 
+			<li class="fore6 dorpdown" id="ttbar-apps" style="display: none;">
 				<div class="dt cw-icon">
 					<i class="ci-left"></i>
-					<i class="ci-right"><s>◇</s></i>
+					<i class="ci-right"> </i>
 					<a target="_blank" href="http://app.jd.com/">手机京东</a>
 				</div>
 			</li>
-			<li class="spacer"></li>
-			<li class="fore7 dorpdown" id="ttbar-atte">
+			<li class="spacer"></li>-->
+			<!-- <li class="fore7 dorpdown" id="ttbar-atte">
 				<div class="dt cw-icon">
-					<i class="ci-right"><s>◇</s></i>关注京东
+					<i class="ci-right"> </i>关注晓米佳
 				</div>	
 			</li>
-			<li class="spacer"></li>
+			<li class="spacer"></li> -->
 			<li class="fore8 dorpdown" id="ttbar-serv">
 				<div class="dt cw-icon">
 					<i class="ci-right"><s>◇</s></i>客户服务
