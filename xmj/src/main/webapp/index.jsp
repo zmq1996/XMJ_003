@@ -83,7 +83,7 @@
           <i class="ci-left"></i>
           <i class="ci-right"></i>
           <i class="iconfont">&#xe607;</i>
-          <a target="_blank" href="//cart.jd.com/cart.action">我的购物车</a>
+          <a target="_blank" href="page/gouwuche.jsp">我的购物车</a>
         </div>
         <div class="dorpdown-layer">
           <div class="spacer"></div>
