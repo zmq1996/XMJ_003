@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
     <title>晓米佳-欢迎登录</title>
     <link type="text/css" rel="stylesheet"
-          href="/xmj/css/buyerLogin.css"
+          href="../css/buyerLogin.css"
           source="widget"/>  
     <script type="text/javascript" src="/xmj/easyui/jquery.min.js"></script>
 	<!-- <script type="text/javascript">
@@ -77,8 +77,8 @@
                                      class="item item-vcode item-fore3  hide ">
                                     <input id="authcode" type="text" class="itxt itxt02" name="authcode" tabindex="3">
                                     <img id="JD_Verification1" class="verify-code"
-                                                                                  src2="//authcode.jd.com/verify/image?a=1&amp;acid=72b3b824-3a8f-4f32-9d65-b134a6e0d539&amp;uid=72b3b824-3a8f-4f32-9d65-b134a6e0d539"
-                                                                                      onclick="this.src= document.location.protocol +'//authcode.jd.com/verify/image?a=1&amp;acid=72b3b824-3a8f-4f32-9d65-b134a6e0d539&amp;uid=72b3b824-3a8f-4f32-9d65-b134a6e0d539&amp;yys='+new Date().getTime();$('#authcode').val('');"/>
+                                                                                  src="../vcode.jpg"
+                                                                                      onclick=""/>
                                     <a href="javascript:void(0)" onclick="$('#JD_Verification1').click();">看不清换一张</a>
                                 </div>
 								
@@ -108,7 +108,7 @@
                     </div>
                 </div>
 
-                <div class="qrcode-login">
+                <!-- <div class="qrcode-login">
                     <div class="mc">
                         <div class="qrcode-error-2016">
                             <div class="qrcode-error-mask">
@@ -124,12 +124,12 @@
                         </div>
                         <div class="qrcode-panel">
                             <ul>
-                                <!-- <li class="fore1">
+                                <li class="fore1">
 									<span>打开</span>
                                     <a href="/uc/links?tag=apps" target="_blank"
 										clstag="pageclick|keycount|201607144|9">
 									<span class="red">手机京东</span></a>
-                                </li> -->
+                                </li>
 								<li>扫描二维码</li>
                             </ul>
                         </div>
@@ -141,7 +141,7 @@
                             </ul>
                         </div>
                     </div>
-                </div>
+                </div> -->
 				             <div class="coagent" id="kbCoagent">
                     <ul>
                         	<!-- 					                        <li>
@@ -245,7 +245,11 @@
 </script> -->
 
 
-<!-- <script src="//payrisk.jd.com/js/td.js"></script> -->
+<script type="text/javascript">
+	function vode(){
+		
+	}
+</script>
 <!-- <script>
     $(function () {
         getJdEid(function (eid, fpid) {
