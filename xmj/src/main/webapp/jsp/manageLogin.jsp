@@ -11,14 +11,6 @@
     <link type="text/css" rel="stylesheet"
           href="css/manageLogin.css"
           source="widget"/>  
-    <script type="text/javascript" src="//misc.360buyimg.com/jdf/lib/jquery-1.6.4.js"></script>
-	<script type="text/javascript">
-     	$(function(){
-                window.SysConfig = {
-                encryptInfo:  true ,
-                rememberMeShowEnable:  true                 };
-         });
-    </script>
 		</head>
 <body>
 <!-- SDK 登录 -->
@@ -34,38 +26,34 @@
 <div id="content">
     <div class="login-wrap">
 		<div class="w">
-            <div class="login-form">
+            <div class="login-form" style="float:left; margin-left:300px;">
                 <div class="login-tab login-tab-r">
-                    <a href="javascript:void(0)" style="font-size:35px;">管理员登录</a>
+                    <span style="font-size:35px;">管理员登录</span>
                 </div>
                 <div class="login-box">
                     <div class="mt tab-h">
                     </div>
                     <div class="msg-wrap">
-													<div class="msg-warn hide"><b></b></div>
-						                        <div class="msg-error hide"><b></b></div>
+						<div class="msg-warn hide"><b></b></div>
+						<div class="msg-error hide"><b></b></div>
                     </div>
                     <div class="mc">
                         <div class="form">
-                            <form id="formlogin" method="post" onsubmit="return false;">
-								<input type="hidden" id="uuid" name="uuid" value="72b3b824-3a8f-4f32-9d65-b134a6e0d539"/>
-                                <input type="hidden" name="eid" id="eid" value="" class="hide"/>
+                            <form id="formlogin" method="post" onsubmit="return false;" action="manage/login">
+                                <input type="hidden" name="aid" id="aid" value="" class="hide"/>
                                 <input type="hidden" name="fp" id="sessionId" value="" class="hide"/>
                                 <input type="hidden" name="_t" id="token" value="_ntXubuv" class="hide"/>
                                 <input type="hidden" name="loginType" id="loginType" value="c" class="hide"/>
-                                <input type="hidden" name="pubKey" id="pubKey" value="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDlOJu6TyygqxfWT7eLtGDwajtNFOb9I5XRb6khyfD1Yt3YiCgQWMNW649887VGJiGr/L5i2osbl8C9+WJTeucF+S76xFxdU6jE0NQ+Z+zEdhUTooNRaY5nZiu5PgDB0ED/ZKBUSLKL7eibMxZtMlUDHjm4gwQco1KRMDSmXSMkDwIDAQAB" class="hide"/>
-                                                                <input type="hidden" name="npXPeINZhM" value="NdZUX"/>
-                                                                <div class="item item-fore1">
-                                    <label for="loginname" class="login-label name-label"></label>
-                                    <input id="loginname" type="text" class="itxt" name="loginname" tabindex="1"
-										autocomplete="off"
-																				placeholder="用户名"/>
+                                <div class="item item-fore1">
+                                    <label for="aname" class="login-label name-label"></label>
+                                    <input id="aname" type="text" class="itxt" name="aname" tabindex="1"
+										autocomplete="off" placeholder="用户名"/>
                                     <span class="clear-btn"></span>
                                 </div>
 								
 								<div id="entry" class="item item-fore2">
-									<label class="login-label pwd-label" for="nloginpwd"></label>
-									<input type="password" id="nloginpwd" name="nloginpwd" class="itxt itxt-error"
+									<label class="login-label pwd-label" for="apwd"></label>
+									<input type="password" id="apwd" name="apwd" class="itxt itxt-error"
 										tabindex="2" autocomplete="off" placeholder="密码"/>
 									<span class="clear-btn"></span>
 									<span class="capslock"><b></b>大小写锁定已打开</span>
@@ -76,27 +64,23 @@
                                 <div id="o-authcode"
                                      class="item item-vcode item-fore3  hide ">
                                     <input id="authcode" type="text" class="itxt itxt02" name="authcode" tabindex="3">
-                                    <img id="JD_Verification1" class="verify-code"
-                                                                                  src2="//authcode.jd.com/verify/image?a=1&amp;acid=72b3b824-3a8f-4f32-9d65-b134a6e0d539&amp;uid=72b3b824-3a8f-4f32-9d65-b134a6e0d539"
+                                    <img id="JD_Verification1" class="verify-code" src2="//authcode.jd.com/verify/image?a=1&amp;acid=72b3b824-3a8f-4f32-9d65-b134a6e0d539&amp;uid=72b3b824-3a8f-4f32-9d65-b134a6e0d539"
                                                                                       onclick="this.src= document.location.protocol +'//authcode.jd.com/verify/image?a=1&amp;acid=72b3b824-3a8f-4f32-9d65-b134a6e0d539&amp;uid=72b3b824-3a8f-4f32-9d65-b134a6e0d539&amp;yys='+new Date().getTime();$('#authcode').val('');"/>
-                                    <a href="javascript:void(0)" onclick="$('#JD_Verification1').click();">看不清换一张</a>
+                                    <a href="javascript:void(0)" onclick="$('#JD_Verification1').click();"></a>
                                 </div>
 								
 								<div class="item item-fore4">
 									<div class="safe">
-										<span>
-                                                                             	</span>
+										<span></span>
 										<span class="forget-pw-safe">
-											<a href="/uc/links?tag=safe" class="" target="_blank"
-												clstag="pageclick|keycount|201607144|3">忘记密码</a>
+											<a href="/uc/links?tag=safe" class="" target="_blank">忘记密码</a>
 										</span>
                                  	</div>
                                 </div>
 								
                                 <div class="item item-fore5">
                                     <div class="login-btn">
-                                        <a href="javascript:;" class="btn-img btn-entry" id="loginsubmit" tabindex="6"
-                                           clstag="pageclick|keycount|201607144|3">登&nbsp;&nbsp;&nbsp;&nbsp;录</a>
+                                        <a href="javascript:;" class="btn-img btn-entry" id="loginsubmit" tabindex="6">登&nbsp;&nbsp;&nbsp;&nbsp;录</a>
                                     </div>
                                 </div>
                             </form>
@@ -157,6 +141,10 @@
         </div>
     </div>
 </div>
+	<script type="text/javascript" src="easyui/jquery.min.js"></script>
+	<script type="text/javascript" src="easyui/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="easyui/locale/easyui-lang-zh_CN.js"></script>
+	<script type="text/javascript" src="js/manageLogin.js"></script>
 </body>
 </html>
 
