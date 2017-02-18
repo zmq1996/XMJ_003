@@ -1,10 +1,10 @@
 <%@ page contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
 <base href="/xmj/">
-    <!-- <meta charset="GBK"/> -->
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
     <title>晓米佳管理员登录界面</title>
     <link rel="icon" href="//www.jd.com/favicon.ico"/>
@@ -40,6 +40,7 @@
                     <div class="mc">
                         <div class="form">
                             <form id="formlogin" method="post" onsubmit="return false;" action="manage/login">
+                            	<p><label>${errorMsg }&nbsp;</label></p><c:remove var="errorMsg" scope="session"/>
                                 <input type="hidden" name="aid" id="aid" value="" class="hide"/>
                                 <input type="hidden" name="fp" id="sessionId" value="" class="hide"/>
                                 <input type="hidden" name="_t" id="token" value="_ntXubuv" class="hide"/>
