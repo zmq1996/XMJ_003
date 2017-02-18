@@ -609,7 +609,7 @@
 		<span class="clr"></span>
 	</div>
 </div> -->
-	<script type="text/javascript"
+	<!-- <script type="text/javascript"
 		src="//cart.jd.com/js/config.js?v=201611290900"></script>
 	<script type="text/javascript"
 		src="//misc.360buyimg.com/user/cart/js/cart-recommend.js?v=201702131415"></script>
@@ -621,7 +621,7 @@
 		src="//misc.360buyimg.com/user/cart/widget/??no-login/no-login.js"></script>
 	<script type="text/javascript">
     seajs.use("/js/cart.new.js?v=201702061500");
-</script>
+</script> -->
 	<!--统计代码 -->
 	<!-- <script type="text/javascript">
     (function() { 
