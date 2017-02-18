@@ -24,7 +24,7 @@
 			<a href="../index.jsp" class="logo"> </a>
 			<div class="logo-title">欢迎注册</div>
 			<div class="have-account">
-				已有账号？ <a href="//passport.jd.com/new/login.aspx">请登录</a>
+				已有账号？ <a href="login.jsp">请登录</a>
 			</div>
 		</div>
 
@@ -111,14 +111,14 @@
 								default='<i class="i-def"></i>完成验证后，你可以用该手机登录和找回密码' /> <i
 								class="i-status"></i>
 						</div>
-						<div class="input-tip">
+						<!--<div class="input-tip">
 							<span></span>
 						</div>
-						<div class="orEmail">
+						 <div class="orEmail">
 							<a href="javascript:;" tabindex="-1">邮箱验证</a>
-						</div>
+						</div> -->
 					</div>
-					<div class="form-item form-item-authcode">
+					<%-- <div class="form-item form-item-authcode">
 						<label>验 证 码</label> <input type="text" autocomplete="off"
 							name="authCode" id="authCode" maxlength="6"
 							class="field form-authcode" placeholder="请输入验证码"
@@ -129,7 +129,7 @@
 					</div>
 					<div class="input-tip">
 						<span></span>
-					</div>
+					</div> --%>
 					<div class="form-item form-item-phonecode">
 						<label>手机验证码</label> <input type="text" name="mobileCode"
 							maxlength="6" id="phoneCode" class="field phonecode"

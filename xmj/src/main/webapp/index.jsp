@@ -3140,12 +3140,12 @@ to {
           <a target="_blank" href="page/login.jsp" class="link-login">你好，请登录</a>&nbsp;&nbsp;<a href="page/register.jsp" class="link-regist style-red">免费注册</a>
         </li>
         <li class="spacer"></li>
-        <li class="fore2" clstag="h|keycount|2016|01c">
+       <!--  <li class="fore2" clstag="h|keycount|2016|01c">
           <div class="dt"><a target="_blank" href="//order.jd.com/center/list.action">我的订单</a></div>
         </li>
-        <li class="spacer"></li>
+        <li class="spacer"></li> -->
         <li class="fore3 dorpdown" id="ttbar-myjd" clstag="h|keycount|2016|01d">
-          <div class="dt cw-icon"><a target="_blank" href="//home.jd.com/">我的晓米佳</a><i class="iconfont">&#xe605;</i><i class="ci-right"><s>◇</s></i></div>
+          <div class="dt cw-icon"><a target="_blank" href="//home.jd.com/">我的晓米佳</a><!-- <i class="iconfont">&#xe605;</i> --><i class="ci-right"><s>◇</s></i></div>
           <div class="dd dorpdown-layer"></div>
         </li>
         <li class="spacer"></li>

@@ -349,9 +349,9 @@ button::-moz-focus-inner, input[type=button]::-moz-focus-inner, input[type=file]
 	overflow: hidden
 }
 
-/* .hide {
+ .hide {
 	display: none
-} */
+} 
 
 .invisible {
 	visibility: hidden
