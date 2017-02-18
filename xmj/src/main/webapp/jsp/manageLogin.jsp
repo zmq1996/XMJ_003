@@ -9,7 +9,7 @@
     <title>晓米佳管理员登录界面</title>
     <link rel="icon" href="//www.jd.com/favicon.ico"/>
     <link type="text/css" rel="stylesheet"
-          href="css/login.css"
+          href="css/manageLogin.css"
           source="widget"/>  
     <script type="text/javascript" src="//misc.360buyimg.com/jdf/lib/jquery-1.6.4.js"></script>
 	<script type="text/javascript">
@@ -36,7 +36,7 @@
 		<div class="w">
             <div class="login-form">
                 <div class="login-tab login-tab-r">
-                    <a href="javascript:void(0)">管理员登录</a>
+                    <a href="javascript:void(0)" style="font-size:35px;">管理员登录</a>
                 </div>
                 <div class="login-box">
                     <div class="mt tab-h">
