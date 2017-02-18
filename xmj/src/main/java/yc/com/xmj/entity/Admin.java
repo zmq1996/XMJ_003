@@ -3,7 +3,7 @@ package yc.com.xmj.entity;
 public class Admin {
 	private Integer aid;
 	private String aname;
-	private String password;
+	private String apassword;
 	private Integer aroot;
 	
 	public Admin() {
@@ -21,11 +21,11 @@ public class Admin {
 	public void setAname(String aname) {
 		this.aname = aname;
 	}
-	public String getPassword() {
-		return password;
+	public String getapassword() {
+		return apassword;
 	}
-	public void setPassword(String password) {
-		this.password = password;
+	public void setapassword(String apassword) {
+		this.apassword = apassword;
 	}
 	public Integer getAroot() {
 		return aroot;
@@ -35,7 +35,7 @@ public class Admin {
 	}
 	@Override
 	public String toString() {
-		return "Admin [aid=" + aid + ", aname=" + aname + ", password="
-				+ password + ", aroot=" + aroot + "]";
+		return "Admin [aid=" + aid + ", aname=" + aname + ", apassword="
+				+ apassword + ", aroot=" + aroot + "]";
 	}
 }
