@@ -29,6 +29,12 @@
 		    		 <li><span>用户详情</span></li> 
 		    	</ul>
 		    </div>
+		    <div title="管理普通管理员" data-options="iconCls:'icon-man'" >   
+		    	<ul class="Menutree">   
+		    		 <li><span>添加管理员</span></li>   
+		    		 <li><span>管理员详情</span></li>   
+		    	</ul>
+		    </div>
 		     <div title="店铺管理" data-options="iconCls:'icon-man'" >   
 		    	<ul class="Menutree">   
 		    		 <li><span>添加店铺</span></li>   
