@@ -5,38 +5,37 @@
 <head>
     <!-- <meta charset="GBK"/> -->
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-    <title>京东-欢迎登录</title>
-    <link rel="icon" href="//www.jd.com/favicon.ico"/>
+    <title>晓米佳-欢迎登录</title>
     <link type="text/css" rel="stylesheet"
-          href="//misc.360buyimg.com/user/passport/1.0.0/??/widget/base/base.css,widget/common-2016-1124/common-2016-1124.css,/widget/login-form-2016-1124/login-form-2016-1124.css,/widget/login-banner/login-banner.css,/widget/safe-step/safe-step.css,widget/foreign-number-layer-1130/foreign-number-layer-1130.css"
+          href="/xmj/css/login.css"
           source="widget"/>  
-    <script type="text/javascript" src="//misc.360buyimg.com/jdf/lib/jquery-1.6.4.js"></script>
-	<script type="text/javascript">
+    <script type="text/javascript" src="/xmj/easyui/jquery.min.js"></script>
+	<!-- <script type="text/javascript">
      	$(function(){
                 window.SysConfig = {
                 encryptInfo:  true ,
-                rememberMeShowEnable:  true                 };
+                rememberMeShowEnable:  true  };
          });
-    </script>
+    </script> -->
 		</head>
 <body>
 <!-- SDK 登录 -->
 <div class="w">
     <div id="logo">
-        <a href="//www.jd.com/" clstag="pageclick|keycount|20150112ABD|45">
-            <img src="//misc.360buyimg.com/lib/img/e/logo-201305-b.png" alt="京东" width="170" height="60">
+        <a href="/xmj/index.jsp" clstag="pageclick|keycount|20150112ABD|45">
+            <img src="/xmj/image/logo_s.v2.png" alt="晓米佳" width="170" height="60">
         </a>
         <b></b>
-    </div>
-			<a href="//surveys.jd.com/index.php?r=survey/index/sid/568245/lang/zh-Hans" target="_blank"  class="q-link"><b></b>登录页面，调查问卷</a>
-    </div>
+     </div>
+			<!--<a href="//surveys.jd.com/index.php?r=survey/index/sid/568245/lang/zh-Hans" target="_blank"  class="q-link"><b></b>登录页面，调查问卷</a>-->
+    </div> 
 <div id="content">
     <div class="login-wrap">
 		<div class="w">
             <div class="login-form">
-                <div class="login-tab login-tab-l">
+                <!-- <div class="login-tab login-tab-l">
                     <a href="javascript:void(0)" clstag="pageclick|keycount|201607144|1"> 扫码登录</a>
-                </div>
+                </div>  -->
                 <div class="login-tab login-tab-r">
                     <a href="javascript:void(0)" clstag="pageclick|keycount|201607144|2">账户登录</a>
                 </div>
@@ -44,8 +43,7 @@
                     <div class="mt tab-h">
                     </div>
                     <div class="msg-wrap">
-													<div class="msg-warn hide"><b></b>公共场所不建议自动登录，以防账号丢失</div>
-						                        <div class="msg-error hide"><b></b></div>
+						<div class="msg-error hide"><b></b>asdasdasd</div>
                     </div>
                     <div class="mc">
                         <div class="form">
@@ -87,10 +85,10 @@
 								<div class="item item-fore4">
 									<div class="safe">
 										<span>
-                                                                                    <input id="autoLogin" name="chkRememberMe" type="checkbox"
+                                          <!--  <input id="autoLogin" name="chkRememberMe" type="checkbox"
                                                    class="jdcheckbox" tabindex="3"
                                                    clstag="pageclick|keycount|20150112ABD|6">
-                                            <label for="">自动登录</label>
+                                            <label for="">自动登录</label> -->
                                                                              	</span>
 										<span class="forget-pw-safe">
 											<a href="/uc/links?tag=safe" class="" target="_blank"
@@ -126,12 +124,12 @@
                         </div>
                         <div class="qrcode-panel">
                             <ul>
-                                <li class="fore1">
+                                <!-- <li class="fore1">
 									<span>打开</span>
                                     <a href="/uc/links?tag=apps" target="_blank"
 										clstag="pageclick|keycount|201607144|9">
 									<span class="red">手机京东</span></a>
-                                </li>
+                                </li> -->
 								<li>扫描二维码</li>
                             </ul>
                         </div>
@@ -146,8 +144,7 @@
                 </div>
 				             <div class="coagent" id="kbCoagent">
                     <ul>
-                        						                        <li>
-                            <b></b>
+                        	<!-- 					                        <li>
                             <a href="javascript:void(0)"
                                onclick="window.location='//qq.jd.com/new/qq/login.aspx'+window.location.search;return false;"
                                clstag="pageclick|keycount|201607144|6" class="pdl"><b
@@ -159,11 +156,11 @@
                                onclick="window.location='//qq.jd.com/new/wx/login.action'+window.location.search;return false;"
                                clstag="pageclick|keycount|201607144|7" class="pdl"><b
                                     class="weixin-icon"></b><span>微信</span></a>
-								                        </li>
+								                        </li> -->
                                                                                                 <li class="extra-r">
                             <div>
                                 <div class="regist-link"><a
-                                        href="//reg.jd.com/reg/person?ReturnUrl=http%3A%2F%2Fwww.jd.com"
+                                        href="/xmj/page/register.jsp"
                                         clstag="pageclick|keycount|201607144|8"
                                         target="_blank"><b></b>立即注册</a></div>
                             </div>
@@ -203,10 +200,10 @@
                 广告服务
             </a>
             |
-            <a rel="nofollow" target="_blank" href="//app.jd.com/">
+           <!--  <a rel="nofollow" target="_blank" href="//app.jd.com/">
                 手机京东
             </a>
-            |
+            | -->
             <a target="_blank" href="/links.vm/club.jd.com/links.aspx">
                 友情链接
             </a>
@@ -215,26 +212,27 @@
                 销售联盟
             </a>
             |
-            <a href="//club.jd.com/" target="_blank">
+           <!--  <a href="//club.jd.com/" target="_blank">
                 京东社区
             </a>
             |
             <a href="//gongyi.jd.com" target="_blank">
                 京东公益
             </a>
-            |
+            | -->
             <a target="_blank" href="//en.jd.com/" clstag="pageclick|keycount|20150112ABD|9">English Site</a>
         </div>
         <div class="copyright">
-            Copyright&nbsp;&copy;&nbsp;2004-2017&nbsp;&nbsp;京东JD.com&nbsp;版权所有
+            Copyright&nbsp;&copy;&nbsp;2004-2017&nbsp;&nbsp;晓米佳XMJ.com&nbsp;版权所有
         </div>
     </div>
-</div><script type="text/javascript" src="//misc.360buyimg.com/jdf/1.0.0/unit/base/1.0.0/base.js"></script>
-    <script type="text/javascript" src="/new/js/jsencrypt.min.js"></script>
-<script type="text/javascript" src="/new/misc/js/login2016.js"></script>
-<script type="text/javascript" src="//misc.360buyimg.com/user/passport/1.0.0/js/login.index.2016-1130.js" source="widget"></script>
+</div>
+<!-- <script type="text/javascript" src="//misc.360buyimg.com/jdf/1.0.0/unit/base/1.0.0/base.js"></script> -->
+   <!--  <script type="text/javascript" src="/new/js/jsencrypt.min.js"></script> -->
+<!-- <script type="text/javascript" src="/new/misc/js/login2016.js"></script> -->
+<!-- <script type="text/javascript" src="//misc.360buyimg.com/user/passport/1.0.0/js/login.index.2016-1130.js" source="widget"></script> -->
 
-<script type="text/javascript">	~function () {		var data = [						{			  src:"//img12.360buyimg.com/da/jfs/t3190/305/6027009355/64123/69ddef6f/589c0dabNb44ed22b.jpg",			  bgColor:"#edecea",                          weight: ""			}						,			{			  src:"//img20.360buyimg.com/da/jfs/t4117/44/2166444334/90074/f2aa527e/58a40975N7ea61b26.jpg",			  bgColor:"#01126f",                          weight: "4"			}						,			{			  src:"//img13.360buyimg.com/da/jfs/t2749/276/1020747574/33213/870500f1/5731485aN1134b4f0.png",			  bgColor:"#e93854",                          weight: "4"			}						,			{			  src:"//img14.360buyimg.com/da/jfs/t3982/328/1677293581/100421/df97b998/5886bcfeN72a95ea6.jpg",			  bgColor:"#E93854",                          weight: ""			}			];						         var getRandom = function (arr) {			var _temp = 0, _random = 0, _weight, _newArr = [];						for (var i = 0; i < arr.length; i++) {				_weight = arr[i].weight ? parseInt(arr[i].weight) : 1;				_newArr[i] = [];				_newArr[i].push(_temp);				_temp += _weight;				_newArr[i].push(_temp);			}						_random = Math.ceil(_temp * Math.random());						for (var i = 0; i< _newArr.length; i++){				if(_random > _newArr[i][0] && _random <= _newArr[i][1]){					return arr[i];				}			}			};				var tpl = '<div class="login-banner" style="background-color: {bgColor}">\		              <div class="w">\			         <div id="banner-bg"  clstag="pageclick|keycount|20150112ABD|46" class="i-inner" style="background: url({imgURI}) 0px 0px no-repeat;background-color: {bgColor}"></div>\		              </div>\		           </div>';							var bgData = getRandom(data);		var bannerHtml = tpl.replace(/{bgColor}/g, bgData.bgColor).replace(/{imgURI}/g, bgData.src);				$('.login-banner').replaceWith(bannerHtml);	}();</script>
+<!-- <script type="text/javascript">	~function () {		var data = [						{			  src:"//img12.360buyimg.com/da/jfs/t3190/305/6027009355/64123/69ddef6f/589c0dabNb44ed22b.jpg",			  bgColor:"#edecea",                          weight: ""			}						,			{			  src:"//img20.360buyimg.com/da/jfs/t4117/44/2166444334/90074/f2aa527e/58a40975N7ea61b26.jpg",			  bgColor:"#01126f",                          weight: "4"			}						,			{			  src:"//img13.360buyimg.com/da/jfs/t2749/276/1020747574/33213/870500f1/5731485aN1134b4f0.png",			  bgColor:"#e93854",                          weight: "4"			}						,			{			  src:"//img14.360buyimg.com/da/jfs/t3982/328/1677293581/100421/df97b998/5886bcfeN72a95ea6.jpg",			  bgColor:"#E93854",                          weight: ""			}			];						         var getRandom = function (arr) {			var _temp = 0, _random = 0, _weight, _newArr = [];						for (var i = 0; i < arr.length; i++) {				_weight = arr[i].weight ? parseInt(arr[i].weight) : 1;				_newArr[i] = [];				_newArr[i].push(_temp);				_temp += _weight;				_newArr[i].push(_temp);			}						_random = Math.ceil(_temp * Math.random());						for (var i = 0; i< _newArr.length; i++){				if(_random > _newArr[i][0] && _random <= _newArr[i][1]){					return arr[i];				}			}			};				var tpl = '<div class="login-banner" style="background-color: {bgColor}">\		              <div class="w">\			         <div id="banner-bg"  clstag="pageclick|keycount|20150112ABD|46" class="i-inner" style="background: url({imgURI}) 0px 0px no-repeat;background-color: {bgColor}"></div>\		              </div>\		           </div>';							var bgData = getRandom(data);		var bannerHtml = tpl.replace(/{bgColor}/g, bgData.bgColor).replace(/{imgURI}/g, bgData.src);				$('.login-banner').replaceWith(bannerHtml);	}();</script>
 <script type="text/javascript">
     (function () {
         var ja = document.createElement('script');
@@ -244,11 +242,11 @@
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(ja, s);
     })();
-</script>
+</script> -->
 
 
-<script src="//payrisk.jd.com/js/td.js"></script>
-<script>
+<!-- <script src="//payrisk.jd.com/js/td.js"></script> -->
+<!-- <script>
     $(function () {
         getJdEid(function (eid, fpid) {
             var eValue = eid;
@@ -257,9 +255,9 @@
             var fp = $("#sessionId").prop("value", fpValue);
         });
     });
-</script>
+</script> -->
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     var _jraq = _jraq || [];
     _jraq.push(['account', 'UA-J2011-12']);
     (function () {
@@ -270,11 +268,11 @@
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(ja, s);
     })();
-</script>
+</script> -->
 
 
-<script type="text/javascript" src="//seq.jd.com/jseqf.html?bizId=passport_jd_com_login_pc&platform=js&version=1"></script>
-
+<!-- <script type="text/javascript" src="//seq.jd.com/jseqf.html?bizId=passport_jd_com_login_pc&platform=js&version=1"></script>
+ -->
 <!-- SDK 登录 -->
 </body>
 </html>
