@@ -53,8 +53,8 @@
                                 </div>
 								
 								<div id="entry" class="item item-fore2">
-									<label class="login-label pwd-label" for="apwd"></label>
-									<input type="password" id="apwd" name="apwd" class="itxt itxt-error"
+									<label class="login-label pwd-label" for="apassword"></label>
+									<input type="password" id="apassword" name="apassword" class="itxt itxt-error"
 										tabindex="2" autocomplete="off" placeholder="密码"/>
 									<span class="clear-btn"></span>
 									<span class="capslock"><b></b>大小写锁定已打开</span>

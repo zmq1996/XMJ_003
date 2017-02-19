@@ -1,9 +1,8 @@
-package yc.com.xmj.mapper;
+package com.yc.xmj.mapper;
 
-import yc.com.xmj.entity.Admin;
+import com.yc.xmj.entity.Admin;
 
 public interface AdminMapper {
-
 	Admin getAdmin(Admin admin);
 
 }

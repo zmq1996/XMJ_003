@@ -279,7 +279,7 @@ body, button, input, txt {
 .form-item-valid .i-status, .i-company, .i-def, .i-error, .i-error1,
 	.i-global, .i-info, .i-pwd-medium, .i-pwd-strong, .i-pwd-weak, .i-suc,
 	.voiceVerifyDialog .ico {
-	background: url(//misc.360buyimg.com/user/reg/1.0.0/css/i/icon.png)
+	background: url(..image/icon.png)
 		no-repeat
 }
 
@@ -364,11 +364,21 @@ body {
 
 .form-item .i-status {
 	position: absolute;
-	display: none;
+	display:none;
 	width: 16px;
 	height: 16px;
 	top: 20px;
-	right: 20px
+	right: 20px;
+	/* background :url(../image/icon.png) 0px -117px; */
+	/* background :url(../image/icon.png) -17px -100px; */
+}
+
+.i-status02 {
+		background :url(../image/icon.png) 0px -117px;
+}
+
+.i-status03 {
+		background :url(../image/icon.png) -17px -100px;
 }
 
 .form-item .img-code {

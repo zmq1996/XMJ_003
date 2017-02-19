@@ -1,4 +1,4 @@
-package yc.com.xmj.util;
+package com.yc.xmj.util;
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

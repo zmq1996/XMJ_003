@@ -1,5 +1,26 @@
-$(function(){    
-    $('#loginsubmit').bind('click', function(data){    
-        alert(data);    
-    });    
+$('#loginsubmit').linkbutton({    
+    onClick:function(){
+    	$("#formlogin").submit();
+    }
 }); 
+$('#formlogin').form({    
+    url:'manage/login',   
+    success:function(data){    
+    	alert(data);
+	       if(data.trim()=="true"){
+	    	   location.replace("jsp/admin.jsp");
+	       }else{
+	    	   $.messager.show({
+	    			title:'登录失败',
+	    			msg:'登录失败，编号与密码不匹配！！！',
+	    			showType:'show',
+	    			style:{
+	    				right:'',
+	    				top:document.body.scrollTop+document.documentElement.scrollTop,
+	    				bottom:''
+	    			}
+	    		}); 
+	       }
+    }   
+});    
+ 

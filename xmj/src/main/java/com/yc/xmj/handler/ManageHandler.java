@@ -1,13 +1,15 @@
-package yc.com.xmj.handler;
+package com.yc.xmj.handler;
 
+import org.apache.logging.log4j.LogManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
-import yc.com.xmj.entity.Admin;
-import yc.com.xmj.service.AdminService;
+import com.yc.xmj.entity.Admin;
+import com.yc.xmj.service.AdminService;
 
 @Controller
 @RequestMapping("/manage")
@@ -18,13 +20,14 @@ public class ManageHandler {
 	private AdminService adminService;
 	
 	@RequestMapping("/login")
-	public String login(Admin admin,ModelMap map) {
+	@ResponseBody
+	public boolean login(Admin admin,ModelMap map) {
+		LogManager.getLogger().debug("请求UserHandler处理login...");
 		admin = adminService.login(admin);
+		System.out.println(admin);
 		if(admin != null){
-			map.put("manageName", admin);
-			return "redirect:/jsp/admin.jsp";
+			map.put("manageName", admin.getAname());
 		}
-		map.put("errorMsg", "用户名或密码错误");
-		return "forward:/manageLogin.jsp";
+		return admin != null;
 	}
 }

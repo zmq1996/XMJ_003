@@ -1,4 +1,4 @@
-package yc.com.xmj.web.filter;
+package com.yc.xmj.web.filter;
 
 import java.io.IOException;
 

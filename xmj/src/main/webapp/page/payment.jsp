@@ -16,6 +16,21 @@
 	<link type="text/css" rel="stylesheet"  href="../css/backpanel2.css" source="widget"/>
 	<link type="text/css" rel="stylesheet"  href="../css/service2.css"/>
 	<script type="text/javascript" src="../easyui/jquery.min.js"></script>
+	<style type="text/css">
+	.v {
+		width: 990px;
+		margin: 0 auto;
+	}
+	
+	#footer-2013 {
+		padding-bottom: 30px;
+		text-align: center;
+	}
+	
+	#footer-2013 .copyright {
+		margin: 10px 0;
+	}
+	</style>
 </head>	<body id="mainframe">
 		<div id="shortcut-2014">
 	<div class="w">
@@ -1232,7 +1247,7 @@ $(".J-mode-infor-tips").hover(
 
 <!--  /widget/footer/footer.tpl -->
 <!-- footer -->
-<div id="service-2014">
+<!-- <div id="service-2014">
 	<div class="slogen">
 		<span class="item fore1">
 			<i></i><b>多</b>品类齐全，轻松购物
@@ -1302,14 +1317,14 @@ $(".J-mode-infor-tips").hover(
 		</dl>
 		<span class="clr"></span>
 	</div>
-</div>
+</div> -->
 
-<script type="text/javascript" rel="stylesheet" src="//misc.360buyimg.com/user/purchase/2.0.0/widget/??/checkout-floatbar/checkout-floatbar.js,backpanel/backpanel.js" source="widget"></script>
-<script type="text/javascript" rel="stylesheet" src="//misc.360buyimg.com/user/purchase/2.0.0/js/paypwd.js"></script>
+<!-- <script type="text/javascript" rel="stylesheet" src="//misc.360buyimg.com/user/purchase/2.0.0/widget/??/checkout-floatbar/checkout-floatbar.js,backpanel/backpanel.js" source="widget"></script>
+<script type="text/javascript" rel="stylesheet" src="//misc.360buyimg.com/user/purchase/2.0.0/js/paypwd.js"></script> 
 <script>
     $("#consignee_id").val('0');
     $("#hideAreaIds").val('0-0-0-0');
-</script>
+</script>-->
 <!-- 不支持自提商品列表隐藏域  -->
 <script id="noSupSkus_hideDiv" type="text/temp">&nbsp;</script>
 <!-- 港澳售项目 -->
@@ -1380,30 +1395,39 @@ $(".J-mode-infor-tips").hover(
 	}
 </script>
 
-		<div class="w">
-	<div id="footer-2014">
-		<div class="links"><a rel="nofollow" target="_blank" href="//www.jd.com/intro/about.aspx">关于我们</a>|<a rel="nofollow" target="_blank" href="//www.jd.com/contact/">联系我们</a>|<a rel="nofollow" target="_blank" href="//www.jd.com/contact/joinin.aspx">商家入驻</a>|<a rel="nofollow" target="_blank" href="//jzt.jd.com">营销中心</a>|<a rel="nofollow" target="_blank" href="//app.jd.com/">手机京东</a>|<a target="_blank" href="//club.jd.com/links.aspx">友情链接</a>|<a target="_blank" href="//media.jd.com/">销售联盟</a>|<a href="//club.jd.com/" target="_blank">京东社区</a>|<a href="//sale.jd.com/act/FTrWPesiDhXt5M6.html" target="_blank">风险监测</a>|<a href="//sale.jd.com/act/cyeSVqiO8GB.html" target="_blank" clstag="h|keycount|2016|43">隐私政策</a>|<a href="//gongyi.jd.com" target="_blank">京东公益</a>|<a href="//en.jd.com/" target="_blank">English Site</a>|<a href="//en.jd.com/help/question-58.html" target="_blank">Contact Us</a></div>
-		<div class="copyright"><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000088"><img src="//img13.360buyimg.com/cms/jfs/t2293/321/1377257360/19256/c267b386/56a0a994Nf1b662dc.png" /> 京公网安备 11000002000088号</a>&nbsp;&nbsp;|&nbsp;&nbsp;京ICP证070359号&nbsp;&nbsp;|&nbsp;&nbsp;<a target="_blank" href="//img14.360buyimg.com/da/jfs/t256/349/769670066/270505/3b03e0bb/53f16c24N7c04d9e9.jpg">互联网药品信息服务资格证编号(京)-经营性-2014-0008</a>&nbsp;&nbsp;|&nbsp;&nbsp;新出发京零&nbsp;字第大120007号<br>互联网出版许可证编号新出网证(京)字150号&nbsp;&nbsp;|&nbsp;&nbsp;<a rel="nofollow" href="//img30.360buyimg.com/uba/jfs/t1036/328/1487467280/1405104/ea57ab94/5732f60aN53b01d06.jpg" target="_blank">出版物经营许可证</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="//misc.360buyimg.com/wz/wlwhjyxkz.jpg" target="_blank">网络文化经营许可证京网文[2014]2148-348号</a>&nbsp;&nbsp;|&nbsp;&nbsp;违法和不良信息举报电话：4006561155<br>Copyright&nbsp;&copy;&nbsp;2004-2017&nbsp;&nbsp;京东JD.com&nbsp;版权所有&nbsp;&nbsp;|&nbsp;&nbsp;消费者维权热线：4006067733&nbsp;&nbsp;&nbsp;&nbsp;<a class="mod_copyright_license" target="_blank" href="//sale.jd.com/act/7Y0Rp81MwQqc.html">经营证照</a><br>京东旗下网站：<a href="https://www.jdpay.com/" target="_blank">京东钱包</a>
-		</div>		
-		<div class="authentication">
-			<a rel="nofollow" target="_blank" href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202007080200026">
-				<img width="103" height="32" alt="经营性网站备案中心" src="//img12.360buyimg.com/da/jfs/t535/349/1185317137/2350/7fc5b9e4/54b8871eNa9a7067e.png" class="err-product" />
-			</a>
-			<script type="text/JavaScript">function CNNIC_change(eleId){var str= document.getElementById(eleId).href;var str1 =str.substring(0,(str.length-6));str1+=CNNIC_RndNum(6); document.getElementById(eleId).href=str1;}function CNNIC_RndNum(k){var rnd=""; for (var i=0;i < k;i++) rnd+=Math.floor(Math.random()*10); return rnd;}</script>
-			<a rel="nofollow" target="_blank" id="urlknet" tabindex="-1" href="https://ss.knet.cn/verifyseal.dll?sn=2008070300100000031&ct=df&pa=294005">
-				<img border="true" width="103" height="32" onclick="CNNIC_change('urlknet')" oncontextmenu="return false;" name="CNNIC_seal" alt="可信网站" src="//img11.360buyimg.com/da/jfs/t643/61/1174624553/2576/4037eb5f/54b8872dNe37a9860.png" class="err-product" />
-			</a>
-			<a rel="nofollow" target="_blank" href="http://www.bj.cyberpolice.cn/index.do">
-				<img width="103" height="32" alt="网络警察" src="//img12.360buyimg.com/cms/jfs/t2050/256/1470027660/4336/2a2c74bd/56a89b8fNfbaade9a.jpg" class="err-product" />
-			</a>
-			<a rel="nofollow" target="_blank" href="https://search.szfw.org/cert/l/CX20120111001803001836">
-				<img width="103" height="32" src="//img11.360buyimg.com/da/jfs/t451/173/1189513923/1992/ec69b14a/54b8875fNad1e0c4c.png" class="err-product" />
-			</a>
-			<a target="_blank" href="http://www.12377.cn"><img width="103" height="32" src="//img30.360buyimg.com/da/jfs/t1915/215/1329999964/2996/d7ff13f0/5698dc03N23f2e3b8.jpg"></a>
-			<a target="_blank" href="http://www.12377.cn/node_548446.htm"><img width="103" height="32" src="//img14.360buyimg.com/da/jfs/t2026/221/2097811452/2816/8eb35b4b/5698dc16Nb2ab99df.jpg"></a>
+	<div class="v">
+			<div id="footer-2013">
+				<div class="links">
+					<a rel="nofollow" target="_blank"
+						href="//www.jd.com/intro/about.aspx"> 关于我们 </a> | <a
+						rel="nofollow" target="_blank" href="//www.jd.com/contact/">
+						联系我们 </a> | <a rel="nofollow" target="_blank" href="//zhaopin.jd.com/">
+						人才招聘 </a> | <a rel="nofollow" target="_blank"
+						href="//www.jd.com/contact/joinin.aspx"> 商家入驻 </a> | <a
+						rel="nofollow" target="_blank"
+						href="//www.jd.com/intro/service.aspx"> 广告服务 </a> |
+					<!--  <a rel="nofollow" target="_blank" href="//app.jd.com/">
+                手机京东
+            </a>
+            | -->
+					<a target="_blank" href="/links.vm/club.jd.com/links.aspx">
+						友情链接 </a> | <a target="_blank" href="//media.jd.com/"> 销售联盟 </a> |
+					<!--  <a href="//club.jd.com/" target="_blank">
+                京东社区
+            </a>
+            |
+            <a href="//gongyi.jd.com" target="_blank">
+                京东公益
+            </a>
+            | -->
+					<a target="_blank" href="//en.jd.com/"
+						clstag="pageclick|keycount|20150112ABD|9">English Site</a>
+				</div>
+				<div class="copyright">
+					Copyright&nbsp;&copy;&nbsp;2004-2017&nbsp;&nbsp;晓米佳XMJ.com&nbsp;版权所有
+				</div>
+			</div>
 		</div>
-	</div>
-</div>
 
 <!-- footer end -->
 	<script type="text/javascript" src="//trade.jd.com/shopping/misc/js/json2.js?r=201611280112"></script>

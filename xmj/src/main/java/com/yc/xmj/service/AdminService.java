@@ -1,6 +1,6 @@
-package yc.com.xmj.service;
+package com.yc.xmj.service;
 
-import yc.com.xmj.entity.Admin;
+import com.yc.xmj.entity.Admin;
 
 public interface AdminService {
 

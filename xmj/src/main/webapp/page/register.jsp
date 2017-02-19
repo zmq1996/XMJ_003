@@ -7,16 +7,13 @@
 <meta http-equiv="Cache-Control" content="no-cache,must-revalidate" />
 <title>个人注册</title>
 <link type="text/css" rel="stylesheet" href="../css/register.css" />
-<!-- <script type="text/javascript">window.pageConfig = { compatible: true }; </script>
-            <script type="text/javascript" src="//misc.360buyimg.com/jdf/1.0.0/unit/??base/1.0.0/base.js"></script>
-                <script type="text/javascript" src="//misc.360buyimg.com/user/reg/1.0.0/js/??jquery.1.7.js"></script>
-        <script>
-        seajs.off("load");
-        seajs.off("fetch");
-        seajs.data.charset = 'gb2312';
-    </script> -->
-<link type="text/css" rel="stylesheet" href="../css/footer.css"
-	source="widget" />
+
+<link type="text/css" rel="stylesheet" href="../css/footer.css"	source="widget" />
+
+<script type="text/javascript" src="../easyui/jquery.min.js"></script>
+
+<script type="text/javascript" src="../js/register.js"></script> 
+
 </head>
 <body>
 	<div id="form-header" class="header">
@@ -32,7 +29,7 @@
 	<div class="container w">
 		<div class="main clearfix" id="form-main">
 			<div class="reg-form fl">
-				<form action="" id="register-form" method="post">
+				<form id="register-form" method="post" onsubmit="return formSubmit()" >
 					<input type="hidden" name="new" value="new_person_reg" /> <input
 						type="hidden" id="localmisc" name="localmisc" value="" /> <input
 						type="hidden" name="regType" id="regType" value="person" /> <input
@@ -43,14 +40,14 @@
 						name="authcodeMg" id="authcodeMg" /> <input type="hidden"
 						name="state" id="state" value="" /> <input type="hidden"
 						name="tgId" id="tgId" value="" /> <input type="hidden" name="eid"
-						id="eid" value="" /> <input type="hidden" name="fp" id="sessionId"
-						value="" /> <input type="hidden" id="jcloud" name="jcloud"
-						value="" /> <input type="hidden" id="ucJcloud" name="ucJcloud"
-						value="" /> <input type="hidden" id="regPage" name="regPage"
-						value="regPage1487330377752" /> <input type="hidden"
-						name="kHmwzjppNt" value="ZOTnD" /> <input type="hidden" value="-1"
-						id="hnschool" class="hide" /> <input type="hidden" id="schoolid"
-						name="schoolid" class="hide" />
+						id="eid" value="" /> <input type="hidden" name="fp"
+						id="sessionId" value="" /> <input type="hidden" id="jcloud"
+						name="jcloud" value="" /> <input type="hidden" id="ucJcloud"
+						name="ucJcloud" value="" /> <input type="hidden" id="regPage"
+						name="regPage" value="regPage1487330377752" /> <input
+						type="hidden" name="kHmwzjppNt" value="ZOTnD" /> <input
+						type="hidden" value="-1" id="hnschool" class="hide" /> <input
+						type="hidden" id="schoolid" name="schoolid" class="hide" />
 					<!--chrome autocomplete off bug hack-->
 					<input style="display: none" name="hack" /> <input type="password"
 						style="display: none" name="hack1" />
@@ -58,7 +55,7 @@
 					<div class="form-item form-item-account" id="form-item-account">
 						<label>用 户 名</label> <input type="text" id="form-account"
 							name="regName" class="field" autocomplete="off" maxlength="20"
-							placeholder="您的账户名和登录名"
+							placeholder="您的账户名和登录名" onkeyup="form_accountCheck()" onfocus="form_accountPrompt()"
 							default='<i class="i-def"></i>支持中文、字母、数字、“-”“_”的组合，4-20个字符' /> <i
 							class="i-status"></i>
 					</div>
@@ -69,7 +66,7 @@
 						<label>设 置 密 码</label> <input style="display: none"
 							type="password" name="pwd" class="fakeinput" /> <input
 							type="password" name="pwd" id="form-pwd" class="field"
-							maxlength="20" placeholder="建议至少使用两种字符组合"
+							maxlength="20" placeholder="建议至少使用两种字符组合" onkeyup="form_pwdCheck()" onfocus="form_pwdPrompt()"
 							default="<i class=i-def></i>建议使用字母、数字和符号两种及以上的组合，6-20个字符" /> <i
 							class="i-status"></i>
 					</div>
@@ -80,7 +77,7 @@
 						<label>确 认 密 码</label> <input style="display: none"
 							type="password" name="pwdRepeat" class="fakeinput" /> <input
 							type="password" name="pwdRepeat" id="form-equalTopwd"
-							class="field" placeholder="请再次输入密码" maxlength="20"
+							class="field" placeholder="请再次输入密码" maxlength="20" onkeyup="reform_pwdCheck()" onfocus="reform_pwdPrompt()"
 							default='<i class="i-def"></i>请再次输入密码' /> <i class="i-status"></i>
 					</div>
 					<div class="input-tip">
@@ -106,7 +103,7 @@
 							<label class="select-country" id="select-country"
 								country_id="0086">中国 0086<a href="javascript:void(0) "
 								tabindex="-1" class="arrow"></a></label> <input type="text"
-								id="form-phone" name="phone" class="field"
+								id="form-phone" name="phone" class="field" onkeyup="form_phoneCheck()" onfocus="form_phonePrompt()"
 								placeholder="建议使用常用手机" autocomplete="off" maxlength="11"
 								default='<i class="i-def"></i>完成验证后，你可以用该手机登录和找回密码' /> <i
 								class="i-status"></i>
@@ -142,7 +139,7 @@
 					</div>
 					<div class="form-agreen">
 						<div>
-							<input type="checkbox" name="agreen" checked="" />阅读并同意<a
+							<input type="checkbox" name="agreen"  onchange="form_agreen()"/>阅读并同意<a
 								href="javascript:;" id="protocol">《用户注册协议》</a> <a
 								href="javascript:;" class="blue" id="privacyProtocolTrigger">《隐私政策》</a>
 						</div>
@@ -574,20 +571,11 @@
             reg.init();
         })
     }
-</script>
-        <script src="//payrisk.jd.com/js/td.js"></script>
-    <script type="text/javascript">
-        $(function () {
-            getJdEid(function (eid, fpid) {
-                $("#eid").val(eid);
-                $("#sessionId").val(fpid);
-            });
-        });
-    </script> -->
-	<a target="_blank"
+</script>-->
+	<!-- <a target="_blank"
 		href="//surveys.jd.com/index.php?r=survey/index/sid/447941/lang/zh-Hans"
 		class="feedback"
-		style="margin-top: -85px; position: fixed; right: 0px; bottom: 50%;"></a>
+		style="margin-top: -85px; position: fixed; right: 0px; bottom: 50%;"></a> -->
 </body>
 </html>
 

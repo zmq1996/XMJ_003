@@ -11,9 +11,9 @@
     <title>京东支付-请选择支付方式</title>
     <link rel="icon" href="//sp.jd.com/payment/1.3.0/css/i/ico.ico" type="image/x-icon"/>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-    <link rel="stylesheet" type="text/css" href="//sp.jd.com/payment/1.3.0/css/main.css">
-    <link rel="stylesheet" type="text/css" href="//sp.jd.com/payment/1.2.0/css/bankList.css">        <script type="text/javascript" src="//sp.jd.com/payment/1.3.0/js/lib/jquery-1.6.4-min.js"></script>
-    <script type="text/javascript" src="/misc/js/lib/md5.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/zhifu.css">
+    <!-- <link rel="stylesheet" type="text/css" href="//sp.jd.com/payment/1.2.0/css/bankList.css">        <script type="text/javascript" src="//sp.jd.com/payment/1.3.0/js/lib/jquery-1.6.4-min.js"></script>
+    <script type="text/javascript" src="/misc/js/lib/md5.js"></script> -->
 	<script>
     //js全局变量
     var globalVar={
