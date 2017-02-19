@@ -1,4 +1,4 @@
-package yc.com.xmj.servlet;
+package com.yc.xmj.servlet;
 
 import java.awt.Color;
 import java.awt.Font;

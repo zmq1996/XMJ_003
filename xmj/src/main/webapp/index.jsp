@@ -30,17 +30,17 @@
         </li>
         <li class="spacer"></li>
         <li class="fore3 dorpdown" id="ttbar-myjd" clstag="h|keycount|2016|01d">
-          <div class="dt cw-icon"><a target="_blank" href="//home.jd.com/">我的晓米佳</a><!-- <i class="iconfont">&#xe605;</i> --><i class="ci-right"><s>◇</s></i></div>
+          <div class="dt cw-icon"><a target="_blank" href="//home.jd.com/">我的晓米佳</a><!-- <i class="iconfont">&#xe605;</i> --><i class="ci-right"></i></div>
           <div class="dd dorpdown-layer"></div>
         </li>
         <li class="spacer"></li>
         <li class="fore8 dorpdown" id="ttbar-serv" clstag="h|keycount|2016|01g">
-          <div class="dt cw-icon">客户服务<i class="iconfont">&#xe605;</i><i class="ci-right"><s>◇</s></i></div>
+          <div class="dt cw-icon">客户服务<!--<i class="iconfont">&#xe605;</i> <i class="ci-right"> </i> --></div>
           <div class="dd dorpdown-layer"></div>
         </li>
         <li class="spacer"></li>
         <li class="fore9 dorpdown" id="ttbar-navs" clstag="h|keycount|2016|01h">
-          <div class="dt cw-icon">网站导航<i class="iconfont">&#xe605;</i><i class="ci-right"><s>◇</s></i></div>
+          <div class="dt cw-icon">网站导航<!-- <i class="iconfont">&#xe605;</i><i class="ci-right"> </i> --></div>
           <div class="dd dorpdown-layer"></div>
         </li>
         <li class="spacer"></li>
@@ -244,7 +244,7 @@
 
       </div>
     </div>
-    <div id="J_fs_act" class="fs_act">asss</div>
+    <div id="J_fs_act" class="fs_act"></div>
   </div>
 
 
@@ -253,71 +253,6 @@
 		location.href = 'page/login.jsp'
 	}
 </script>
-    
-<!-- <script type="text/javascript">
-window['_REPORT_']['FS'] = new Date();
-pageConfig.O2_REPORT = 100;
-pageConfig.O2_ERROR_REPORT = 20;
-pageConfig.tplLoadTimeout = 5000;
-pageConfig.dataLoadTimeout = 5000;
-pageConfig.miaoshaAdwords = '总有你想不到的低价';
-</script>
-<div class="J_f J_lazyload J_sk mod_lazyload need_ani sk" id="seckill" data-tpl="seckill_tpl" data-custom="true">
-</div>
-<div class="J_f J_lazyload mod_lazyload need_ani coupon" id="coupon_lazy" data-tpl="floor_coupon_tpl" data-backup="coupons" data-source="cms:coupons">
-</div>
-<div class="J_f J_lazyload J_fbt mod_lazyload need_ani fbt" id="fbt" data-tpl="fbt_tpl" data-custom="true">
-</div>
-<div class="J_f J_lazyload mod_lazyload need_ani rec" id="rec_1" data-tpl="rec_tpl" data-backup="banner_1" data-source="cms:banner_1">
-
-</div>
-<div class="J_f J_lazyload J_f_lift mod_lazyload need_ani entry entry_c3 entry_1" id="entry_1" data-tpl="entry_tpl" data-backup="special_1" data-source="cms:special_1">
-
-</div>
-<div class="J_f J_lazyload mod_lazyload rec" id="rec_2" data-tpl="rec_tpl" data-backup="banner_2" data-source="cms:banner_2">
-
-</div>
-<div class="J_f J_lazyload J_f_lift mod_lazyload need_ani chn chn_t" id="portal_1" data-tpl="portal_tpl" data-backup="basic_1" data-source="cms:basic_1">
-
-</div>
-<div class="J_f J_lazyload J_f_lift mod_lazyload need_ani chn" id="portal_2" data-backup="basic_2" data-source="cms:basic_2" data-tpl="portal_tpl">
-
-</div>
-<div class="J_f J_lazyload J_f_lift mod_lazyload need_ani chn" id="portal_3" data-backup="basic_3" data-source="cms:basic_3" data-tpl="portal_tpl">
-
-</div>
-<div class="J_f J_lazyload J_f_lift mod_lazyload need_ani chn" id="portal_4" data-backup="basic_4" data-source="cms:basic_4" data-tpl="portal_tpl">
-
-</div>
-<div class="J_f J_lazyload mod_lazyload rec" id="rec_3" data-backup="banner_3" data-source="cms:banner_3" data-tpl="rec_tpl">
-
-</div>
-<div class="J_f J_lazyload J_f_lift mod_lazyload need_ani chn" id="portal_5" data-backup="basic_5" data-source="cms:basic_5" data-tpl="portal_tpl">
-
-</div>
-<div class="J_f J_lazyload J_f_lift mod_lazyload need_ani chn" id="portal_6" data-backup="basic_6" data-source="cms:basic_6" data-tpl="portal_tpl">
-
-</div>
-<div class="J_f J_lazyload J_f_lift mod_lazyload need_ani chn" id="portal_7" data-backup="basic_7" data-source="cms:basic_7" data-tpl="portal_tpl">
-
-</div>
-<div class="J_f J_lazyload J_f_lift mod_lazyload need_ani chn" id="portal_8" data-backup="basic_8" data-source="cms:basic_8" data-tpl="portal_tpl">
-
-</div>
-<div class="J_f J_lazyload mod_lazyload need_ani entry entry_c7 entry_2" id="entry_2" data-backup="special_2" data-source="cms:special_2" data-tpl="entry_tpl">
-
-</div>
- <div class="J_f J_lazyload mod_lazyload rec" id="rec_4" data-backup="banner_4" data-source="cms:banner_4" data-tpl="rec_tpl">
-
-</div> 
-<div class="J_f J_lazyload J_f_lift mod_lazyload more J_more" id="more" data-custom="true" data-tpl="more_tpl">
-
-</div>
-<div class="J_f J_lazyload mod_lazyload mod_footer" id="footer" data-tpl="mod_footer_tpl">
-</div>
-<div class="J_f J_lazyload J_lift mod_lazyload lift" id="lift" data-tpl="elevator_tpl" data-forcerender="true">
-
-</div>-->
 
 </body>
 </html><!--index_ok-->

@@ -3,11 +3,11 @@ package yc.com.xmj.service.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.yc.xmj.entity.Admin;
+import com.yc.xmj.mapper.AdminMapper;
+import com.yc.xmj.service.AdminService;
+import com.yc.xmj.util.Encrypt;
 
-import yc.com.xmj.entity.Admin;
-import yc.com.xmj.mapper.AdminMapper;
-import yc.com.xmj.service.AdminService;
-import yc.com.xmj.util.Encrypt;
 
 @Service("adminService")
 public class AdminServiceImpl implements AdminService {

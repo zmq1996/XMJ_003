@@ -1,4 +1,4 @@
-package yc.com.xmj.handler;
+package com.yc.xmj.handler;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -6,8 +6,9 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
-import yc.com.xmj.entity.Admin;
-import yc.com.xmj.service.AdminService;
+import com.yc.xmj.entity.Admin;
+import com.yc.xmj.service.AdminService;
+
 
 @Controller
 @RequestMapping("/manage")

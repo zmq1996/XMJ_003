@@ -1,4 +1,4 @@
-package yc.com.xmj.entity;
+package com.yc.xmj.entity;
 
 public class Admin {
 	private Integer aid;

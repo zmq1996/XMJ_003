@@ -4,7 +4,6 @@
 <html>
 <head>
     <meta charset="utf-8" />
-<<<<<<< HEAD
     <title>我的晓米佳</title>
     <base href="/xmj/"/>
 
@@ -1744,7 +1743,6 @@
 		</div>
 	</div>
 </div>
->>>>>>> branch 'master' of git@github.com:zmq1996/XMJ_003.git
     <!-- /js 位置 -->
     <script type="text/javascript" src="//misc.360buyimg.com/jdf/??lib/jquery-1.6.4.js"></script>
     <script type="text/javascript" src="//cdn.bootcss.com/json2/20150503/json2.js"></script>
