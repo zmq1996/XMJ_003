@@ -7,24 +7,25 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
 import com.yc.xmj.entity.User;
-import com.yc.xmj.service.AdminService;
+import com.yc.xmj.service.UserService;
 
 
 @Controller
-@RequestMapping("/user")
+@RequestMapping("*/user")
 @SessionAttributes("userName")
 public class UserHandler {
 	
 	@Autowired
-	private AdminService adminService;
+	private UserService userService;
 	
 	@RequestMapping("/login")
-	public String login(User admin,ModelMap map) {
-		if(admin != null){
-			map.put("manageName", admin);
-			return "redirect:/jsp/admin.jsp";
+	public String login(User user,ModelMap map) {
+		if(user != null){
+			System.out.println(user);
+			map.put("manageName", user);
+			return "redirect:/index.jsp";
 		}
 		map.put("errorMsg", "用户名或密码错误");
-		return "forward:/manageLogin.jsp";
+		return "forward:/login.jsp";
 	}
 }
