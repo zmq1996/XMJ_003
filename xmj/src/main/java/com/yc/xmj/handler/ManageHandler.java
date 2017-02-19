@@ -24,6 +24,7 @@ public class ManageHandler {
 	public boolean login(Admin admin,ModelMap map) {
 		LogManager.getLogger().debug("请求UserHandler处理login...");
 		admin = adminService.login(admin);
+		System.out.println(admin);
 		if(admin != null){
 			map.put("manageName", admin.getAname());
 		}

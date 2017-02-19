@@ -9,6 +9,7 @@ create table Admin(
 		obligate2 varchar2(20)
 )
 select * from ADMIN;
+select * from admin where a_name='张三' and  a_password ='abc'
 
 --用户表
 create table users(
