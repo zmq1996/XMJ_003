@@ -1,5 +1,8 @@
---管理员表
+drop table address;
+drop table messages;
+drop table type;
 
+--0.管理员表
 create table Admin(
 		a_id Integer primary key,
 		a_name varchar2(20),
@@ -7,11 +10,11 @@ create table Admin(
 		a_root Integer ,
 		obligate1 varchar2(20),
 		obligate2 varchar2(20)
-)
-select * from ADMIN;
+);
+
 create sequence seq_admin start with 1001;
-insert into ADMIN values(seq_admin.nextval,'张三','abc',0,null,null)
---用户表
+insert into ADMIN values(seq_admin.nextval,'张三','abc',0,null,null);
+--1.用户表
 create table users(
 		u_id Integer primary key,
 		u_name varchar2(20),
@@ -23,20 +26,19 @@ create table users(
 		u_root Integer, --卖家，买家
 		obligate1 varchar2(20),
 		obligate2 varchar2(20)
-)
-select * from users;
+);
 
---地址	
-drop table address;
+--2.地址	
+
 create table address(
 		addr_id Integer primary key ,
 		introduce varchar2(50),
 		u_id Integer references users(u_id),
 		obligate1 varchar2(20),
 		obligate2 varchar2(20)
-)
-select * from address;
---店铺
+);
+
+--3.店铺
 create table shop(
 		s_id int primary key ,
 		s_name varchar2(20),
@@ -45,11 +47,11 @@ create table shop(
 		s_status int, --营业，未营业
 		obligate1 varchar2(20),
 		obligate2 varchar2(20)
-)
-select * from shop;
+);
 
-drop table messages
---店铺申请信息表
+
+
+--4.店铺申请信息表
 create table messages(
 		m_id int primary key,
 		speaker int ,
@@ -59,11 +61,11 @@ create table messages(
 		m_date varchar2(20),
 		obligate1 varchar2(20),
 		obligate2 varchar2(20)
-)
-select * from messages
+);
 
---类型表
-drop table type;
+
+--5.类型表
+
 create table type(
 		t_id int primary key ,
 		t_name varchar2(20) not null,
@@ -71,9 +73,9 @@ create table type(
 		obligate1 varchar2(20),
 		obligate2 varchar2(20)
 )
-select * from type;
 
---商品
+
+--6.商品
 create table product(
 		p_id int primary key ,
 		p_name varchar2(20) not null,
@@ -82,18 +84,17 @@ create table product(
 		properties varchar2(100),--通过协议协定所有商品属性
 		obligate1 varchar2(20),
 		obligate2 varchar2(20)
-		
-)
+);
 
---购物车
+--7.购物车
 create table shoppingBakcet(
 		sh_id int primary key,
 		u_id int references users(u_id),
 		obligate1 varchar2(20),
 		obligate2 varchar2(20)
-)
+);
 
---购物车详情
+--8.购物车详情
 create table shdetail(
 		sht_id int primary key,
 		sh_id references shoppingBakcet(sh_id),
@@ -101,9 +102,9 @@ create table shdetail(
 		sht_detail varchar2(50),--拼接买家所选的商品属性以确定某件具体商品
 		obligate1 varchar2(20),
 		obligate2 varchar2(20)
-)
+);
 
---订单
+--9.订单
 create table order(
 	o_id int primary key,
 	u_id references users(u_id),
@@ -112,18 +113,18 @@ create table order(
 	osale_status int,--已处理，未处理
 	obligate1 varchar2(20),
 	obligate2 varchar2(20)
-)
+);
 
---订单详情
+--10.订单详情
 create table orderdetail(
 	odd_id int primary key,
 	p_id int references product(p_id),
 	odd_detail varchar2(100),--拼接买家所选的商品属性以确定某件具体商品
 	obligate1 varchar2(20),
 	obligate2 varchar2(20)
-)
+);
 
---评论表
+--11.评论表
 create table comments(
 	com_id int primary key,
 	u_id references users(u_id), 
@@ -133,13 +134,11 @@ create table comments(
 	com_date varchar2(20),
 	obligate1 varchar2(20),
 	obligate2 varchar2(20)
-)
+);
 
-
-{	颜色:蓝,红;
-	尺寸:M,L,S;
-	图片:...,...;
-	蓝库存:10,9,8;
-	红库存:11,10,3;
-}
-
+select * from type;
+select * from messages
+select * from shop;
+select * from address;
+select * from users;
+select * from ADMIN;
