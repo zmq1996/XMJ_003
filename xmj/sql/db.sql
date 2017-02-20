@@ -25,6 +25,9 @@ create table users(
 		obligate2 varchar2(20)
 )
 select * from users;
+alter table users modify u_password varchar2(60)
+create sequence users_seq start with 1001
+insert into users values(users_seq.nextval,'zxc123','zxc123',null,null,'15573481252',null,0,null,null)
 
 --地址	
 drop table address;

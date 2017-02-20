@@ -4,6 +4,7 @@ import com.yc.xmj.entity.User;
 
 public interface UserMapper {
 
-	User getUser(User user);
+	int getUser(User user);
 
+	int register(User user);
 }

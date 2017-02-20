@@ -4,6 +4,7 @@ import com.yc.xmj.entity.User;
 
 public interface UserService {
 
-	User login(User user);
+	boolean register(User user);
 
+	boolean login(User user);
 }

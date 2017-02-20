@@ -1,8 +1,10 @@
 var flag0 = false
 var flag1 = false
 var flag2 = false
-
 var flag3 = false
+var flag4 = false
+var flag5 = false
+var val5 = '0' 
 
 function form_accountPrompt(){
 	$("#form-account").next().attr("class","i-status i-status03")
@@ -73,27 +75,84 @@ function reform_pwdCheck(){
 		flag2 = false
 	}
 }
+/*++++++++++++++++++++++++++++*/
+function form_phonePrompt(){
+	$("#form-phone").next().attr("class","i-status i-status03")
+	$("#form-phone").next().css("display","block")
+}
 
+function form_phoneCheck(){
+	var val3 = $("#form-phone").val()
+	var rvg = /^1[34578]\d{9}$/;
+	if(rvg.test(val3)){
+		$("#form-phone").next().attr("class","i-status i-status02")
+		$("#form-phone").parent().next().children("span").text("")
+		flag4 = true
+	}else{
+		$("#form-phone").next().attr("class","i-status i-status03")
+		flag4 = false
+	}
+}
+
+function mobileCodePrompt(){
+	$("#mobileCode").next().next().attr("class","i-status i-status03")
+	$("#mobileCode").next().next().css("display","block")
+	/*alert()*/
+}
+
+function mobileCodeCheck(){
+	var val4 = $("#mobileCode").val()
+	if(val4 == val5){
+		$("#mobileCode").next().next().attr("class","i-status i-status02")
+		flag5 = true
+	}else{
+		$("#form-phone").next().next().attr("class","i-status i-status03")
+		flag5 = false
+	}
+}
+/*================================*/
 function form_agreen(){
 	flag3 = !flag3
 	console.info(flag3)
 }
 
 function formSubmit(){
-	if(flag0 && flag1 && flag2 && flag3){
-		alert("注册")
-		var params = $('#fm1').serialize()
-		$.post("user/login", params, function(data) {
-		if (data == true) {
-			location.href = 'page/admin.jsp'
-		} else {
-			$("#username").val("")
-			$("#password").val("")
-			alert("账号或者密码有误...")
-		}
+	if(flag0 && flag1 && flag2 && flag3 && flag4 && flag5){
+		/*var params = $('#register-form').serialize()
+		console.info(params)*/
+		alert(flag0 + flag1 + flag2 + flag3 + flag4 + flag5)
+		var val1 = $("#form-account").val()
+		var val2 = $("#form-pwd").val()
+		var val3 = $("#form-phone").val()
+		console.info(val1+ val2 +val3)
+		$.post("user/register?u_name="+ val1+"&u_password="+val2+"&u_phone="+val3,null, function(data) {
+			
 	}, "json")
 	}else{
 		alert(flag3)
 	}
 	return false
+}
+
+/*function form_phoneCheck(){
+	var val3 = $("#form-phone").val()
+	var rvg = /^1[34578]\d{9}$/;
+	if(rvg.test(val3)){
+		flag4 = true
+	}else{
+		flag4 = false
+	}
+}*/
+
+function getSMS(){
+	var val3 = $("#form-phone").val()
+	if(flag4){
+		$.post("user/getSMS?u_phone="+val3,null, function(data) {
+			alert(data)
+			val5 = data
+		}, "json")
+	}else{
+		
+	}
+	
 }

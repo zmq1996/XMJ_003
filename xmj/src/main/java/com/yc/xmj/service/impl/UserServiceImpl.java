@@ -15,11 +15,17 @@ public class UserServiceImpl implements UserService {
 	private UserMapper userMapper;
 	
 	@Override
-	public User login(User user) {
+	public boolean login(User user) {
 		user.setU_password(Encrypt.md5AndSha(user.getU_password()));
-		return userMapper.getUser(user);
+		System.out.println(userMapper.getUser(user)); 
+		return userMapper.getUser(user) > 0;
 	}
 
+	@Override
+	public boolean register(User user) {
+		user.setU_password(Encrypt.md5AndSha(user.getU_password()));
+		return userMapper.register(user) > 0;
+	}
 
 
 }
