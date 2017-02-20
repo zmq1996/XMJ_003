@@ -75,7 +75,7 @@
 									<div class="safe">
 										<span></span>
 										<span class="forget-pw-safe">
-											<a href="/uc/links?tag=safe" class="" target="_blank">忘记密码</a>
+											<a href="/uc/links?tag=safe" target="_blank">忘记密码</a>
 										</span>
                                  	</div>
                                 </div>
