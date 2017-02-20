@@ -1,41 +1,59 @@
 package com.yc.xmj.entity;
 
 public class Admin {
-	private Integer aid;
-	private String aname;
-	private String apassword;
-	private Integer aroot;
+	private Integer a_id;
+	private String a_name;
+	private String a_password;
+	private Integer a_root;
 	
 	public Admin() {
 	}
-	
-	public Integer getAid() {
-		return aid;
+
+	public Admin(Integer a_id, String a_name, String a_password, Integer a_root) {
+		super();
+		this.a_id = a_id;
+		this.a_name = a_name;
+		this.a_password = a_password;
+		this.a_root = a_root;
 	}
-	public void setAid(Integer aid) {
-		this.aid = aid;
+
+	public Integer getA_id() {
+		return a_id;
 	}
-	public String getAname() {
-		return aname;
+
+	public void setA_id(Integer a_id) {
+		this.a_id = a_id;
 	}
-	public void setAname(String aname) {
-		this.aname = aname;
+
+	public String getA_name() {
+		return a_name;
 	}
-	public String getapassword() {
-		return apassword;
+
+	public void setA_name(String a_name) {
+		this.a_name = a_name;
 	}
-	public void setapassword(String apassword) {
-		this.apassword = apassword;
+
+	public String getA_password() {
+		return a_password;
 	}
-	public Integer getAroot() {
-		return aroot;
+
+	public void setA_password(String a_password) {
+		this.a_password = a_password;
 	}
-	public void setAroot(Integer aroot) {
-		this.aroot = aroot;
+
+	public Integer getA_root() {
+		return a_root;
 	}
+
+	public void setA_root(Integer a_root) {
+		this.a_root = a_root;
+	}
+
 	@Override
 	public String toString() {
-		return "Admin [aid=" + aid + ", aname=" + aname + ", apassword="
-				+ apassword + ", aroot=" + aroot + "]";
+		return "Admin [a_id=" + a_id + ", a_name=" + a_name + ", a_password="
+				+ a_password + ", a_root=" + a_root + "]";
 	}
+	
+	
 }

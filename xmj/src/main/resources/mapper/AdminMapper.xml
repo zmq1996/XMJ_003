@@ -5,6 +5,6 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <mapper namespace="com.yc.xmj.mapper.AdminMapper">
 		
 	<select id="getAdmin" parameterType="Admin" resultType="Admin">
-	    select * from admin where a_name=#{aname} and  a_password = #{apassword}
+	    select * from admin where a_name=#{a_name} and  a_password = #{a_password}
 	</select>
 </mapper>
