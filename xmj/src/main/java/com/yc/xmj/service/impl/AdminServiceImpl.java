@@ -18,7 +18,9 @@ public class AdminServiceImpl implements AdminService {
 	
 	@Override
 	public Admin login(Admin admin) {
+		System.out.println(admin+"zheli");
 		//admin.setapassword(Encrypt.md5AndSha(admin.getapassword()));
+		System.out.println("55"+adminMapper.getAdmin(admin));
 		return adminMapper.getAdmin(admin);
 	}
 
