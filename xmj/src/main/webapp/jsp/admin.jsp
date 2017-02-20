@@ -15,7 +15,7 @@
 <body class="easyui-layout" id="myBody">   
     <div data-options="region:'north'" style="height:130px;">
     	<div id="header">
-		  <div id="welcome">欢迎  <span style="color:green;"><%=session.getAttribute("login") %></span> 使用后台管理系统！</div>
+		  <div id="welcome">欢迎  <span style="color:green;"><%=session.getAttribute("manageName") %></span> 使用后台管理系统！</div>
 		  <div id="nav">
 		    <div id="logo"><img src="images/logo.jpg" alt="" /></div>
 		    <div id="a_b01"><img src="images/a_b01.gif" alt="" /></div>

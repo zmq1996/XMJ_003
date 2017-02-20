@@ -8,6 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
     <title>晓米佳管理员登录界面</title>
     <link rel="icon" href="//www.jd.com/favicon.ico"/>
+    <link type="text/css" rel="stylesheet" href="easyui/themes/icon.css">
+    <link type="text/css" rel="stylesheet" href="easyui/themes/default/easyui.css">
     <link type="text/css" rel="stylesheet"
           href="css/manageLogin.css"
           source="widget"/>  
@@ -40,22 +42,21 @@
                     <div class="mc">
                         <div class="form">
                             <form id="formlogin" method="post" onsubmit="return false;" action="manage/login">
-                            	<p><label>${errorMsg }&nbsp;</label></p><c:remove var="errorMsg" scope="session"/>
-                                <input type="hidden" name="aid" id="aid" value="" class="hide"/>
+                                <input type="hidden" name="a_id" id="aid" value="" class="hide"/>
                                 <input type="hidden" name="fp" id="sessionId" value="" class="hide"/>
                                 <input type="hidden" name="_t" id="token" value="_ntXubuv" class="hide"/>
                                 <input type="hidden" name="loginType" id="loginType" value="c" class="hide"/>
                                 <div class="item item-fore1">
                                     <label for="aname" class="login-label name-label"></label>
-                                    <input id="aname" type="text" class="itxt" name="aname" tabindex="1"
-										autocomplete="off" placeholder="用户名"/>
+                                    <input id="aname" type="text" class="itxt" name="a_name" tabindex="1"
+										autocomplete="off" placeholder="用户名" required="required"/>
                                     <span class="clear-btn"></span>
                                 </div>
 								
 								<div id="entry" class="item item-fore2">
 									<label class="login-label pwd-label" for="apassword"></label>
-									<input type="password" id="apassword" name="apassword" class="itxt itxt-error"
-										tabindex="2" autocomplete="off" placeholder="密码"/>
+									<input type="password" id="apassword" name="a_password" class="itxt itxt-error"
+										tabindex="2" autocomplete="off" placeholder="密码" required="required"/>
 									<span class="clear-btn"></span>
 									<span class="capslock"><b></b>大小写锁定已打开</span>
 								</div>

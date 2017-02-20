@@ -14,6 +14,7 @@ create table Admin(
 
 create sequence seq_admin start with 1001;
 insert into ADMIN values(seq_admin.nextval,'张三','abc',0,null,null);
+insert into ADMIN values(seq_admin.nextval,'lisi','abc',1,null,null);
 --1.用户表
 create table users(
 		u_id Integer primary key,

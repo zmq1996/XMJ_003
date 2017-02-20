@@ -21,14 +21,15 @@ public class ManageHandler {
 	
 	@RequestMapping("/login")
 	@ResponseBody
-	public boolean login(Admin admin,ModelMap map) {
-		System.out.println(admin+"dengdeng");
-		LogManager.getLogger().debug("请求UserHandler处理login...");
+	public int login(Admin admin,ModelMap map) {
+		LogManager.getLogger().debug("请求ManageHandler处理login...");
 		admin = adminService.login(admin);
-		System.out.println(admin);
-		if(admin != null){
+		if(admin!=null){
 			map.put("manageName", admin.getA_name());
+			return admin.getA_root();
+		}else{
+			return 2;
 		}
-		return admin != null;
+		
 	}
 }
