@@ -21,23 +21,29 @@ public class UserHandler {
 	private UserService userService;
 	
 	@RequestMapping("/login")
-	public String login(User user,ModelMap map) {
-		if(user.getU_id() >= 0){
+	@ResponseBody
+	public boolean login(User user,ModelMap map) {
+		if(user.getU_id() > 0){
 			System.out.println(user);
 			map.put("userName", user);
-			return "redirect:/index.jsp";
+			/*return "redirect:/index.jsp";*/
+			return true;
 		}
 		map.put("errorMsg", "用户名或密码错误");
-		return "forward:/login.jsp";
+		/*return "forward:/login.jsp";*/
+		return false;
 	}
 	
 	@RequestMapping("/register")
-	public String register(User user,ModelMap map) {
+	@ResponseBody
+	public boolean register(User user,ModelMap map) {
 		System.out.println(user);
 		if(userService.register(user)){
-			return "redirect:/page/login.jsp";
+			/*return "redirect:/page/login.jsp";*/
+			return true;
 		}
-		return "forward:/register.jsp";
+		/*return "forward:/register.jsp";*/
+		return false;
 	}
 	
 	@RequestMapping("/getSMS")

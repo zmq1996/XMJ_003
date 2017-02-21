@@ -126,8 +126,12 @@ function formSubmit(){
 		var val3 = $("#form-phone").val()
 		console.info(val1+ val2 +val3)
 		$.post("user/register?u_name="+ val1+"&u_password="+val2+"&u_phone="+val3,null, function(data) {
-			
-	}, "json")
+			if(data){
+				location.href = 'login.jsp'
+			}else{
+				location.href = 'register.jsp'
+			}
+		}, "json")
 	}else{
 		alert(flag3)
 	}

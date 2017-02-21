@@ -3,20 +3,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- <meta charset="GBK"/> -->
     <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
     <title>晓米佳-欢迎登录</title>
     <link type="text/css" rel="stylesheet"
           href="../css/buyerLogin.css"
           source="widget"/>  
-    <script type="text/javascript" src="/xmj/easyui/jquery.min.js"></script>
-	<!-- <script type="text/javascript">
-     	$(function(){
-                window.SysConfig = {
-                encryptInfo:  true ,
-                rememberMeShowEnable:  true  };
-         });
-    </script> -->
+    <script type="text/javascript" src="../easyui/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="../js/login.js"></script> 
 		</head>
 <body>
 <!-- SDK 登录 -->
@@ -42,8 +36,8 @@
                 <div class="login-box">
                     <div class="mt tab-h">
                     </div>
-                    <div class="msg-wrap">
-						<div class="msg-error hide"><b></b></div>
+                    <div class="msg-wrap" >
+						<div class="msg-error hide" id="loginMsg-error" >密码错误</div>
                     </div>
                     <div class="mc">
                         <div class="form">
@@ -54,31 +48,29 @@
                                 <input type="hidden" name="_t" id="token" value="_ntXubuv" class="hide"/>
                                 <input type="hidden" name="loginType" id="loginType" value="c" class="hide"/>
                                 <input type="hidden" name="pubKey" id="pubKey" value="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDlOJu6TyygqxfWT7eLtGDwajtNFOb9I5XRb6khyfD1Yt3YiCgQWMNW649887VGJiGr/L5i2osbl8C9+WJTeucF+S76xFxdU6jE0NQ+Z+zEdhUTooNRaY5nZiu5PgDB0ED/ZKBUSLKL7eibMxZtMlUDHjm4gwQco1KRMDSmXSMkDwIDAQAB" class="hide"/>
-                                                                <input type="hidden" name="npXPeINZhM" value="NdZUX"/>
-                                                                <div class="item item-fore1">
-                                    <label for="loginname" class="login-label name-label"></label>
-                                    <input id="loginname" type="text" class="itxt" name="loginname" tabindex="1"
-										autocomplete="off"  value="123" maxlength="18"
-																				placeholder="邮箱/用户名/已验证手机"/>
-                                    <span class="clear-btn"></span>
-                                </div>
-								
-								<div id="entry" class="item item-fore2">
+                                <input type="hidden" name="npXPeINZhM" value="NdZUX"/>
+									<div class="item item-fore1">
+										<label for="loginname" class="login-label name-label"></label>
+										<input id="loginname" type="text" class="itxt"
+											onkeyup="loginnameCheck()"
+											name="loginname" tabindex="1" autocomplete="off"
+											maxlength="18" placeholder="用户名/已验证手机" /> <span
+											class="clear-btn" onclick="emptyLoginname(this)"></span>
+									</div>
+
+									<div id="entry" class="item item-fore2">
 									<label class="login-label pwd-label" for="nloginpwd"></label>
 									<input type="password" id="nloginpwd" name="nloginpwd" class="itxt itxt-error"
+										onkeyup="nloginpwdCheck()"
 										tabindex="2" autocomplete="off" placeholder="密码" maxlength="18" />
-									<span class="clear-btn"></span>
+									<span class="clear-btn" onclick="emptyNloginpwd(this)"></span>
 									<span class="capslock"><b></b>大小写锁定已打开</span>
 								</div>
-								
-								
-								
                                 <div id="o-authcode"
                                      class="item item-vcode item-fore3 ">
                                     <input id="authcode" type="text" class="itxt itxt02" name="authcode" tabindex="3">
                                     <img id="JD_Verification1" class="verify-code"
-                                                                                  src="../vcode.jpg"
-                                                                                      onclick=""/>
+                                    src="../vcode.jpg" onclick="changeVcode(this)"/>
                                     <a href="javascript:void(0)" onclick="$('#JD_Verification1').click();">看不清换一张</a>
                                 </div>
 								
@@ -100,6 +92,7 @@
                                 <div class="item item-fore5">
                                     <div class="login-btn">
                                         <a href="javascript:login();" class="btn-img btn-entry" id="loginsubmit" tabindex="6"
+                                           onclick="loginSubmit()"
                                            clstag="pageclick|keycount|201607144|3">登&nbsp;&nbsp;&nbsp;&nbsp;录</a>
                                     </div>
                                 </div>
