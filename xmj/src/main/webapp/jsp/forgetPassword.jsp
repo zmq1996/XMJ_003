@@ -19,7 +19,6 @@
         <a href="//www.jd.com/" clstag="pageclick|keycount|20150112ABD|45">
             <img src="//misc.360buyimg.com/lib/img/e/logo-201305-b.png" alt="晓米佳" width="170" height="60">
         </a>
-        <b></b>
     
    <div id="content">
     <div class="login-wrap">
