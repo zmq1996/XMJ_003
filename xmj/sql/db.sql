@@ -1,6 +1,4 @@
-drop table address;
-drop table messages;
-drop table type;
+
 
 --0.管理员表
 create table Admin(
@@ -15,18 +13,28 @@ create table Admin(
 create sequence seq_admin start with 1001;
 insert into ADMIN values(seq_admin.nextval,'张三','abc',0,null,null);
 --1.用户表
+drop table users cascade constraints;
+select * from users
 create table users(
-		u_id Integer primary key,
+		u_id integer primary key,
 		u_name varchar2(20),
 		u_password varchar2(40),
 		u_sex varchar2(4),
 		idcard varchar2(18),
 		u_phone varchar2(11),
 		email varchar2(40),
-		u_root Integer, --卖家，买家
+		u_root Integer check(u_root<1), --卖家，买家
+		realNameAuthentication integer,  --实名认证
+		payAuthentication integer,		--支付认证
 		obligate1 varchar2(20),
 		obligate2 varchar2(20)
-);
+)
+update users set u_root=0 where u_id=1001;
+insert into users (u_id,u_name) values(1001,'xiaodansfather');
+
+alter table users rename column obligate2 to payAuthentication
+alter table users modify realNameAuthentication integer
+
 
 --2.地址	
 
@@ -37,19 +45,27 @@ create table address(
 		obligate1 varchar2(20),
 		obligate2 varchar2(20)
 );
-
+select
 --3.店铺
 create table shop(
-		s_id int primary key ,
-		s_name varchar2(20),
-		u_id int references users(u_id),
-		s_birthday varchar2(20),
-		s_status int, --营业，未营业
+		sid int primary key,
+		sname varchar2(20) not null unique,
+		suid int references users(u_id),
+		majorBusiness varchar2(100),
+		address varchar2(100),
+		introduce varchar2(200),
+		sbirthday date,
+		sstatus int,
 		obligate1 varchar2(20),
 		obligate2 varchar2(20)
 );
+delete  shop
+select * from shop
+update shop set sid =12345 where sid=1029
+drop table shop cascade constraints;
+select se_shop_sid.nextval current_sid from dual
 
-
+create sequence se_shop_sid start with 1001 
 
 --4.店铺申请信息表
 create table messages(
@@ -73,7 +89,6 @@ create table type(
 		obligate1 varchar2(20),
 		obligate2 varchar2(20)
 )
-
 
 --6.商品
 create table product(
@@ -107,7 +122,7 @@ create table shdetail(
 --9.订单
 create table order(
 	o_id int primary key,
-	u_id references users(u_id),
+	u_id int references users(u_id),
 	date varchar2(20),
 	obuy_status int ,--已支付，未支付，已退款，未退款
 	osale_status int,--已处理，未处理
@@ -142,3 +157,4 @@ select * from shop;
 select * from address;
 select * from users;
 select * from ADMIN;
+sele

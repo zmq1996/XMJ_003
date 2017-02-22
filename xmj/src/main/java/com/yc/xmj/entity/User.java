@@ -10,8 +10,8 @@ public class User {
 	private String u_phone;
 	private String email;
 	private int u_root;
-	private String obligate1;
-	private String obligate2;
+	private Integer realNameAuthentication;
+	private Integer payAuthentication;
 
 	public int getU_id() {
 		return u_id;
@@ -77,27 +77,27 @@ public class User {
 		this.u_root = u_root;
 	}
 
-	public String getObligate1() {
-		return obligate1;
+	public Integer getrealNameAuthentication() {
+		return realNameAuthentication;
 	}
 
-	public void setObligate1(String obligate1) {
-		this.obligate1 = obligate1;
+	public void setrealNameAuthentication(Integer realNameAuthentication) {
+		this.realNameAuthentication = realNameAuthentication;
 	}
 
-	public String getObligate2() {
-		return obligate2;
+	public Integer getpayAuthentication() {
+		return payAuthentication;
 	}
 
-	public void setObligate2(String obligate2) {
-		this.obligate2 = obligate2;
+	public void setpayAuthentication(Integer payAuthentication) {
+		this.payAuthentication = payAuthentication;
 	}
 
 	@Override
 	public String toString() {
 		return "User [u_id=" + u_id + ", u_name=" + u_name + ", u_password=" + u_password + ", u_sex=" + u_sex
 				+ ", idcard=" + idcard + ", u_phone=" + u_phone + ", email=" + email + ", u_root=" + u_root
-				+ ", obligate1=" + obligate1 + ", obligate2=" + obligate2 + "]";
+				+ ", realNameAuthentication=" + realNameAuthentication + ", payAuthentication=" + payAuthentication + "]";
 	}
 
 	public User() {
@@ -105,7 +105,7 @@ public class User {
 	}
 
 	public User(int u_id, String u_name, String u_password, String u_sex, String idcard, String u_phone, String email,
-			int u_root, String obligate1, String obligate2) {
+			int u_root, Integer realNameAuthentication, Integer payAuthentication) {
 		this.u_id = u_id;
 		this.u_name = u_name;
 		this.u_password = u_password;
@@ -114,8 +114,8 @@ public class User {
 		this.u_phone = u_phone;
 		this.email = email;
 		this.u_root = u_root;
-		this.obligate1 = obligate1;
-		this.obligate2 = obligate2;
+		this.realNameAuthentication = realNameAuthentication;
+		this.payAuthentication = payAuthentication;
 	}
 
 	
