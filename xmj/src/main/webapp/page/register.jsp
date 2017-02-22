@@ -103,7 +103,8 @@
 							<label class="select-country" id="select-country"
 								country_id="0086">中国 0086<a href="javascript:void(0) "
 								tabindex="-1" class="arrow"></a></label> <input type="text"
-								id="form-phone" name="phone" class="field" onkeyup="form_phoneCheck()" onfocus="form_phonePrompt()"
+								id="form-phone" name="phone" class="field"
+								onfocus="form_phonePrompt()" onkeyup="form_phoneCheck()"
 								placeholder="建议使用常用手机" autocomplete="off" maxlength="11"
 								default='<i class="i-def"></i>完成验证后，你可以用该手机登录和找回密码' /> <i
 								class="i-status"></i>
@@ -128,10 +129,11 @@
 						<span></span>
 					</div> --%>
 					<div class="form-item form-item-phonecode">
-						<label>手机验证码</label> <input type="text" name="mobileCode"
-							maxlength="6" id="phoneCode" class="field phonecode"
+						<label>手机验证码</label> <input type="text" name="mobileCode" id="mobileCode"
+							maxlength="4" id="phoneCode" class="field phonecode"
+							onfocus="mobileCodePrompt()" onkeyup="mobileCodeCheck()"
 							placeholder="请输入手机验证码" autocomplete="off" />
-						<button id="getPhoneCode" class="btn-phonecode" type="button">获取验证码</button>
+						<button id="getPhoneCode" class="btn-phonecode" type="button" onclick="getSMS()">获取验证码</button>
 						<i class="i-status"></i>
 					</div>
 					<div class="input-tip">

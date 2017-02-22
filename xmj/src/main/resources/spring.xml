@@ -19,7 +19,7 @@
 	
 	
 	<!-- 引入外部文件 -->
-	<context:property-placeholder location="classpath:db.properties" /> 
+	<context:property-placeholder location="classpath:data.properties" /> 
 	
 	<!-- 手动配置spring容器中的bean -->
 	<bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
