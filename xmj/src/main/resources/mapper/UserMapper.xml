@@ -3,14 +3,8 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.yc.xmj.mapper.UserMapper">
-<<<<<<< HEAD
-	<select id="getAdmin" parameterType="Admin" resultType="Admin">
-	    select * from admin where a_name=#{aname} and  a_password = #{apassword}
-=======
-		
 	<select id="getUser" parameterType="com.yc.xmj.entity.User" resultType="int">
 	    select u_id from users where u_name=#{u_name} and  u_password = #{u_password}
->>>>>>> branch 'master' of git@github.com:zmq1996/XMJ_003.git
 	</select>
 	
 	<insert id="register" parameterType="com.yc.xmj.entity.User">
