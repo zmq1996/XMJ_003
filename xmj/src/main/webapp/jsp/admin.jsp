@@ -10,6 +10,7 @@
     <link type="text/css" rel="stylesheet" href="easyui/themes/icon.css">
     <link type="text/css" rel="stylesheet" href="easyui/themes/default/easyui.css">
     <link type="text/css" rel="stylesheet" href="css/admin.css"/>
+     <link type="text/css" rel="stylesheet" href="css/lanrenzhijia.css"/>
     <link type="text/css" rel="stylesheet"
           href="css/manageLogin.css"
           source="widget"/> 
@@ -54,25 +55,25 @@
 				      </div>
 				    </div>
 				  </div>
-				  <script>
-				        $("#css3-animated-example").collapse({
-				          accordion: true,
-				          open: function() {
-				            this.addClass("open");
-				            this.css({ height: this.children().outerHeight()+287+"px" });
-				          },
-				          close: function() {
-				            this.css({ height: "0px" });
-				            this.removeClass("open");
-				          }
-				        });
-				      </script>
-  				</div>	 				
+  				</div>	
+  				<script>
+  				 $("#css3-animated-example").collapse({
+			          accordion: true,
+			          open: function() {
+			            this.addClass("open");
+			            this.css({ height: this.children().outerHeight()+287+"px" });
+			          },
+			          close: function() {
+			            this.css({ height: "0px" });
+			            this.removeClass("open");
+			          }
+			        });
+  				</script> 				
 	 			<div class="right">
 	 				<div id="p" class="easyui-layout"    
 					        style="width:500px;height:150px;padding:10px;background:#fafafa;"   
 					        data-options="fit:true,border:false">   
-					    <div id="welcome">欢迎  <span style="color:green;">null</span> 使用新闻管理系统！</div> 
+					    <div id="welcome">欢迎  <span style="color:green;">null</span> 使用后台管理系统！</div> 
 					</div>
 	 		</div>
 	 	</div>
