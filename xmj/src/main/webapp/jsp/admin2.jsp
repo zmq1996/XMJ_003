@@ -54,6 +54,15 @@
 				      	</ul>
 				      </div>
 				    </div>
+				     <h3>普通管理员管理</h3>
+				    <div>
+				      <div class="content">
+				        <ul>
+				      		<li><a>管理员详情</a></li>
+				      		<li><a>添加管理员</a></li>
+				      	</ul>
+				      </div>
+				    </div>
 				  </div>
   				</div>	
   				<script>
@@ -132,6 +141,6 @@
 	<script type="text/javascript" src="easyui/jquery.min.js"></script>
 	<script type="text/javascript" src="easyui/jquery.easyui.min.js"></script>
 	<script type="text/javascript" src="easyui/locale/easyui-lang-zh_CN.js"></script>
-	<script type="text/javascript" src="js/admin.js"></script>
+	<script type="text/javascript" src="js/admin2.js"></script>
 </body>
 </html>
