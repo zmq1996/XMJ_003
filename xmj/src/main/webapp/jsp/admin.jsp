@@ -40,7 +40,7 @@
 				    <div>
 				      <div class="content">
 				      	<ul>
-				      		<li><a>用户详情</a></li>
+				      		<li><a href="javaScript:userDetail()">用户详情</a></li>
 				      		<li><a>添加用户</a></li>
 				      	</ul>
 				      </div>
@@ -70,7 +70,8 @@
 			        });
   				</script> 				
 	 			<div class="right">
-	 				<div id="p" class="easyui-layout"    
+	 				<table id="userList"></table> 
+	 				<div id="p" class="easyui-panel"    
 					        style="width:500px;height:150px;padding:10px;background:#fafafa;"   
 					        data-options="fit:true,border:false">   
 					    <div id="welcome">欢迎  <span style="color:green;"><%=session.getAttribute("manageName") %></span> 使用后台管理系统！</div> 

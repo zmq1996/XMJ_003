@@ -36,21 +36,23 @@
 	 		<div class="bottom">
 	 			<div class="left">
 				  <div id="css3-animated-example">
-				    <h3>用户管理</h3>
+				    <h3>店铺交易管理</h3>
 				    <div>
 				      <div class="content">
 				      	<ul>
-				      		<li><a>用户详情</a></li>
-				      		<li><a>添加用户</a></li>
+				      		<li><a>每日交易数量Top10</a></li>
+				      		<li><a>每月交易数量Top10</a></li>
+				      		<li><a>每年交易数量Top10</a></li>
 				      	</ul>
 				      </div>
 				    </div>
-				    <h3>店铺管理</h3>
+				    <h3>交易报表</h3>
 				    <div>
 				      <div class="content">
 				        <ul>
-				      		<li><a>店铺详情</a></li>
-				      		<li><a>添加店铺</a></li>
+				      		<li><a>年报表</a></li>
+				      		<li><a>月报表</a></li>
+				      		<li><a>日报表</a></li>
 				      	</ul>
 				      </div>
 				    </div>
