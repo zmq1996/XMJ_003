@@ -8,7 +8,7 @@
 	<meta http-equiv="cache-control" content="no-cache">
 	<meta http-equiv="expires" content="0">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-    <title>京东支付-请选择支付方式</title>
+    <title>晓米佳支付-请选择支付方式</title>
     <link rel="icon" href="//sp.jd.com/payment/1.3.0/css/i/ico.ico" type="image/x-icon"/>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
     <link rel="stylesheet" type="text/css" href="../css/zhifu.css">
@@ -99,34 +99,34 @@
         })();
     </script>
 </head><body >
-    <div class="shortcut">
-      <div class="w">
-          <ul class="s-right">
-              <li id="loginbar" class="s-item fore1"></li>
-              <li class="s-div">|</li>
-              <li class="s-item fore2">
-                  <a class="op-i-ext" href="//order.jd.com/center/list.action" >我的订单</a>
-              </li>
-              <li class="s-div">|</li>
-              <li class="s-item fore3">
-                  <a class="op-i-ext" target="_blank" href="//help.jd.com/user/issue/list-173-224.html" >支付帮助</a>
-              </li>
-              <li class="s-div">|</li>
-              <li class="s-item fore4">
-                  <a class="op-i-ext" target="_blank" href="//survadmin.jd.com/index.php?r=survey/index/sid/757632/lang/zh-Hans" >问题反馈</a>
-              </li>
-          </ul>
-          <span class="clr"></span>
-      </div>
-</div>    <div class="p-header">
-            <div class="w">
-                <div id="logo">
-                                                <img width="170" height="28" src="//sp.jd.com/payment/1.3.0/css/i/logo.png" alt="京东 收银台">
-                                    </div>
-            </div>
-    </div>
+	<div class="shortcut">
+		<div class="w">
+			<ul class="s-right">
+				<li id="loginbar" class="s-item fore1"></li>
+				<li class="s-div">|</li>
+				<li class="s-item fore2"><a class="op-i-ext"
+					href="//order.jd.com/center/list.action">我的订单</a></li>
+				<li class="s-div">|</li>
+				<li class="s-item fore3"><a class="op-i-ext" target="_blank"
+					href="//help.jd.com/user/issue/list-173-224.html">支付帮助</a></li>
+				<li class="s-div">|</li>
+				<li class="s-item fore4"><a class="op-i-ext" target="_blank"
+					href="//survadmin.jd.com/index.php?r=survey/index/sid/757632/lang/zh-Hans">问题反馈</a>
+				</li>
+			</ul>
+			<span class="clr"></span>
+		</div>
+	</div>
+	<div class="p-header">
+		<div class="w">
+			<div id="logo">
+				<img width="170" height="28"
+					src="//sp.jd.com/payment/1.3.0/css/i/logo.png" alt="收银台">
+			</div>
+		</div>
+	</div>
 
-    <form name="virtualPayForm" id="virtualPayForm" action="/combinationVirtualPay.action" method="post" style="display:none">
+	<!-- <form name="virtualPayForm" id="virtualPayForm" action="/combinationVirtualPay.action" method="post" style="display:none">
 	
 		<input type="checkbox" name="virtualPayType" id="virtualPayBlankNote" value="blank_note" >	<input type="hidden" name="" id="baiTiaoCanPay" value="" autocomplete="off" >	<input type="hidden" name="instalmentNum" id="fenQiPlanHidden" value="" autocomplete="off">	<input type="hidden" name="userType" id="userTypeHidden" value="1" autocomplete="off">	
 	<input type="hidden" autocomplete="off" name="baiTiaoActivityCode" id="baiTiaoActivityCode"  value="">
@@ -158,16 +158,17 @@
 		<input type="hidden" name="verifCode" id="verifCode" value="" autocomplete="off" >
 		<input type="hidden" name="riskPaySession" id="riskPaySession" value="" autocomplete="off">
 	<input type="hidden" name="codedPhoneNum" id="codedPhoneNum" value="" autocomplete="off">
-	<!--<input type="hidden" name="haveQuickPay" id="haveQuickPay" value="" autocomplete="off" >-->
+	<input type="hidden" name="haveQuickPay" id="haveQuickPay" value="" autocomplete="off" >
 
-</form>
+</form> 
 
 <form id="quickPayForm">
     <input type="hidden" name="cardCanPay" id="cardCanPay" value="" autocomplete="off" >    <input type="hidden" name="cardDiscountAmount" id="cardDiscountAmount" value="" autocomplete="off">    <input type="hidden" name="cardWillPay" id="cardWillPay" value="" autocomplete="off" ></form>
-
+ 
 <form action="/payment/paymentConfirm.action" name="paymentConfirm" id="paymentConfirm" method="post" target="_blank" style="display:none">
-    <input type="hidden" name="orderId" id = "orderId" value="49457805343" autocomplete="off"/>    <input type="hidden" name="paySign" id = "paySign" value="5288cacb32da4757eff7ce2e274cf5ce940352dd5245d9579a94694b144057f569b056fca276401584a890514dc85f4f3f843e5725fd5f1d1006eb6049b56c3e2e1fcfae4cbff38e46bfe2a6695a5b95969ea29efbc44fc03a886515e50354cb25afbd112b6d72628283d5874d6ed01590632c8ce757cdd8c69250600256b5f37fb767659b65413c867d584b3d418007bb4fc289b429ac7ed9dd17bc3374fbd55d91017705345b198b4fb1938a4188ab6690cdd2e99a832fe61a90e619b8980a7da57d1dff3e1f23a99e8ebfcaeb705b2c5f97a755d45dd3c73b3648f9050b115afb09b527b469ae214a48c05f0b9af146e581df72835bdb715b6c36e1a8872edd34d6143600ca9114afde44b2d4a11e03a8c9728de1be8cc2ef82c004fa9fe957c2f94e26c756d918044c16f14179f978e78ebba15228fb135d5c3fcdd2af3db684b5074f050fafdd792955157877e55b6f0e286e60ae5284569040ea6bbeab24c5ceb0d673c1f6dafaf20801ff499b2f66537faf233df4ef0c4d924575e788f427613794b37c2f99c4539b976c7155644449723f64c660eeb4d997b89f4fb44821857171579a339f4fe4d036a27dd4f498018509774a11b7110f8df367ba4ee70915000ab0cb8d9c9bcf2d94a0d7030c320bb7942cdc5c6f467d334c728ae504aafa2e8d81db0c6783022b6974bdf545c2035ad08b1e5598e857bc023dfc1d8f04bb53c4a285df7358902d4f38d2a706d9c59dd1cf031c52c94af1d4d7e9cc5b93396aee66f0d592232804e1bfcf6930cf7e30603f8b07940c8dd8e5506a41b8cf4380e51a60b0941722779c471985121af9d117f6560a2c40ae71db8f16867c95cbf7073eae3a43babdd88e2b1d1b51945ec525e90b73cc8b647117789ebf1f277362da550b2f31a101bd7604b91d0afc53d40b560771e32b74e9c9c857421b1dfec07aada246ceed4522ea5e50ce8b60ab0717df63aec233ccf597d5055a766656d987c5a8cd2bd4e041bc3fa63443a7bbc4d6385e081f41e5e7eb88e6534d6b1e54189dea98b5d9c86c6b2c0549" autocomplete="off"/>    <input type="hidden" name="agencyCode" id="agencyCode" autocomplete="off"/>    <input type="hidden" name="bankCode" id="bankCode" autocomplete="off"/>     <input type="hidden" name="bankName" id="bankName" autocomplete="off"/>     <input type="hidden" name="commonBankType" id="commonBankType" value="" autocomplete="off"/>     <input type="hidden" name="confirmPaymentAmount" id="confirmPayAmount" autocomplete="off"/>     <input type="hidden" name="shouldPaymentAmount" id="shouldPaymentAmount" autocomplete="off"/>    <input type="hidden" name="gradedPayment" id="gradedPayment" autocomplete="off"/>    <input type="hidden" name="toType" id="toType" autocomplete="off"/></form><div class="main"> 
-	<div class="w"> 
+    <input type="hidden" name="orderId" id = "orderId" value="49457805343" autocomplete="off"/>    <input type="hidden" name="paySign" id = "paySign" value="5288cacb32da4757eff7ce2e274cf5ce940352dd5245d9579a94694b144057f569b056fca276401584a890514dc85f4f3f843e5725fd5f1d1006eb6049b56c3e2e1fcfae4cbff38e46bfe2a6695a5b95969ea29efbc44fc03a886515e50354cb25afbd112b6d72628283d5874d6ed01590632c8ce757cdd8c69250600256b5f37fb767659b65413c867d584b3d418007bb4fc289b429ac7ed9dd17bc3374fbd55d91017705345b198b4fb1938a4188ab6690cdd2e99a832fe61a90e619b8980a7da57d1dff3e1f23a99e8ebfcaeb705b2c5f97a755d45dd3c73b3648f9050b115afb09b527b469ae214a48c05f0b9af146e581df72835bdb715b6c36e1a8872edd34d6143600ca9114afde44b2d4a11e03a8c9728de1be8cc2ef82c004fa9fe957c2f94e26c756d918044c16f14179f978e78ebba15228fb135d5c3fcdd2af3db684b5074f050fafdd792955157877e55b6f0e286e60ae5284569040ea6bbeab24c5ceb0d673c1f6dafaf20801ff499b2f66537faf233df4ef0c4d924575e788f427613794b37c2f99c4539b976c7155644449723f64c660eeb4d997b89f4fb44821857171579a339f4fe4d036a27dd4f498018509774a11b7110f8df367ba4ee70915000ab0cb8d9c9bcf2d94a0d7030c320bb7942cdc5c6f467d334c728ae504aafa2e8d81db0c6783022b6974bdf545c2035ad08b1e5598e857bc023dfc1d8f04bb53c4a285df7358902d4f38d2a706d9c59dd1cf031c52c94af1d4d7e9cc5b93396aee66f0d592232804e1bfcf6930cf7e30603f8b07940c8dd8e5506a41b8cf4380e51a60b0941722779c471985121af9d117f6560a2c40ae71db8f16867c95cbf7073eae3a43babdd88e2b1d1b51945ec525e90b73cc8b647117789ebf1f277362da550b2f31a101bd7604b91d0afc53d40b560771e32b74e9c9c857421b1dfec07aada246ceed4522ea5e50ce8b60ab0717df63aec233ccf597d5055a766656d987c5a8cd2bd4e041bc3fa63443a7bbc4d6385e081f41e5e7eb88e6534d6b1e54189dea98b5d9c86c6b2c0549" autocomplete="off"/>    <input type="hidden" name="agencyCode" id="agencyCode" autocomplete="off"/>    <input type="hidden" name="bankCode" id="bankCode" autocomplete="off"/>     <input type="hidden" name="bankName" id="bankName" autocomplete="off"/>     <input type="hidden" name="commonBankType" id="commonBankType" value="" autocomplete="off"/>     <input type="hidden" name="confirmPaymentAmount" id="confirmPayAmount" autocomplete="off"/>     <input type="hidden" name="shouldPaymentAmount" id="shouldPaymentAmount" autocomplete="off"/>    <input type="hidden" name="gradedPayment" id="gradedPayment" autocomplete="off"/>    <input type="hidden" name="toType" id="toType" autocomplete="off"/></form>
+-->    <div class="main"> 
+	<div class="w">
 							            <!-- order 订单信息 -->
 <div class="order">
         <div class="o-left">
@@ -4220,46 +4221,7 @@
                 <!-- payment 支付方式选择 end -->
                                     <!-- payment-change 变更支付方式 -->
 
-<div class="payment mt25">
-    <div class="payment-change">
-        <div class="o-icon-wrap">
-            <span class="o-icon"></span>
-            <span class="o-p-tips">以下支付方式不支持合并支付</span>
-        </div>
-
-        <div class="pc-wrap clearfix">
-            <div class="pc-w-left">
-                                                                                                                                                                <a class="pl-item" href="javascript:;"
-                                   clstag="jr|keycount|cashier_jd|cashier_jd_wxzf" psa="pcCashier_wxzf"
-                                   onclick="weixinPay('616','10')">微信支付
-                                </a>
-                                                                                                                            <span>|</span>
-                                                                                                            <a class="pl-item" href="javascript:;"
-                                   clstag="jr|keycount|cashier_jd|cashier_jd_wxzf" psa="pcCashier_zgyl"
-                                   onclick="submitBankorPlatPay('021','unionpay','0','10')">中国银联
-                                </a>
-                                                                                        
-
-                                                                            <span>|</span>
-                                                    <a href="http://capi.jdpay.com/card/gateway/toPayGateway?data=eyJzaG91bGRQYXkiOiIxNDguMDAiLCJ0b1R5cGUiOiIxMCIsIm9yZGVySWQiOiI0OTQ1NzgwNTM0MyJ9&version=1.0&appKey=jdPcCashier&sign=DDACA0D2F231DB6805520066D6B6877F" target="_blank"
-                               clstag="jr|keycount|cashier_jd|cashier_jd_yfkzf" psa="pcCashier_yfkzf">预付卡支付</a>
-                                                            
-
-                                    <span>|</span>
-                    <a class="pc-item-jdpay" href="javascript:;" id="jdQianBaoscan" onclick="openScanPay();" psa="pcCashier_jdqbsys">京东金融APP扫一扫
-                        <i class="item-icon"></i>
-                        <i class="item-pop">
-                            <img src="https://cashier.jd.com/image/getjdpayImage.action?orderId=49457805343&type=0&PassKey=D2657212A3316410D3D5FD9C3399E1E9" width="100" height="100"/>
-                            <b>京东金融APP扫一扫<br/></b>
-                        </i>
-                    </a>
-                            </div>
-        </div>
-    </div>
-</div>
 <!-- payment-change 变更支付方式 end -->
-
-
     </div>
 </div>
 
@@ -4617,14 +4579,10 @@
 
     payXJK.bindCheck();
 </script>
-
-
-
             <div class="p-footer">
       <div class="pf-wrap w">
           <div class="pf-line">
-              <span class="pf-l-copyright">Copyright &copy; 2004-2016  京东JD.com 版权所有</span>
-              <img width="185" height="20" src="../misc/css/i/footer-auth.png">
+              <span class="pf-l-copyright">Copyright &copy; 2004-2016  晓米佳JD.com 版权所有</span>
           </div>
       </div>
 </div>
@@ -4762,7 +4720,7 @@ jQuery.getScript('https://sstat.jd.com/scslog?args=2^' + getQueryString('suc_ord
 	
 
 	
-	<script>
+	<!-- <script>
 		$('.j_pcWangyin').bind('mouseenter', function(){
                     $('.pc-w-promotion').css('display', 'none');
                     $('.pc-w-price').css('display', 'block');
@@ -4771,7 +4729,7 @@ jQuery.getScript('https://sstat.jd.com/scslog?args=2^' + getQueryString('suc_ord
                     $('.pc-w-price').css('display', 'none');
                 });
 		
-	</script>
+	</script> -->
 	
 	<form name="payWangyinJarForm" id="payWangyinJarForm" action="/payment/wangYinJiaAction.action" method="post" target="iframeLayer" style="display:none">
 		<input type="hidden" name="payInfoStr" value="5288cacb32da4757eff7ce2e274cf5ce940352dd5245d9579a94694b144057f569b056fca276401584a890514dc85f4f3f843e5725fd5f1d1006eb6049b56c3e2e1fcfae4cbff38e46bfe2a6695a5b95969ea29efbc44fc03a886515e50354cb25afbd112b6d72628283d5874d6ed01590632c8ce757cdd8c69250600256b5f37fb767659b65413c867d584b3d418007bb4fc289b429ac7ed9dd17bc3374fbd55d91017705345b198b4fb1938a4188ab6690cdd2e99a832fe61a90e619b8980a7da57d1dff3e1f23a99e8ebfcaeb705b2c5f97a755d45dd3c73b3648f9050b115afb09b527b469ae214a48c05f0b9af146e581df72835bdb715b6c36e1a8872edd34d6143600ca9114afde44b2d4a11e03a8c9728de1be8cc2ef82c004fa9fe957c2f94e26c756d918044c16f14179f978e78ebba15228fb135d5c3fcdd2af3db684b5074f050fafdd792955157877e55b6f0e286e60ae5284569040ea6bbeab24c5ceb0d673c1f6dafaf20801ff499b2f66537faf233df4ef0c4d924575e788f427613794b37c2f99c4539b976c7155644449723f64c660eeb4d997b89f4fb44821857171579a339f4fe4d036a27dd4f498018509774a11b7110f8df367ba4ee70915000ab0cb8d9c9bcf2d94a0d7030c320bb7942cdc5c6f467d334c728ae504aafa2e8d81db0c6783022b6974bdf545c2035ad08b1e5598e857bc023dfc1d8f04bb53c4a285df7358902d4f38d2a706d9c59dd1cf031c52c94af1d4d7e9cc5b93396aee66f0d592232804e1bfcf6930cf7e30603f8b07940c8dd8e5506a41b8cf4380e51a60b0941722779c471985121af9d117f6560a2c40ae71db8f16867c95cbf7073eae3a43babdd88e2b1d1b51945ec525e90b73cc8b647117789ebf1f277362da550b2f31a101bd7604b91d0afc53d40b560771e32b74e9c9c857421b1dfec07aada246ceed4522ea5e50ce8b60ab0717df63aec233ccf597d5055a766656d987c5a8cd2bd4e041bc3fa63443a7bbc4d6385e081f41e5e7eb88e6534d6b1e54189dea98b5d9c86c6b2c0549">
@@ -4787,7 +4745,7 @@ jQuery.getScript('https://sstat.jd.com/scslog?args=2^' + getQueryString('suc_ord
 	<script src="/misc/js/wyplus-ctrl.js?v=1"></script>
 
 
-    <script>
+   <!--  <script>
        $(function(){
                   var currentURL=window.location.href;
            if(currentURL.indexOf("&from=direct")>0){
@@ -4797,7 +4755,7 @@ jQuery.getScript('https://sstat.jd.com/scslog?args=2^' + getQueryString('suc_ord
                payBankcard.showAllBankList();
            }
               })
-    </script>
+    </script> -->
 
 </body>
 </html>

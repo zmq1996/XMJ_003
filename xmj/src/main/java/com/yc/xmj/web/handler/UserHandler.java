@@ -1,4 +1,4 @@
-package com.yc.xmj.handler;
+package com.yc.xmj.web.handler;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
+import com.yc.xmj.entity.ShoppingBakcet;
 import com.yc.xmj.entity.User;
 import com.yc.xmj.service.UserService;
 import com.yc.xmj.util.SMS;
@@ -14,24 +15,28 @@ import com.yc.xmj.util.SMS;
 
 @Controller
 @RequestMapping("*/user")
-@SessionAttributes("userName")
+@SessionAttributes("loginUser")
 public class UserHandler {
 	
 	@Autowired
 	private UserService userService;
 	
-	@RequestMapping("/login")
 	@ResponseBody
+	@RequestMapping("/login")
 	public boolean login(User user,ModelMap map) {
-		if(user.getU_id() > 0){
-			System.out.println(user);
-			map.put("userName", user);
-			/*return "redirect:/index.jsp";*/
-			return true;
+		System.out.println(user);
+		try {
+			userService.login(user);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			map.put("errorMsg", "用户名或密码错误");
+			/*return "forward:/login.jsp";*/
+			return false;
 		}
-		map.put("errorMsg", "用户名或密码错误");
-		/*return "forward:/login.jsp";*/
-		return false;
+		map.put("loginUser", user);
+		map.put("errorMsg", "");
+		return true;
 	}
 	
 	@RequestMapping("/register")
@@ -46,10 +51,22 @@ public class UserHandler {
 		return false;
 	}
 	
+	@RequestMapping("/shoppingBakcet")
+	@ResponseBody
+	public boolean shoppingBakcet(User user,ModelMap map) {
+		System.out.println(user);
+		ShoppingBakcet shoppingBakcet = null;
+		map.put("shoppingBakcet",shoppingBakcet );
+		if(userService.register(user)){
+			return true;
+		}
+		/*return "forward:/register.jsp";*/
+		return false;
+	}
+	
 	@RequestMapping("/getSMS")
 	@ResponseBody
 	public String getSMS(User user,ModelMap map) {
-		System.out.println(user);
 		SMS sms = new SMS();
 		sms.sendSMS(user.getU_phone());
 		/*System.out.println(sms.getNum());*/

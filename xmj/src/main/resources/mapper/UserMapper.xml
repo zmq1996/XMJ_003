@@ -7,9 +7,9 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<select id="getUser" parameterType="com.yc.xmj.entity.User" resultType="int">
 	    select u_id from users where u_name=#{u_name} and  u_password = #{u_password}
 	</select>
-	
 	<insert id="register" parameterType="com.yc.xmj.entity.User">
- 		insert into users values(users_seq.nextval,#{u_name},#{u_password},null,null,#{u_phone},null,0,null,null) 
+ 		insert into users(u_id,u_name,u_password,u_phone,u_root,realNameAuthentication,payAuthentication)
+ 		 values(users_seq.nextval,#{u_name},#{u_password},#{u_phone},0,0,0)
  	</insert>
  	
 </mapper>

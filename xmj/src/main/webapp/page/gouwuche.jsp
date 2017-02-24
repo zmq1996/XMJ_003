@@ -8,7 +8,6 @@
 <title>我的购物车 - 京东商城</title>
 <link type="text/css" rel="stylesheet" href="../css/sevice.css" />
 <script type="text/javascript" src="../easyui/jquery.min.js"></script>
-<!-- <script type="text/javascript" src="//misc.360buyimg.com/jdf/1.0.0/unit/base/1.0.0/base.js"></script> -->
 <link source="widget" href="../css/no-login/no-login.css"
 	rel="stylesheet" type="text/css">
 <link type="text/css" rel="stylesheet" href="../css/backpanel.css"
@@ -16,23 +15,84 @@
 <link type="text/css" rel="stylesheet" href="../css/index.css"
 	source="widget" />
 
-<!-- <script type="text/javascript">
-   try{	
-            window._alysAA =  window._alysAA || [];
-            var _alysAA = window._alysAA;
-            _alysAA.push( [ 'init',  'ifc', 'T-000014-01' ] );
-            ;(function() {
-            var idgJsPath = "//misc.360buyimg.com/lib/js/2012";  
-            var ga = document.createElement('script');
-            ga.type = 'text/javascript';
-            ga.async = true;
-            ga.src = idgJsPath + '/idigger.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(ga, s);
-            })();
-     }catch(err) {
-	}
-</script> -->
+<script type="text/javascript">
+$(function() {
+            var str = '<div class=" item-last item-item item-selected " id="product_'+'1000'+'">'
+			+'<div class="item-form">'
+			+'	<div class="cell p-checkbox">'
+			+'		<div class="cart-checkbox">'
+			+'			<input p-type="11151047032_11" manFanZeng="0" type="checkbox" name="checkItem" '
+			+'			value="11151047032_11_4025315760" checked="checked" class="jdcheckbox" data-bind="cbid" >'
+			+'				<label for="" class="checked">勾选商品</label> <span class="line-circle"></span>'
+			+'		</div>'
+			+'	</div>'
+			+'	<div class="cell p-goods">'
+			+'		<div class="goods-item">'
+			+'			<div class="p-img">'
+			+'				<a href="//item.jd.com/'+'1000'+'.html" target="_blank" class="J_zyyhq_'+'1000'+'">'
+			+'					<img alt="'+'书兰 卫衣男 2017春季新款韩版修身潮拼接连帽卡通绣花套头男士外套 绿色 M'+'"'
+			+'					src="'+'//img10.360buyimg.com/cms/s80x80_jfs/t4078/132/1596283745/189841/7018bff5/588077fdN1ffd20ca.jpg'+'"></a>'
+			+'			</div>'
+			+'			<div class="item-msg">'
+			+'				<div class="p-name">'
+			+'					<a clstag="clickcart|keycount|xincart|cart_sku_name" href="//item.jd.com/'+'1000'+'.html" target="_blank">'
+			+'						'+'书兰 卫衣男 2017春季新款韩版修身潮拼接连帽卡通绣花套头男士外套 绿色 M '+'</a>'
+			+'				</div>'
+			+'				<div class="p-extend"><span class="promise" _giftcard="giftcard_'+'1000'+'"> </span>'
+			+'					<span class="promise" _yanbao="yanbao_'+'1000'+'_4025315760"><i class="jd-service-icon"></i></span>'
+			+'				</div>'
+			+'			</div>'
+			+'		</div>'
+			+'	</div>'
+			+'	<div class="cell p-props p-props-new">'
+			+'		<div class="props-txt" title="'+'绿色'+'">颜色：'+' 绿色'+'</div>'
+			+'		<div class="props-txt" title="'+'M'+'">尺码：'+'M'+'</div>'
+			+'	</div>'
+			+'	<div class="cell p-price">'
+			+'		<strong>¥148.00</strong> <a class="sales-promotion" href="#none" data-tips="更多促销"> 更多促销<b></b></a>'
+			+'		<div id="sales-promotion_'+'1000'+'" class="promotion-tips">'
+			+'			<div class="promotion-tit"> 促销信息<b></b> </div>'
+			+'			<div class="promotion-cont">'
+			+'				<ul>'
+			+'					<li><input type="radio" multiPromotion="0" name="radioPromotion_'+'1000'+'"'
+			+'						value="636237_4025315760_11151047032_11_4025315760" title="满2件总价9.0折，满3件总价8.5折，满4件总价8.0折"'
+			+'						checked="checked">满2件总价9.0折，满3件总价8.5折，满4件总价8.0折</li>'
+			+'					<li><input type="radio" multiPromotion="0" name="radioPromotion_11151047032"'
+			+'						value="636237_-300_11151047032_11_4025315760" title="不使用活动优惠">不使用活动优惠</li>'
+			+'				</ul>'
+			+'				<div class="op-btns ac mt20">'
+			+'					<a href="#none" class="btn-1 select-promotion" >确定</a>'
+			+'					<a href="#none" class="btn-9 ml10 del cancel-promotion">取消</a>'
+			+'				</div>'
+			+'			</div>'
+			+'		</div>'
+			+'	</div>'
+			+'	<div class="cell p-quantity">'
+			+'		<div class="quantity-form" promoid="4025315760">'
+			+'			<a href="javascript:void(0);" class="decrement disabled" id="decrement_636237_'+'1000'+'_1_11_4025315760">-</a>'
+			+'			<input autocomplete="off" type="text" class="itxt" value="1"'
+			+'				id="changeQuantity_636237_11151047032_1_11_0_4025315760" minnum="1" /> '
+			+'				<a href="javascript:void(0);" class="increment" id="increment_636237_'+'1000'+'_1_11_0_4025315760">+</a>'
+			+'		</div>'
+			+'		<div class="ac ftx-03 quantity-txt" _stock="stock_'+'1000'+'"></div>'
+			+'	</div>'
+			+'	<div class="cell p-sum"> <strong>¥'+'148.00'+'</strong> </div>'
+			+'	<div class="cell p-ops">'
+			+'		<a id="remove_636237_11151047032_11_4025315760" data-name="'+'书兰 卫衣男 2017春季新款韩版修身潮拼接连...'+'"'
+			+'			data-more="removed_148.00_1" class="cart-remove" href="javascript:void(0);">删除</a> '
+			+'			<a href="javascript:void(0);" class="cart-follow" id="follow_636237_11151047032_11_4025315760">移到我的关注</a>'
+			+'	</div>'
+			+'</div>'
+			+'<div class="item-extra mb10">'
+			+'	<div class="unmarket-items" _unmarket="unmarket_1=='+'1000'+'" data="1315;1342;9732;11151047032;1487389195855"></div>'
+			+'</div>'
+			+'<div class="item-line"></div>'
+			+'</div>'
+			
+			$('#product_promo_4025315760').append(str)
+     });
+	
+</script>
 
 <style type="text/css">
 .v {
@@ -53,82 +113,156 @@
 <body>
 	<div id="shortcut-2014">
 		<div id="shortcut">
-			<div class="w">
-				<ul class="fl" clstag="h|keycount|2016|01a">
-					<li class="dorpdown" id="ttbar-mycity"></li>
-				</ul>
+		<div class="w">
+			<ul class="fl">
+				<li class="dorpdown" id="ttbar-mycity"></li>
+			</ul>
 
-				<ul class="fr">
-					<!-- <li class="fore1" id="ttbar-login" clstag="h|keycount|2016|01b">
-          <a target="_blank" href="page/login.jsp" class="link-login">你好，请登录</a>&nbsp;&nbsp;<a href="page/register.jsp" class="link-regist style-red">免费注册</a>
-        </li>
-        <li class="spacer"></li>
-        <li class="fore2" clstag="h|keycount|2016|01c">
-          <div class="dt"><a target="_blank" href="//order.jd.com/center/list.action">我的订单</a></div>
-        </li>
-        <li class="spacer"></li> -->
-					<li class="fore3 dorpdown" id="ttbar-myjd"
-						clstag="h|keycount|2016|01d">
-						<div class="dt cw-icon">
-							<a target="_blank" href="//home.jd.com/">我的晓米佳</a>
-							<!-- <i class="iconfont">&#xe605;</i> -->
-							<i class="ci-right"><s>◇</s></i>
+			<ul class="fr">
+				<li class="fore2 dorpdown" clstag="h|keycount|2016|01d">
+					<div class="dt cw-icon"  >
+						<a id="u_name" target="_blank" href="javascript:void(0)">${sessionScope.loginUser.u_name}</a>
+					</div>
+				</li>
+				<li class="spacer"></li>
+				<li class="fore3 dorpdown" id="ttbar-myjd" >
+					<div class="dt cw-icon">
+						<a target="_blank" href="page/myxmj.jsp">我的晓米佳</a>
+						<i class="ci-right"></i>
+					</div>
+					<div class="dd dorpdown-layer">
+						<div class="myjdlist">
+							<div class="fore1">
+								<div class="item"><a href="//order.jd.com/center/list.action" 
+										target="_blank">我的订单<span id="num-unfinishedorder"></span></a></div>
+								<div class="item"><a href="//myjd.jd.com/afs/indexNew.action?entry=1" target="_blank">返修退换货</a></div>
+							</div>
+							<div class="fore2">
+								<div class="item">
+									<a href="//joycenter.jd.com/msgCenter/queryHistoryMessage.action"
+										target="_blank">消息<span id="num-tip"></span></a>
+								</div>
+								<div class="item">
+									<a href="//t.jd.com/home/follow" clstag="" target="_blank">我的关注</a>
+								</div>
+							</div>
 						</div>
-						<div class="dd dorpdown-layer"></div>
-					</li>
-					<li class="spacer"></li>
-					<!-- <li class="fore4" clstag="h|keycount|2016|01e">
-          <div class="dt"><a target="_blank" href="//vip.jd.com/">晓米佳会员</a></div>
+						<div class="viewlist" style="display: none;">
+							<div class="smt"><h4>我的足迹</h4><span class="extra"> <a target="_blank"
+									href="//my.jd.com/history/list.html">更多&nbsp;&gt;</a></span>
+							</div>
+							<div class="smc"></div>
+						</div>
+					</div>
+				</li>
+				<li class="spacer"></li>
+				<li class="fore8 dorpdown" id="ttbar-serv" >
+					<div class="dt cw-icon">
+						客户服务
+						<!--<i class="iconfont">&#xe605;</i> <i class="ci-right"> </i> -->
+					</div>
+					<div class="dd dorpdown-layer">
+						<div class="item-client">客户</div>
+						<div class="item"><a href="//myjd.jd.com/afs/indexNew.action?entry=2"
+								target="_blank" true="">售后服务</a></div>
+						<div class="item"><a href="//chat.jd.com/jdchat/custom.action " target="_blank"
+								true="">在线客服</a></div>
+						<div class="item"><a href="//myjd-crm.jd.com/opinion/orderList.action"
+								target="_blank" true="">意见建议</a></div>
+						<div class="item"><a href="//sale.jd.com/act/wQTpIm7GnXE.html" target="_blank"
+								true="">商家入驻</a></div>
+					</div>
+				</li>
+				<li class="spacer"></li>
+				<li class="fore9 dorpdown" id="ttbar-navs" >
+					<div class="dt cw-icon">
+						网站导航
+						<!-- <i class="iconfont">&#xe605;</i><i class="ci-right"> </i> -->
+					</div>
+					<div class="dd dorpdown-layer">
+						<dl class="fore1"><dt>特色主题</dt>
+							<dd><div class="item"><a href="//brands.jd.com/" target="_blank">品牌头条</a></div>
+								<div class="item"><a href="//hao.jd.com/" target="_blank">发现好货</a></div>
+								<div class="item"><a href="//coll.jd.com/list.html?sub=11461" target="_blank">港澳售</a></div>
+								<div class="item"><a href="//a.jd.com/" target="_blank">优惠券</a></div>
+								<div class="item"><a href="//miaosha.jd.com/" target="_blank">秒杀</a></div>
+								<div class="item"><a href="//gift.jd.com/" target="_blank">礼品购</a></div>
+								<div class="item"><a href="//smarthome.jd.com/" target="_blank">智能馆</a></div>
+								<div class="item"><a href="//sale.jd.com/act/3je8ZTCxNl6SusId.html "
+										target="_blank">北京老字号</a></div>
+								<div class="item"><a href="//what.jd.com/" target="_blank">买什么</a></div>
+							</dd>
+						</dl>
+						<dl class="fore2">
+							<dt>行业频道</dt>
+							<dd>
+								<div class="item"><a href="//channel.jd.com/fashion.html" target="_blank">服装城</a></div>
+								<div class="item"><a href="//channel.jd.com/electronic.html" target="_blank">家用电器</a></div>
+								<div class="item"><a href="//diannao.jd.com/" target="_blank">电脑办公</a></div>
+								<div class="item"><a href="//shouji.jd.com/" target="_blank">手机</a></div>
+								<div class="item"><a href="//channel.jd.com/beauty.html" target="_blank">美妆馆</a></div>
+								<div class="item"><a href="//channel.jd.com/chaoshi.html" target="_blank">食品</a></div>
+								<div class="item"><a href="https://shuma.jd.com/" target="_blank">智能数码</a></div>
+								<div class="item"><a href="//book.jd.com/" target="_blank">图书</a></div>
+								<div class="item"><a href="//3c.jd.com/" target="_blank">玩3C</a></div>
+							</dd>
+						</dl>
+						<dl class="fore3">
+							<dt>生活服务</dt>
+							<dd>
+								<div class="item"><a href="//baitiao.jd.com/activity/third" target="_blank">白条</a></div>
+								<div class="item"><a href="//licai.jd.com/" target="_blank">理财</a></div>
+								<div class="item"><a href="//chongzhi.jd.com/" target="_blank">话费</a></div>
+								<div class="item"><a href="//trip.jd.com/" target="_blank">旅行</a></div>
+								<div class="item"><a href="//caipiao.jd.com/" target="_blank">彩票</a></div>
+								<div class="item"><a href="//game.jd.com/" target="_blank">游戏</a></div>
+								<div class="item"><a href="//jipiao.jd.com/" target="_blank">机票酒店</a></div>
+								<div class="item"><a href="//movie.jd.com/" target="_blank">电影票</a></div>
+								<div class="item"><a href="//jiaofei.jd.com/" target="_blank">水电煤</a></div>
+							</dd>
+						</dl>
+						<dl class="fore4">
+							<dt>更多精选</dt>
+							<dd>
+								<div class="item"><a href="http://group.jd.com/site/20000121/20000032.htm"
+										target="_blank">智能社区</a></div>
+								<div class="item"><a href="http://group.jd.com/index/20000001.htm"
+										target="_blank">游戏社区</a></div>
+								<div class="item"><a href="//sale.jd.com/act/wQTpIm7GnXE.html" target="_blank">卖家入驻</a></div>
+								<div class="item"><a href="//fw.jd.com/" target="_blank">服务市场</a></div>
+								<div class="item"><a href="//zhaomu.jd.com/XCDLzm.html" target="_blank">乡村招募</a></div>
+								<div class="item"><a href="//zhaomu.jd.com/intro.html" target="_blank">校园加盟</a></div>
+								<div class="item"><a href="//channel.jd.com/office.html" target="_blank">办公生活馆</a></div>
+								<div class="item"><a href="//ipr.jd.com/edition" target="_blank">知识产权维权</a></div>
+								<div class="item"><a href="//en.jd.com/" target="_blank">English Site</a></div>
+							</dd>
+						</dl>
+						</div>
+				</li>
+		
+	<!-- <li class="spacer"></li> -->
+        <li class="fore10 mobile" id="J_mobile" style="display: none;">
+        	<div class="dt mobile_txt" >手机晓米佳</div>
+        	<div id='J_mobile_pop' class='mod_loading mobile_pop'>
+            </div>
         </li>
-        <li class="spacer"></li> -->
-					<!-- <li class="fore5" clstag="h|keycount|2016|01f">
-          <div class="dt"><a target="_blank" href="//b.jd.com/">企业采购</a></div>
-        </li>
-        <li class="spacer"></li> -->
-					<li class="fore8 dorpdown" id="ttbar-serv"
-						clstag="h|keycount|2016|01g">
-						<div class="dt cw-icon">
-							客户服务<i class="iconfont">&#xe605;</i><i class="ci-right"><s>◇</s></i>
-						</div>
-						<div class="dd dorpdown-layer"></div>
-					</li>
-					<li class="spacer"></li>
-					<li class="fore9 dorpdown" id="ttbar-navs"
-						clstag="h|keycount|2016|01h">
-						<div class="dt cw-icon">
-							网站导航<i class="iconfont">&#xe605;</i><i class="ci-right"><s>◇</s></i>
-						</div>
-						<div class="dd dorpdown-layer"></div>
-					</li>
-					<li class="spacer"></li>
-					<li class="fore10 mobile" id="J_mobile"
-						clstag="h|keycount|2016|01i" style="display: none;">
-						<div class="dt mobile_txt">手机晓米佳</div>
-						<div class="mobile_static">
-							<div class="mobile_static_qrcode"></div>
-						</div>
-						<div id='J_mobile_pop' class='mod_loading mobile_pop'></div>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<div id="o-header-2013">
-		<div id="header-2013" style="display: none;"></div>
+      </ul>
+    </div>
+  </div>
 	</div>
 	<div class="w w1 header clearfix">
 		<div id="logo-2014">
 			<a href="http://www.jd.com/" class="logo"></a> <a href="#none"
 				class="link2"><b></b>购物车</a>
 		</div>
-		<div class="cart-search">
+		<!-- <div class="cart-search">
 			<div class="form">
 				<input id="key" type="text" class="itxt" autocomplete="off"
 					accesskey="s"> <input type="button" class="button"
 					value="搜索" clstag="clickcart|keycount|xincart|cart_search"
 					onclick="javascript:void(0);">
 			</div>
-		</div>
+		</div> -->
 	</div>
 
 
@@ -140,9 +274,6 @@
 				<ul class="switch-cart">
 					<li class="switch-cart-item curr"><a href="#none"> <em>全部商品</em>
 							<span class="number">1</span>
-					</a></li>
-					<li class="switch-cart-item ui-switchable-selected"><a
-						class="" href="//cart.yiyaojd.com/cart"> <em>京东大药房</em>
 					</a></li>
 				</ul>
 				<div class="cart-store">

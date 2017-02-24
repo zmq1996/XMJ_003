@@ -1,4 +1,4 @@
-package com.yc.xmj.handler;
+package com.yc.xmj.web.handler;
 
 import org.apache.logging.log4j.LogManager;
 import org.springframework.beans.factory.annotation.Autowired;

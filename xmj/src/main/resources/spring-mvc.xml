@@ -20,7 +20,7 @@
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
         
 	<!-- 描述指定包中，要把对象交给springmvc容器管理的类 -->
-	<context:component-scan base-package="com.yc.xmj" />
+	<context:component-scan base-package="com.yc.xmj.web.handler" />
 
 	<!-- 配制 springmv视图处理器的bean -->
 	<bean id="viewResolver"

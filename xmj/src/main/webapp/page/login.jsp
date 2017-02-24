@@ -37,7 +37,7 @@
                     <div class="mt tab-h">
                     </div>
                     <div class="msg-wrap" >
-						<div class="msg-error hide" id="loginMsg-error" >密码错误</div>
+						<div class="msg-error hide" id="loginMsg-error" >${sessionScope.errorMsg}</div>
                     </div>
                     <div class="mc">
                         <div class="form">
@@ -220,59 +220,6 @@
         </div>
     </div>
 </div>
-<!-- <script type="text/javascript" src="//misc.360buyimg.com/jdf/1.0.0/unit/base/1.0.0/base.js"></script> -->
-   <!--  <script type="text/javascript" src="/new/js/jsencrypt.min.js"></script> -->
-<!-- <script type="text/javascript" src="/new/misc/js/login2016.js"></script> -->
-<!-- <script type="text/javascript" src="//misc.360buyimg.com/user/passport/1.0.0/js/login.index.2016-1130.js" source="widget"></script> -->
-
-<!-- <script type="text/javascript">	~function () {		var data = [						{			  src:"//img12.360buyimg.com/da/jfs/t3190/305/6027009355/64123/69ddef6f/589c0dabNb44ed22b.jpg",			  bgColor:"#edecea",                          weight: ""			}						,			{			  src:"//img20.360buyimg.com/da/jfs/t4117/44/2166444334/90074/f2aa527e/58a40975N7ea61b26.jpg",			  bgColor:"#01126f",                          weight: "4"			}						,			{			  src:"//img13.360buyimg.com/da/jfs/t2749/276/1020747574/33213/870500f1/5731485aN1134b4f0.png",			  bgColor:"#e93854",                          weight: "4"			}						,			{			  src:"//img14.360buyimg.com/da/jfs/t3982/328/1677293581/100421/df97b998/5886bcfeN72a95ea6.jpg",			  bgColor:"#E93854",                          weight: ""			}			];						         var getRandom = function (arr) {			var _temp = 0, _random = 0, _weight, _newArr = [];						for (var i = 0; i < arr.length; i++) {				_weight = arr[i].weight ? parseInt(arr[i].weight) : 1;				_newArr[i] = [];				_newArr[i].push(_temp);				_temp += _weight;				_newArr[i].push(_temp);			}						_random = Math.ceil(_temp * Math.random());						for (var i = 0; i< _newArr.length; i++){				if(_random > _newArr[i][0] && _random <= _newArr[i][1]){					return arr[i];				}			}			};				var tpl = '<div class="login-banner" style="background-color: {bgColor}">\		              <div class="w">\			         <div id="banner-bg"  clstag="pageclick|keycount|20150112ABD|46" class="i-inner" style="background: url({imgURI}) 0px 0px no-repeat;background-color: {bgColor}"></div>\		              </div>\		           </div>';							var bgData = getRandom(data);		var bannerHtml = tpl.replace(/{bgColor}/g, bgData.bgColor).replace(/{imgURI}/g, bgData.src);				$('.login-banner').replaceWith(bannerHtml);	}();</script>
-<script type="text/javascript">
-    (function () {
-        var ja = document.createElement('script');
-        ja.type = 'text/javascript';
-        ja.async = true;
-        ja.src = ('https:' == document.location.protocol ? 'https://cscssl' : '//csc') + '.jd.com/wl.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ja, s);
-    })();
-</script> -->
-
-
-<script type="text/javascript">
-	function code(){
-		
-	}
-	
-	function login(){
-		console.info($("#formlogin"))
-		console.info($("#loginname").val())
-	}
-	
-</script>
-<!-- <script>
-    $(function () {
-        getJdEid(function (eid, fpid) {
-            var eValue = eid;
-            var fpValue = fpid;
-            var ee = $("#eid").prop("value", eValue);
-            var fp = $("#sessionId").prop("value", fpValue);
-        });
-    });
-</script> -->
-
-<!-- <script type="text/javascript">
-    var _jraq = _jraq || [];
-    _jraq.push(['account', 'UA-J2011-12']);
-    (function () {
-        var ja = document.createElement('script');
-        ja.type = 'text/javascript';
-        ja.async = true;
-        ja.src = ('https:' == document.location.protocol ? 'https://jrclick' : '//jrclick') + '.jd.com/wl.dev.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ja, s);
-    })();
-</script> -->
-
 
 <!-- <script type="text/javascript" src="//seq.jd.com/jseqf.html?bizId=passport_jd_com_login_pc&platform=js&version=1"></script>
  -->

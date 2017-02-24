@@ -17,8 +17,7 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public boolean login(User user) {
 		user.setU_password(Encrypt.md5AndSha(user.getU_password()));
-		System.out.println(userMapper.getUser(user)); 
-		return userMapper.getUser(user) > 0;
+		return  userMapper.getUser(user) > 0;
 	}
 
 	@Override
