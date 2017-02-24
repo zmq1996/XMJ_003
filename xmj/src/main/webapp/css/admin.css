@@ -43,7 +43,20 @@ a:hover {
 	font-size:25px;
 	color:#666666;
 }
-
+#modifyDiv{
+	width:240px;
+	height:400px;
+}
+#modifyForm{
+	width:90%;
+	height:90%;
+	margin-left:40px;
+}
+#modifyForm p{
+	height:20px;
+	margin-top:10px;
+	width:60%;
+}
 #nav {
 	clear: both;
 	padding: 0 10px;
@@ -135,7 +148,7 @@ a:hover {
 	height:500px;
 }
 .left{
-	width:30%;
+	width:15%;
 	height:100%;
 	float:left;
 }
@@ -155,7 +168,7 @@ a:hover {
 	margin-left:40px;
 }
 .right{
-	width:70%;
+	width:85%;
 	height:100%;
 	float:right;
 }

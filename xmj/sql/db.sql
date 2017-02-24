@@ -35,7 +35,9 @@ insert into users (u_id,u_name) values(1001,'xiaodansfather');
 
 alter table users rename column obligate2 to payAuthentication
 alter table users modify realNameAuthentication integer
-
+update users set u_name='liujiasfather',u_password=null,u_sex=null,
+		idcard=null,u_phone=null,email=null,u_root=0,realNameAuthentication=0,payAuthentication=0
+		where u_id=1001
 
 --2.地址	
 

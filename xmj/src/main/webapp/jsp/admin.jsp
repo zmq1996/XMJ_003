@@ -80,6 +80,22 @@
 	 	</div>
 	</div>
 </div>
+	<div id="modifyDiv">
+			<form id="modifyForm" method="post">
+				<p><input id="uid" name="u_id" readonly="readonly"/></p>
+				<p><input id="uname" name="u_name"/></p>
+				<p><input id="upassword" name="u_password"/></p>
+				<p><input id="usex" name="u_sex"/></p>
+				<p><input id="uidcard" name="idcard" /></p>
+				<p><input id="uphone" name="u_phone"/></p>
+				<p><input id="uemail" name="email"/></p>
+				<p><input id="uroot" name="u_root"/></p>
+				<p><input id="ureal" name="realNameAuthentication"/></p>
+				<p><input id="upay" name="payAuthentication"/></p>
+				<p><a class="updateBtn" href="javaScript:void(0)">修改</a>&nbsp;
+				<a class="closeBtn" href="javaScript:void(0)">关闭</a></p>
+			</form>
+		</div>
 	<div class="w">
     <div id="footer-2013">
         <div class="links">
