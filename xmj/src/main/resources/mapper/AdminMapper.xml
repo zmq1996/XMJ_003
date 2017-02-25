@@ -31,7 +31,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		idcard=#{idcard},u_phone=#{u_phone},email=#{email},u_root=#{u_root},realNameAuthentication=#{realNameAuthentication},payAuthentication=#{payAuthentication}
 		where u_id=#{u_id}
 	</update>
-	<delete id="deleteUser" parameterType="Integer">
+	<delete id="deleteUser" parameterType="User">
 		delete from users where u_id=#{u_id}
 	</delete>
 </mapper>

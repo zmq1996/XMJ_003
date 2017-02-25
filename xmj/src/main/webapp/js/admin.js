@@ -96,19 +96,32 @@ function Delete(index){
 	    if (r){ 
 	    	$.get("manage/userDelete", { u_id:row.u_id },
 	    			function(data){
-			    		$.messager.show({
-			    			title:'删除',
-			    			msg:'删除成功',
-			    			showType:'show',
-			    			style:{
-			    				right:'',
-			    				top:document.body.scrollTop+document.documentElement.scrollTop,
-			    				bottom:''
-			    			}
-			    		});
+	    		 		if(data.trim()=="true"){
+				    		$.messager.show({
+				    			title:'删除',
+				    			msg:'删除成功',
+				    			showType:'show',
+				    			style:{
+				    				right:'',
+				    				top:document.body.scrollTop+document.documentElement.scrollTop,
+				    				bottom:''
+				    			}
+				    		});
+	    		 		}else{
+	    		 			$.messager.show({
+				    			title:'删除',
+				    			msg:'删除失败',
+				    			showType:'show',
+				    			style:{
+				    				right:'',
+				    				top:document.body.scrollTop+document.documentElement.scrollTop,
+				    				bottom:''
+				    			}
+				    		});
+	    		 		}
 	    		});
 	    	 $('#userList').datagrid("reload");//刷新修改数据
 	    }    
 	});  
-
 }
+
