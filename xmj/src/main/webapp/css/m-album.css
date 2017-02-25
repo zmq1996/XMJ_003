@@ -1441,16 +1441,6 @@
 	overflow: hidden
 }
 
-.order-tb .deal-state-cont .state-list li a.curr {
-	color: #e4393c
-}
-
-.order-tb .deal-state-cont .state-list li a.curr b {
-	background:
-		url(//misc.360buyimg.com/user/myjd-2015/css/i/order-icon20150916.png)
-		0 -207px
-}
-
 .order-tb .deal-state-hover .state-txt {
 	background: #fff;
 	box-shadow: 0 0 10px rgba(0, 0, 0, .12)
@@ -1552,12 +1542,6 @@
 
 .order-tb .ordertime-cont .time-list li a.curr {
 	color: #e4393c
-}
-
-.order-tb .ordertime-cont .time-list li a.curr b {
-	background:
-		url(//misc.360buyimg.com/user/myjd-2015/css/i/order-icon20150916.png)
-		0 -207px
 }
 
 .order-tb .ordertime-hover .time-txt {

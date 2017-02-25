@@ -1820,3 +1820,17 @@ img.err-poster, img.err-product {
 #footer-2013 .copyright {
 	margin: 10px 0;
 }
+
+.v {
+	width: 990px;
+	margin: 0 auto;
+}
+
+#footer-2013 {
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+#footer-2013 .copyright {
+	margin: 10px 0;
+}

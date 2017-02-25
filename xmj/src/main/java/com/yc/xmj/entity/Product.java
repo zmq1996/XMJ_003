@@ -6,9 +6,7 @@ public class Product {
 	private int s_id;
 	private int t_id;
 	private String properties;// 通过协议协定所有商品属性
-	private int p_stock ; //商品数量
-	private String obligate1;
-	private String obligate2;
+	private int p_stock ; //库存有无
 
 	public int getP_id() {
 		return p_id;
@@ -58,22 +56,6 @@ public class Product {
 		this.properties = properties;
 	}
 
-	public String getObligate1() {
-		return obligate1;
-	}
-
-	public void setObligate1(String obligate1) {
-		this.obligate1 = obligate1;
-	}
-
-	public String getObligate2() {
-		return obligate2;
-	}
-
-	public void setObligate2(String obligate2) {
-		this.obligate2 = obligate2;
-	}
-
 	public Product(int p_id, String p_name, int s_id, int t_id, String properties, int p_stock, String obligate1,
 			String obligate2) {
 		this.p_id = p_id;
@@ -82,14 +64,12 @@ public class Product {
 		this.t_id = t_id;
 		this.properties = properties;
 		this.p_stock = p_stock;
-		this.obligate1 = obligate1;
-		this.obligate2 = obligate2;
 	}
 
 	@Override
 	public String toString() {
 		return "Product [p_id=" + p_id + ", p_name=" + p_name + ", s_id=" + s_id + ", t_id=" + t_id + ", properties="
-				+ properties + ", p_stock=" + p_stock + ", obligate1=" + obligate1 + ", obligate2=" + obligate2 + "]";
+				+ properties + ", p_stock=" + p_stock + ", obligate1=" + "]";
 	}
 
 	public Product() {

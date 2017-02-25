@@ -372,9 +372,8 @@ $(function() {
 									<div class="item-list">
 										<!-- 满减 -->
 										<!-- 满减 -->
-										<div class="item-full minus-item"
-											id="product_promo_4025315760">
-											<div class="item-header">
+										<div class="item-full minus-item" id="product_promo_4025315760">
+											<!-- <div class="item-header">
 												<div class="f-txt">
 													<span class="full-icon full-gray-icon">满减<b></b></span>
 													活动商品购满2件， 即可享受满减 <a href="javascript:void(0);"
@@ -385,7 +384,7 @@ $(function() {
 												<div class="f-price">
 													<strong>¥148.00</strong>
 												</div>
-											</div>
+											</div> -->
 											<!-- 单品-->
 											<div class=" item-last item-item item-selected  "
 												id="product_11151047032">

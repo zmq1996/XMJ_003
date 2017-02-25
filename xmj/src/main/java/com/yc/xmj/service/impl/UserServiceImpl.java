@@ -1,8 +1,12 @@
 package com.yc.xmj.service.impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.yc.xmj.entity.Trolley;
+import com.yc.xmj.entity.TrolleyBean;
 import com.yc.xmj.entity.User;
 import com.yc.xmj.mapper.UserMapper;
 import com.yc.xmj.service.UserService;
@@ -15,15 +19,24 @@ public class UserServiceImpl implements UserService {
 	private UserMapper userMapper;
 	
 	@Override
-	public boolean login(User user) {
+	public User login(User user) {
 		user.setU_password(Encrypt.md5AndSha(user.getU_password()));
-		return  userMapper.getUser(user) > 0;
+		return  userMapper.getUser(user);
 	}
 
 	@Override
 	public boolean register(User user) {
+		int sum = 0;
 		user.setU_password(Encrypt.md5AndSha(user.getU_password()));
-		return userMapper.register(user) > 0;
+		sum = userMapper.register(user) + userMapper.insertAddress(user) + userMapper.insertShoppingBakcet(user);
+		System.out.println(sum);
+		return sum >= 3;
+	}
+
+	@Override
+	public List<Trolley> getTrolley(User user) {
+		
+		return userMapper.getTrolley(user);
 	}
 
 
