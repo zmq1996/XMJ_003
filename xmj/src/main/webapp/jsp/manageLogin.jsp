@@ -92,6 +92,7 @@
                 </div>
 				             <div class="coagent" id="kbCoagent"></div>  
     </div>
+    </div>
 </div>
 <div class="w">
     <div id="footer-2013">

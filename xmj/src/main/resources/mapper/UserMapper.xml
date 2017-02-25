@@ -3,7 +3,6 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.yc.xmj.mapper.UserMapper">
-		
 	<select id="getUser" parameterType="com.yc.xmj.entity.User" resultType="int">
 	    select u_id from users where u_name=#{u_name} and  u_password = #{u_password}
 	</select>

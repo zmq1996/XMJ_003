@@ -7,4 +7,5 @@ public interface UserMapper {
 	int getUser(User user);
 
 	int register(User user);
+	
 }

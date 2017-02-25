@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
-
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,10 +13,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>晓米佳网 - 开店</title>    
     <link href="css/SellMode/opStore_index.css" rel="stylesheet">  
-    <link href="css/SellMode/opStore_index-min.css" rel="stylesheet">
+    <link href="css/SellMode/index-min.css" rel="stylesheet">
     <link href="css/SellMode/opStore_index(4).css" rel="stylesheet" >
     <link href="css/SellMode/opStore_index5.css" rel="stylesheet" type="text/css" >
    	<link href="css/SellMode/openStore.css" rel="stylesheet" type="text/css">
+   	<link type="text/css" rel="stylesheet" href="css/buyerLogin.css" /> 
     
 </head>
 
@@ -26,7 +27,7 @@
         <div id="site-nav-content">
             
             <div class="login-info" data-spm="a1zvp">
-              <a class="user-nick" href="#" target="_top">jiajiag52</a>
+              <a class="user-nick" href="#" target="_top">${user.u_name }</a>
               ,
               <a id="J_Logout" href="#="_top">退出</a>
               <a class="user-nick" href="#" >站内信</a>
@@ -443,7 +444,7 @@
                                              -->
                                             <div class="tip-container tip-type-success">
                                                 <p>
-                                                    <!-- react-text: 477 -->您已绑定了支付宝账户：524294514@qq.com
+                                                    <!-- react-text: 477 -->您已绑定了支付宝账户：${user.email }
                                                     <!-- /react-text -->
                                                     <!-- react-text: 478 -->&nbsp;
                                                     <!-- /react-text --><a href="https://member1.taobao.com/member/fresh/account_management.htm" target="_blank">查看</a></p>
@@ -513,16 +514,19 @@
                                                                         </div>
                                                                     </td>
                                                                     <td>
-                                                                        <div class="next-table-cell-wrapper"><span class="passed">通过</span></div>
+                                                                        <div class="next-table-cell-wrapper">
+                                                                        <c:set var="payAuthentication" value="${user.payAuthentication }"/>
+	                                                                        <span 
+	                                                                        class=${payAuthentication eq "1" ? "passed" : "notPassed" }>
+	                                                                         ${payAuthentication eq "1" ? "通过" : "未通过" }
+	                                                                        </span>
+                                                                        </div>
                                                                     </td>
                                                                     <td>
                                                                         <div class="next-table-cell-wrapper">
                                                                             <div class="open-shop-condition-tips-container">
                                                                                 <div>
-                                                                                    <!-- react-text: 526 -->
-                                                                                    <!-- /react-text -->
-                                                                                    <!-- react-text: 527 -->&nbsp;
-                                                                                    <!-- /react-text -->
+                                                                                    &nbsp;
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -539,12 +543,17 @@
                                                                 <tr class="next-table-row last">
                                                                     <td>
                                                                         <div class="next-table-cell-wrapper">
-                                                                            <!-- react-text: 535 -->晓米佳开店认证
+                                                                            <!-- react-text: 535 -->晓米佳实名认证
                                                                             <!-- /react-text -->
                                                                         </div>
                                                                     </td>
                                                                     <td>
-                                                                        <div class="next-table-cell-wrapper"><span class="passed">通过</span></div>
+                                                                        <div class="next-table-cell-wrapper">
+                                                                        <c:set var="realNameAuthentication" value="${user.realNameAuthentication }"/>
+                                                                        <span class=${realNameAuthentication eq "1" ? "passed" : "notPassed" }>
+                                                                        	${realNameAuthentication eq "1" ? "通过" : "不通过" }
+                                                                        </span>
+                                                                        </div>
                                                                     </td>
                                                                     <td>
                                                                         <div class="next-table-cell-wrapper">
@@ -579,7 +588,16 @@
                                                  type="normal" onclick="step2()">上一步</a>
                                                  
                                                 <button type="button" class="next-btn next-btn-primary 
-                                                next-btn-large ice-link" onclick="open_pact_window()">下一步</button>
+                                                next-btn-large ice-link" onclick="open_pact_window()" 
+                                                <c:choose>
+													<c:when test="${realNameAuthentication eq 0 }">
+														disabled="disabled"
+													</c:when>
+													<c:when test="${payAuthentication eq 0 }">
+														disabled="disabled" 
+													</c:when>
+                                                </c:choose>
+                                                >下一步</button>
                                             </div>
                                         </div>
                                     </div>
@@ -596,7 +614,7 @@
         </div>
     </div>
     
-     <div id="pact_window" aria-hidden="false" class="next-dialog right next-overlay-inner animated zoomIn shop-dialog" role="dialog" aria-labelledby="dialog-header-0" style="width: 615px; left: 375.5px; top: 40px; display:none;">
+     <div aria-hidden="false" class="next-dialog right next-overlay-inner animated zoomIn shop-dialog" role="dialog" aria-labelledby="dialog-header-0" style="width: 615px; left: 375.5px; top: 40px; display:none;">
                 <div id="dialog-header-0" class="next-dialog-header">阅读开店协议</div>
                 <div id="dialog-body-1" class="next-dialog-body" style="max-height: 223px; overflow-y: auto;">
                     <h2 class="assignment-title">请认真阅读以下四大协议条款, 确认无误再点击“同意”正式签署：</h2>
@@ -843,22 +861,27 @@
                         </div>
                     </div>
                     <h3 class="assignment-tips">本人同意将支付宝认证材料授权晓米佳开店使用；本人同意认证材料用于晓米佳店铺的对外披露</h3></div>
+               <form id="sendapp" action="seller/openShop">
+               	<input type="hidden" name="u_id" value="${user.u_id }"/>
+               	<input type="hidden" name="realNameAuthentication" value="${user.realNameAuthentication }"/>
+               	<input type="hidden" name="payAuthentication" value="${user.payAuthentication }"/>
+               	
                 <div id="dialog-footer-2" class="next-dialog-footer">
                     <div class="dialog-actions">
                         <button type="button" class="next-btn next-btn-normal 
                         next-btn-large" onclick="dialog_close()">不同意</button>
                         
                         <a type="primary" class="next-btn next-btn-primary next-btn-large 
-                        ice-link" onclick="sendApply();">同意 </a>
+                        ice-link" onclick="sendApply();" >同意 </a> <!--  onclick="document.getElementById('sendapp').submit();return false"-->
                     </div>
                 </div><a href="javascript:;" class="next-dialog-close"><i class="short-icon-close" onclick="dialog_close();"></i></a></div>
-    
+    		</form>
     <body data-spm="3063657" class=" new-seller " style="overflow-y: auto; padding-right: 0px;">
 	
                                     
                                     
-       <div class="open-page open-success" style="display:none;">
-           <div class="open-success"><img src="image/SellMode/openSuccess.png" class="open-img">
+       <div class="open-page open-success" style="display:none; padding-bottom:100px;">
+           <div class="open-success"><img src="image/SellMode/opensuccess2.jpg" class="open-img">
                <h2 class="open-success-title">亲，店铺创建成功啦！祝您生意兴隆！</h2>
                <p class="open-success-desc">现在您可以经营您的店铺了，赶紧发布宝贝吧！</p>
                <a type="primary" target="_blank" href="https://upload.taobao.com/auction/sell.jhtml?file=sell.jhtml" class="next-btn next-btn-primary next-btn-large shop-success-btn-primary">
@@ -866,15 +889,49 @@
                    <!-- /react-text -->
                </a>
                <p style="color: rgb(255, 68, 0); font-size: 14px; font-weight: bold; margin-top: 10px;">晓米佳网不会主动联系您缴纳保证金业务，谨防假冒客服诈骗！</p>
-               		
            </div>
        </div>
                                  
 </body>
     
-    <div id="footer">
-        
+    <div class="w">
+    <div id="footer-2013">
+        <div class="links">
+            <a rel="nofollow" target="_blank" href="//www.jd.com/intro/about.aspx">
+                关于我们
+            </a>
+            |
+            <a rel="nofollow" target="_blank" href="//www.jd.com/contact/">
+                联系我们
+            </a>
+            |
+            <a rel="nofollow" target="_blank" href="//zhaopin.jd.com/">
+                人才招聘
+            </a>
+            |
+            <a rel="nofollow" target="_blank" href="//www.jd.com/contact/joinin.aspx">
+                商家入驻
+            </a>
+            |
+            <a rel="nofollow" target="_blank" href="//www.jd.com/intro/service.aspx">
+                广告服务
+            </a>
+            |
+            <a target="_blank" href="/links.vm/club.jd.com/links.aspx">
+                友情链接
+            </a>
+            |
+            <a target="_blank" href="//media.jd.com/">
+                销售联盟
+            </a>
+            |
+            <a target="_blank" href="//en.jd.com/" clstag="pageclick|keycount|20150112ABD|9">English Site</a>
+        </div>
+        <div class="copyright">
+            Copyright&nbsp;&copy;&nbsp;2004-2017&nbsp;&nbsp;晓米佳XMJ.com&nbsp;版权所有
+        </div>
     </div>
+</div>
     
 </body>
 <script type="text/javascript" src="js/jquery.min.js"></script>
