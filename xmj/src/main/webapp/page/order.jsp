@@ -6,111 +6,37 @@
     <title>我的晓米佳--我的订单</title>
 	<meta http-equiv="Content-Type"  content="text/html; charset=gb2312" />
 	<meta name="format-detection" content="telephone=no" />
-            <!-- <script type="text/javascript">
-            window.pageConfig={
-                compatible:true,jdfVersion:'2.0.0'
-            };
-        </script> -->
+    
     <!-- <link type="text/css" rel="stylesheet"  href="../css/basePatch.css"/> -->
     <link type="text/css" rel="stylesheet"  href="../css/index.css"/>
 	<link type="text/css" rel="stylesheet"  href="../css/m-album.css" source="widget"/>
     <link type="text/css" rel="stylesheet"  href="../css/common.css" source="widget"/>
     <link type="text/css" rel="stylesheet"  href="../css/order.css" source="combo"/>
     
-		<!-- <script language="javascript" type="text/javascript" >
-		if(window.top !== window.self){ window.top.location = window.location;}
-	</script> -->
+	<script type="text/javascript" src="../js/jquery.min.js"> </script> 
+	<script type="text/javascript" src="../js/order.js"> </script> 
 </head>  
 <body myjd="_MYJD_ordercenter">
-
- <!--< div id="shortcut-2014">
-	<div class="w">
-    	<ul class="fl">
-    		<li class="dorpdown" id="ttbar-mycity"></li>
-    	</ul>
-    	<ul class="fr">
-			<li class="fore1" id="ttbar-login">
-				<a href="javascript:login();" class="link-login">你好，请登录</a>&nbsp;&nbsp;<a href="javascript:regist();" class="link-regist style-red">免费注册</a>
-			</li>
-			<li class="spacer"></li>
-			<li class="fore2">
-				<div class="dt">
-					<a target="_blank" href="//order.jd.com/center/list.action">我的订单</a>
-				</div>
-			</li>
-			<li class="spacer"></li>
-			<li class="fore3 dorpdown" id="ttbar-myjd">
-				<div class="dt cw-icon">
-					<i class="ci-right"><s>◇</s></i>
-					<a target="_blank" href="//home.jd.com/">我的京东</a>
-				</div>
-				<div class="dd dorpdown-layer"></div>
-			</li>
-			<li class="spacer"></li>
-			<li class="fore4">
-				<div class="dt">
-					<a target="_blank" href="//vip.jd.com/">京东会员</a>
-				</div>
-			</li>
-			<li class="spacer"></li>
-			<li class="fore5">
-				<div class="dt">
-					<a target="_blank" href="//b.jd.com/">企业采购</a>
-				</div>
-			</li>
-			<li class="spacer"></li>
-			<li class="fore6 dorpdown" id="ttbar-apps">
-				<div class="dt cw-icon">
-					<i class="ci-left"></i>
-					<i class="ci-right"><s>◇</s></i>
-					<a target="_blank" href="//app.jd.com/">手机京东</a>
-				</div>
-			</li>
-			<li class="spacer"></li>
-			<li class="fore7 dorpdown" id="ttbar-atte">
-				<div class="dt cw-icon">
-					<i class="ci-right"><s>◇</s></i>关注京东
-				</div>	
-			</li>
-			<li class="spacer"></li>
-			<li class="fore8 dorpdown" id="ttbar-serv">
-				<div class="dt cw-icon">
-					<i class="ci-right"><s>◇</s></i>客户服务
-				</div>
-				<div class="dd dorpdown-layer"></div>
-			</li>
-			<li class="spacer"></li>
-			<li class="fore9 dorpdown" id="ttbar-navs">
-				<div class="dt cw-icon">
-					<i class="ci-right"><s>◇</s></i>网站导航
-				</div>
-				<div class="dd dorpdown-layer"></div>
-			</li>
-    	</ul>
-		<span class="clr"></span>
-    </div>
-</div> -->
-<!-- <div id="o-header-2013"><div id="header-2013" style="display:none;"></div></div> -->
  
  <div id="nav">
 	<div class="w">
 		<div class="logo">
-			<a href="//www.jd.com" target="_blank" class="fore1" clstag="homepage|keycount|home2013|Homejdlogo"></a>
-			<a href="//home.jd.com" target="_self" class="fore2" clstag="homepage|keycount|home2013|Homebackm">我的京东</a>
-			<a href="//www.jd.com" target="_blank" class="fore3" clstag="homepage|keycount|home2013|Homebackjd">返回京东首页</a>
+			<a href="/xmj/" target="_blank" class="fore1" clstag="homepage|keycount|home2013|Homejdlogo"></a>
+			<a href="/xmj/" target="_self" class="fore2" clstag="homepage|keycount|home2013|Homebackm">晓米佳</a>
+			<a href="/xmj/" target="_blank" class="fore3" clstag="homepage|keycount|home2013|Homebackjd">返回首页</a>
 		</div>
 		<div class="navitems">
 			<ul>
-				<li class="fore-1">
+				<!-- <li class="fore-1">
 					<a target="_self" href="//home.jd.com" clstag="homepage|keycount|home2013|Homeindex">首页</a>
-				</li>
+				</li> -->
 				<li class="fore-5">
 					<a tid="_MYJD_joy" href="//joycenter.jd.com" target="_self" clstag="homepage|keycount|home2013|Homemsg">消息</a>
 				</li>
 			</ul>
 		</div>
 		<div class="nav-r">
-		<div id="settleup" class="dorpdown">
+		<!-- <div id="settleup" class="dorpdown">
 			<div class="cw-icon">
 				<i class="ci-left"></i> <i class="ci-right"></i> <i
 					class="iconfont">&#xe607;</i> <a target="_blank"
@@ -122,7 +48,7 @@
 					<span class="loading"></span>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		</div> 
 		<div class="clr"></div>
 	</div>
@@ -220,7 +146,7 @@
 							<div class="extra-r">
 								<div class="search">
 									<input id="ip_keyword" type="text" class="itxt"
-										  placeholder="商品名称/商品编号/订单号"  /> <a href="javascript:;"
+										  placeholder="商品名称/商品编号/订单号"  /> <a href="javascript:void(0);"
 										class="search-btn" clstag="click|keycount|orderinfo|search">搜索<b></b></a>
 										<a href="#none" clstag='click|keycount|orderlist|gaoji'
 										class="default-btn high-search">高级<b></b></a>
@@ -229,68 +155,7 @@
 						</div>
 
 						<div class="mc">
-
-
-							<div class="top-search hide">
-								<div class="dl">
-									<span class="label">订单类型：</span>
-									<div class="dd">
-										<a href="list.action?t=&d=1&s=4096" target="_self"
-											clstag="click|keycount|orderlist|quanbuleixing" class="curr">全部类型</a>
-										<a
-											href="list.action?t=0-6-8-9-10-11-13-15-16-17-18-19-21-22-23-24-25-32-33-41-42-49-54-56&d=1&s=4096"
-											target="_self"
-											clstag="click|keycount|orderlist|shiwushangpin">实物商品</a> <a
-											href="list.action?t=35-83&d=1&s=4096" target="_self"
-											clstag="click|keycount|orderlist|jipiao">机票</a> <a
-											href="list.action?t=39-111&d=1&s=4096" target="_self"
-											clstag="click|keycount|orderlist|jiudian">酒店</a> <a
-											href="list.action?t=45&d=1&s=4096" target="_self"
-											clstag="click|keycount|orderlist|zuche">租车</a> <a
-											href="list.action?t=47&d=1&s=4096" target="_self"
-											clstag="click|keycount|orderlist|dujia">度假</a> <a
-											href="list.action?t=44&d=1&s=4096" target="_self"
-											clstag="click|keycount|orderlist|jingdian">门票</a> <a
-											href="list.action?t=46&d=1&s=4096" target="_self"
-											clstag="click|keycount|orderlist|huoche">火车</a> <a
-											href="list.action?t=34-62&d=1&s=4096" target="_self"
-											clstag="click|keycount|orderlist|youxi">游戏</a> <a
-											href="list.action?t=37&d=1&s=4096" target="_self"
-											clstag="click|keycount|orderlist|shoujichongzhi">手机充值</a> <a
-											href="list.action?t=43&d=1&s=4096" target="_self"
-											clstag="click|keycount|orderlist|dianyingpiao">电影票</a> <a
-											href="list.action?t=53&d=1&s=4096" target="_self"
-											clstag="click|keycount|orderlist|yanchupiao">演出票</a> <a
-											href="list.action?t=38&d=1&s=4096" target="_self"
-											clstag="click|keycount|orderlist|dianzishu">电子书</a> <a
-											href="list.action?t=58&d=1&s=4096" target="_self"
-											clstag="click|keycount|orderlist|shuziyinyue">数字音乐</a> <a
-											href="list.action?t=57&d=1&s=4096" target="_self"
-											clstag="click|keycount|orderlist|yingyongshangdian">应用商店</a>
-										<a href="list.action?t=36&d=1&s=4096" target="_self"
-											clstag="click|keycount|orderlist|caipiao">彩票</a> <a
-											href="list.action?t=28-29-201&d=1&s=4096" target="_self"
-											clstag="click|keycount|orderlist|tuangou">团购</a> <a
-											href="list.action?t=48-64-65&d=1&s=4096" target="_self"
-											clstag="click|keycount|orderlist|baoxian">保险</a> <a
-											href="list.action?t=2&d=1&s=4096" target="_self"
-											clstag="click|keycount|orderlist|duobaodao">夺宝岛</a> <a
-											href="list.action?t=99&d=1&s=4096" target="_self"
-											clstag="click|keycount|orderlist|jiayouka">加油卡</a> <a
-											href="list.action?t=98&d=1&s=4096" target="_self"
-											clstag="click|keycount|orderlist|jiayouka">一元抢宝</a>
-									</div>
-								</div>
-								<div class="dl">
-									<a href="#none" clstag='click|keycount|orderlist|fanhui'
-										class="btn-9">返回</a>
-								</div>
-								<a href="#none"
-									clstag='click|keycount|orderlist|closehighserach'
-									class="ts-del"></a>
-							</div>
-
-							<table class="td-void order-tb">
+							<table class="td-void order-tb" id="orderTable">
 								<colgroup>
 									<col class="number-col">
 										<col class="consignee-col">
@@ -300,25 +165,24 @@
 								</colgroup>
 								<thead>
 									<tr>
-										<th><div class="ordertime-cont">
-												<div class="time-txt">
-													近三个月订单<b></b><span class="blank"></span>
+										<th><div class="ordertime-cont" onmouseover="timeSpread()" onmouseout="timeFurl()">
+												<div class="time-txt"  >
+													近三个月订单 <span class="blank"></span>
 												</div>
-												<div class="time-list">
+												<div class="time-list" >
 													<ul>
-														<li><a href="#none" _val="1&s=4096"
-															clstag="click|keycount|orderlist|zuijinsangeyue"
-															class="curr"><b></b>近三个月订单</a></li>
-														<li><a href="#none" _val="2&s=4096"
-															clstag="click|keycount|orderlist|jinniannei"><b></b>今年内订单</a></li>
-														<li><a href="#none" _val="2016&s=4096"
-															clstag="click|keycount|orderlist|2016"><b></b>2016年订单</a></li>
-														<li><a href="#none" _val="2015&s=4096"
-															clstag="click|keycount|orderlist|2015"><b></b>2015年订单</a></li>
-														<li><a href="#none" _val="2014&s=4096"
-															clstag="click|keycount|orderlist|2014"><b></b>2014年订单</a></li>
-														<li><a href="#none" _val="3&s=4096"
-															clstag="click|keycount|orderlist|before_2014"><b></b>2014年以前订单</a></li>
+														<li><a class="curr" href="javascript:void(0);"
+															onclick="timeSelect(this)" _val="1&s=4096">近三个月订单</a></li>
+														<li><a href="javascript:void(0);"
+															onclick="timeSelect(this)" _val="2&s=4096">今年内订单</a></li>
+														<li><a href="javascript:void(0);"
+															onclick="timeSelect(this)" _val="2016&s=4096">2016年订单</a></li>
+														<li><a href="javascript:void(0);"
+															onclick="timeSelect(this)" _val="2015&s=4096">2015年订单</a></li>
+														<li><a href="javascript:void(0);"
+															onclick="timeSelect(this)" _val="2014&s=4096">2014年订单</a></li>
+														<li><a href="javascript:void(0);"
+															onclick="timeSelect(this)" _val="3&s=4096">2014年以前订单</a></li>
 													</ul>
 												</div>
 											</div>
@@ -326,27 +190,23 @@
 										<th>收货人</th>
 										<th>金额</th>
 										<th>
-											<div class="deal-state-cont" id="orderState">
+											<div class="deal-state-cont" id="orderState" 
+											onmouseover="orderStateSpread()" onmouseout="orderStateFurl()">
 												<div class="state-txt">
 													全部状态<b></b><span class="blank"></span>
 												</div>
 												<div class="state-list">
 													<ul>
-														<li value="4096"><a href="#none"
-															clstag='click|keycount|orderlist|quanbuzhuangtai'
-															class="curr"><b></b>全部状态</a></li>
-														<li value="1"><a href="#none"
-															clstag='click|keycount|orderlist|dengdaifukuan'><b></b>等待付款</a>
-														</li>
-														<li value="128"
-															clstag='click|keycount|orderlist|dengdaishouhuo'><a
-															href="#none"><b></b>等待收货</a></li>
-														<li value="1024"><a href="#none"
-															clstag='click|keycount|orderlist|yiwancheng'><b></b>已完成</a>
-														</li>
-														<li value="-1"><a href="#none"
-															clstag='click|keycount|orderlist|yiquxiao'><b></b>已取消</a>
-														</li>
+														<li value="4096"><a href="javascript:void(0);"
+															onclick="stateSelect(this)" class="curr">全部状态</a></li>
+														<li value="1"><a href="javascript:void(0);"
+															onclick="stateSelect(this)">等待付款</a></li>
+														<li value="128"><a href="javascript:void(0);"
+															onclick="stateSelect(this)">等待收货</a></li>
+														<li value="1024"><a href="javascript:void(0);"
+															onclick="stateSelect(this)">已完成</a></li>
+														<li value="-1"><a href="javascript:void(0);"
+															onclick="stateSelect(this)">已取消</a></li>
 													</ul>
 												</div>
 											</div>
@@ -355,122 +215,13 @@
 									</tr>
 
 								</thead>
-								<tbody id="tb-49457805343">
-									<tr class="sep-row">
-										<td colspan="5"></td>
-									</tr>
-
-									<tr class="tr-th">
-										<td colspan="5"><span class="gap"></span> <span
-											class="dealtime" title="2017-02-18 11:44:17">2017-02-18
-												11:44:17</span> <input type="hidden" id="datasubmit-49457805343"
-											value="2017-02-18 11:44:17" /> <span class="number">订单号：<a
-												name='orderIdLinks' id='idUrl49457805343' target='_blank'
-												href='//details.jd.com/normal/item.action?orderid=49457805343&PassKey=CD61AB446A98C8E71D45F3CFE049094E'
-												clstag='click|keycount|orderinfo|order_num'>49457805343</a>
-
-
-
-
-										</span>
-
-											<div class="tr-operate">
-												<span class="order-shop"> <a href="#none"
-													target="_blank" class="shop-txt venderName636237"
-													clstag='click|keycount|orderlist|636237'></a> <a
-													class="btn-im venderChat636237" href="#none"
-													target='_blank' title="联系卖家"
-													clstag='click|keycount|orderinfo|chatim'></a>
-												</span> <span class="tel"> <i
-													class="tel-icon venderTel636237"></i>
-												</span> <a href="#none"
-													clstag='click|keycount|orderlist|dingdanshanchu'
-													class="order-del" _orderid="49457805343"
-													_passkey="ACE8E999AE432BAF938CCD1212943F30"></a>
-
-											</div></td>
-									</tr>
-									<tr class="tr-bd" id="track49457805343" oty="22,4,70">
-										<td>
-											<div class="goods-item p-11151047032">
-												<div class="p-img">
-													<a href=""  target="_blank"> 
-													<img class="err-product" src="//misc.360buyimg.com/lib/img/e/blank.gif" title=""
-														data-lazy-img="" width="60" height="60"></a>
-												</div>
-												<div class="p-msg">
-													<div class="p-name">
-														<a href="" class="a-link"
-															clstag="click|keycount|orderinfo|order_product"
-															target="_blank" title=""></a>
-													</div>
-													<div class="p-extra">
-														<ul class="o-info">
-															<li><span class="o-similar J-o-similar"
-																data-sku="11151047032"><i></i><em>相似商品</em></span></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-											<div class="goods-number">x1</div>
-
-
-											<div class="goods-repair"></div>
-											<div class="clr"></div>
-										</td>
-
-										<td rowspan="1">
-											<div class="consignee tooltip">
-												<span class="txt">陆晓丹</span><b></b>
-												<div class="prompt-01 prompt-02">
-													<div class="pc">
-														<strong>陆晓丹</strong>
-														<p>湖南衡阳市珠晖区酃湖乡湖南工学院衡花路18号</p>
-														<p>184****3293</p>
-													</div>
-													<div class="p-arrow p-arrow-left"></div>
-												</div>
-											</div>
-										</td>
-										<td rowspan="1">
-											<div class="amount">
-												<span>总额 &yen;148.00</span> <br> <span class="ftx-13">在线支付</span>
-											</div>
-										</td>
-										<td rowspan="1">
-											<div class="status">
-												<span class="order-status"> 已取消 </span> <br> <a
-													href="//details.jd.com/normal/item.action?orderid=49457805343&PassKey=CD61AB446A98C8E71D45F3CFE049094E"
-													clstag='click|keycount|orderlist|dingdanxiangqing'
-													target="_blank">订单详情</a>
-											</div>
-										</td>
-										<td rowspan="1" id="operate49457805343">
-											<div class="operate">
-
-
-
-												<div id="pay-button-49457805343" _baina="0"></div>
-
-
-
-												<a
-													href="//cart.jd.com/reBuyForOrderCenter.action?wids=11151047032&nums=1&rid=1487938182188"
-													class="btn-again" target="_blank"
-													clstag="click|keycount|orderlist|buy"><b></b> 立即购买 </a><br>
-											</div>
-										</td>
-									</tr>
-
-								</tbody>
+								
 							</table>
-
 							<div class="mt20">
 								<div class="pagin fr">
-
-									<!--  <span class="text">共1条记录</span>    <span class="text">共1页</span> -->
+									<span class="text">共1条记录</span>    
+									<!-- <span class="text">共1页</span>  -->
 									<span class="prev-disabled">上一页<b></b></span>
-
 									<!-- <span class="prev-disabled">首页</span> -->
 									<a class="current">1</a>
 									<!-- <span class="next-disabled">末页</span>  -->
@@ -479,31 +230,116 @@
 								</div>
 								<div class="clr"></div>
 							</div>
-
-
 						</div>
 					</div>
 					<div class="mod-main mod-comm" id="guessing-liked"
 						data-widget="tabs" style="display: none;">
-						<div class="mt">
-							<h3>猜你喜欢</h3>
-							<div class="extra-r">
-								<div class="switch-items">
-									<a class="curr" data-widget="tab-item" href="#none">1</a> <a
-										href="#none" data-widget="tab-item">2</a> <a href="#none"
-										data-widget="tab-item">3</a>
+						<div id="addressList" class="mod-main mod-comm">
+							<div class="mt">
+								<a onclick="alertAddAddressDiag()" class="e-btn add-btn btn-5"
+									href="javascript:;">新增收货地址</a> <span class="ftx-03">您已创建<span
+									id="addressNum_top" class="ftx-02">1 </span>个收货地址，最多可创建<span
+									class="ftx-02">5</span>个
+								</span>
+							</div>
+
+							<div class="mc">
+								<div class="sm easebuy-m " id="addresssDiv-137969880">
+									<div class="smt">
+										<h3>
+											郑米钦 <a onclick="modifyAliasTips(137969880,event);"
+												id="alias-edit-137969880" class="alias-edit"
+												href="javascript:;"></a> <span class="ftx-04 ml10">默认地址</span>
+										</h3>
+										<div class="extra">
+											<a onclick="alertDelAddressDiag(137969880);" class="del-btn"
+												href="#none">删除</a>
+										</div>
+										<div id="alias-form-137969880" class="alias-form hide">
+											<div class="alias-new">
+												<input class="ipt-text" id="ipt-text-137969880" value="郑米钦"
+													onblur="checkConsigneeAlias('ipt-text-137969880')"
+													maxlength="20" type="text"/>
+													<button type="button" class="btn-save"
+														onclick="saveAddessAlias(137969880,event)" >保存</button>
+											</div>
+											<div class="alias-common">
+												<div class="ac-tip">建议填写常用名称：</div>
+												<div class="ac-con">
+													<a
+														href="javascript:setAddressAilas(137969880,'home-137969880');"
+														id="home-137969880" class="item">家里</a> <a
+														href="javascript:setAddressAilas(137969880,'parentHome-137969880');"
+														id="parentHome-137969880" class="item">父母家</a> <a
+														href="javascript:setAddressAilas(137969880,'company-137969880');"
+														id="company-137969880" class="item">公司</a>
+												</div>
+												<span class="error-msg" id="error_ipt-text-137969880"></span>
+											</div>
+										</div>
+									</div>
+
+									<div class="smc">
+										<div class="items new-items">
+											<div class="item-lcol">
+												<div class="item">
+													<span class="label">收货人：</span>
+													<div class="fl">郑米钦</div>
+													<div class="clr"></div>
+												</div>
+												<div class="item">
+													<span class="label">所在地区：</span>
+													<div class="fl">湖南衡阳市珠晖区酃湖乡</div>
+													<div class="clr"></div>
+												</div>
+												<div class="item">
+													<span class="label">地址：</span>
+													<div class="fl">湖南工学院计算机科学系</div>
+													<div class="clr"></div>
+												</div>
+												<div class="item">
+													<span class="label">手机：</span>
+													<div class="fl">155****1252</div>
+													<div class="clr"></div>
+												</div>
+												<div class="item">
+													<span class="label">固定电话：</span>
+													<div class="fl">155****1252</div>
+													<div class="clr"></div>
+												</div>
+												<div class="item">
+													<span class="label">电子邮箱：</span>
+													<div class="fl"></div>
+													<div class="clr"></div>
+												</div>
+											</div>
+
+											<div class="item-rcol">
+												<div class="extra">
+													<a class="ml10 ftx-05"
+														href="javascript:getPayment(137969880,0,0);">使用一键购</a> <a
+														class="ml10 ftx-05" href="javascript:;"
+														onclick="alertUpdateAddressDiag(137969880);">编辑</a>
+												</div>
+											</div>
+											<div class="clr"></div>
+										</div>
+									</div>
 								</div>
+							</div>
+
+							<div class="mt" id="addAddressDiv_bottom">
+								<a onclick="alertAddAddressDiag()" class="e-btn add-btn btn-5"
+									href="javascript:;">新增收货地址</a> <span class="ftx-03">您已创建<span
+									id="addressNum_botton" class="ftx-02">1 </span>个收货地址，最多可创建<span
+									class="ftx-02">20</span>个
+								</span>
 							</div>
 						</div>
 						<div class="mc">
 							<div class="goods-list"></div>
 						</div>
 					</div>
-					<div class="mod-main">
-						<div id="miaozhen10772"></div>
-						<div id="orderAdids"></div>
-					</div>
-
 				</div>
 			</div>
     </div>

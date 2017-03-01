@@ -25,7 +25,7 @@ create table users(
 		idcard varchar2(18),
 		u_phone varchar2(11),
 		email varchar2(40),
-		u_root Integer check(u_root<1), --卖家，买家
+		u_root Integer , --卖家，买家
 		realNameAuthentication int,  --实名认证
 		payAuthentication int,		--支付认证
 		obligate1 varchar2(20),
@@ -39,14 +39,19 @@ insert into users values(users_seq.nextval,'l44444','l44444',null,null,'15573481
 drop table address
 create table address(
 		addr_id Integer primary key ,
-		introduce varchar2(50),
 		u_id Integer references users(u_id),
+		addr_name varchar2(20),
+		introduce varchar2(50),
+		u_phone varchar2(11),
+		email varchar2(40),
 		obligate1 varchar2(20),
 		obligate2 varchar2(20)
 );
 select *from address;
+drop sequence address_seq ;
 create sequence address_seq start with 1000;
-insert into ADDRESS values(address_seq.nextval,null,1000,null,null);
+insert into ADDRESS values(address_seq.nextval,1000,'儿子丹','湖南工学院','12345678910',null,null,null);
+alter table ADDRESS rename column u_phone to addr_phone
 
 --3.店铺
 drop table shop
@@ -119,8 +124,12 @@ create table product(
 drop sequence product_seq;
 create sequence product_seq start with 1000;
 insert into product values(product_seq.nextval,'一加手机3T (A3010)',1000,1002,null,1,null,null);
-update PRODUCT set properties ='内存:6GB+64GB,颜色:枪灰版,其他:全网通 双卡双待 移动联通电信4G手机' where p_id = 1000;
+update PRODUCT set properties ='路径:/xmj/image/logov2.png,内存:6GB+64GB,颜色:枪灰版,其他:全网通 双卡双待 移动联通电信4G手机,价格:1000.00' where p_id = 1000;
 insert into product values(product_seq.nextval,'兰书 卫衣 春季新款',1000,1003,null,1,null,null);
+update PRODUCT set properties ='路径:/xmj/image/lazyload.gif,款式:2017春季新款韩版修身潮拼接连帽卡通绣花套头男士外套,颜色:绿色,尺寸:M,价格:110.00' where p_id = 1001;
+alter table product rename column price to obligate1;
+alter table product modify properties varchar2(200);
+--协议：路径第一，价格最后，其他在中间
 
 --7.购物车
 drop table SHOPPINGBAKCET
@@ -131,9 +140,20 @@ create table shoppingBakcet(
 		obligate2 varchar2(20)
 );
 select * from shoppingbakcet;
+select count(1) total,ceil(count(1)/5) totalPage,
+		5 pageSize,1 currPage ,1000 u_id from (
 select sb.u_id,sb.sh_id,s_date,s_num,p_id,p_name,s_id,t_id,properties from shoppingbakcet sb join 
 (select sh_id,s_date,s_num,p.p_id,p_name,s_id,t_id,properties from shdetail st join product p on st.p_id = p.p_id ) st
-on sb.sh_id = st.sh_id and u_id = 1000;
+on sb.sh_id = st.sh_id and u_id = 1000);
+
+select * from
+		(select n.*,rownum rn from
+		(select * from (select sb.u_id,sb.sh_id,s_date,s_num,p_id,p_name,s_id,t_id,properties from shoppingbakcet sb join 
+(select sh_id,s_date,s_num,p.p_id,p_name,s_id,t_id,properties from shdetail st join product p on st.p_id = p.p_id ) st
+on sb.sh_id = st.sh_id ))n where 2 >=rownum)
+		where rn>0 and u_id = 1000	and s_num > 0
+
+
 
 drop sequence shoppingBakcet_seq ;
 create sequence shoppingBakcet_seq start with 1000;
@@ -154,10 +174,11 @@ create table shdetail(
 );
 drop sequence shdetail_seq;
 create sequence shdetail_seq start with 1000;
-insert into shdetail values(shdetail_seq.nextval,1000,1000,null,null,1,null,null);
-insert into shdetail values(shdetail_seq.nextval,1000,1001,null,null,1,null,null);
-select sh_id,s_date,s_num,p_id,p_name,s_id,t_id,properties from shdetail st join product p on st.p_id = p.p_id ;
-
+insert into shdetail values(shdetail_seq.nextval,1000,1000,null,null,6,null,null);
+insert into shdetail values(shdetail_seq.nextval,1000,1001,null,null,5,null,null);
+update shdetail set s_num = 3 where p_id = 1001 and s_num >0;
+select sh_id,s_date,s_num,st.p_id,p_name,s_id,t_id,properties from shdetail st join product p on st.p_id = p.p_id ;
+select * from shdetail where p_id = 1000
 
 --9.订单
 drop table orders
@@ -175,10 +196,13 @@ drop sequence orders_seq;
 create sequence orders_seq start with 1000;
 insert into orders values(orders_seq.nextval,1000,null,0,0,null,null);
 
-select o_id,u_id,o_date,obuy_status,osale_status,p_id,p_name,s_id,t_id,properties from ORDERS o join 
-(select odd_id,odd_oid,odd_num,p.p_id,p_name,s_id,t_id,properties from ORDERDETAIL od 
+select o_id,u_id,addr_name,introduce,addr_phone,odd_num,o_date,obuy_status,osale_status,p_id,p_name,s_id,t_id,properties from ORDERS o join 
+(select odd_id,odd_oid,odd_num,odd_addr_id,p.p_id,p_name,s_id,t_id,properties from ORDERDETAIL od 
 join product p on od.p_id = p.p_id) a 
 on  o.o_id = a.odd_oid and u_id = 1000
+join users u on u.u_id = o.u_id 
+join address addr on addr.addr_id = a.odd_addr_id
+group by o_id
 
 --10.订单详情
 drop table ORDERDETAIL
@@ -188,15 +212,17 @@ create table orderdetail(
 	p_id int references product(p_id),
 	odd_detail varchar2(100),--拼接买家所选的商品属性以确定某件具体商品
 	odd_num int, --商品数量
+	odd_addr_id int references address(addr_id),
 	obligate1 varchar2(20),
 	obligate2 varchar2(20)
 );
 select * from orderdetail;
 drop sequence orderdetail_seq;
 create sequence orderdetail_seq start with 1000;
-insert into orderdetail values(orderdetail_seq.nextval,1000,1001,null,1,null,null);
+insert into orderdetail values(orderdetail_seq.nextval,1000,1001,null,1,1000,null,null);
 
-select odd_id,odd_oid,odd_num,p.p_id,p_name,s_id,t_id,properties from ORDERDETAIL od join product p on od.p_id = p.p_id ;
+select odd_id,odd_oid,odd_num,p.p_id,p_name,s_id,t_id,properties from ORDERDETAIL od 
+join product p on od.p_id = p.p_id ;
 
 --11.评论表
 drop table COMMENTS

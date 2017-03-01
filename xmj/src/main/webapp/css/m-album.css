@@ -215,42 +215,6 @@
 	color: #e4393c
 }
 
-.top-search .ordertime-cont .time-list li a.curr b {
-	background:
-		url(//misc.360buyimg.com/user/myjd-2015/css/i/order-icon20150212.png)
-		0 -207px
-}
-
-.top-search .ordertime-hover .time-txt {
-	background: #fff;
-	border-color: #ddd;
-	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .12);
-	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, .12);
-	box-shadow: 0 0 10px rgba(0, 0, 0, .12)
-}
-
-.top-search .ordertime-hover .time-txt b {
-	background-position: -20px -207px
-}
-
-.top-search .ordertime-hover .time-txt .blank {
-	display: block;
-	position: absolute;
-	height: 10px;
-	width: 96px;
-	top: 21px;
-	left: 0;
-	background: #fff;
-	z-index: 3
-}
-
-.top-search .ordertime-hover .time-list {
-	display: block;
-	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .12);
-	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, .12);
-	box-shadow: 0 0 10px rgba(0, 0, 0, .12)
-}
-
 .root61 .top-search .dd {
 	width: 970px
 }
@@ -1430,6 +1394,10 @@
 	color: #e4393c
 }
 
+.order-tb .deal-state-cont .state-list li .curr {
+	color: #e4393c
+}
+
 .order-tb .deal-state-cont .state-list li a b {
 	display: block;
 	position: absolute;
@@ -1439,31 +1407,6 @@
 	height: 7px;
 	vertical-align: middle;
 	overflow: hidden
-}
-
-.order-tb .deal-state-hover .state-txt {
-	background: #fff;
-	box-shadow: 0 0 10px rgba(0, 0, 0, .12)
-}
-
-.order-tb .deal-state-hover .state-txt b {
-	background-position: -20px -207px
-}
-
-.order-tb .deal-state-hover .state-txt .blank {
-	display: block;
-	position: absolute;
-	height: 10px;
-	width: 96px;
-	top: 21px;
-	left: 0;
-	background: #fff;
-	z-index: 3
-}
-
-.order-tb .deal-state-hover .state-list {
-	display: block;
-	box-shadow: 0 0 10px rgba(0, 0, 0, .12)
 }
 
 .order-tb .ordertime-cont {

@@ -180,7 +180,6 @@
         <h2 class="logo_subtit">晓米佳,多快好省</h2>
         <div class="logo_extend"></div>
       </div>
-
       <div id="search">
         <div class="search-m">
           <div class="search_logo">
@@ -204,6 +203,7 @@
 				<div class="spacer"></div>
 				<div id="settleup-content">
 					<span class="loading"></span>
+					
 				</div>
 			</div>
 		</div>
