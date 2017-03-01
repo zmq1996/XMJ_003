@@ -9,4 +9,7 @@ public interface SellerMapper {
 	int insertShop(Shop shop);
 	int becomeSeller(User user);
 	int deleteShop(Shop shop);
+	int updateShop(Shop shop);
+	Shop selectShopByUid(User user);
+	Shop selectShopBySid(Shop shop);
 }

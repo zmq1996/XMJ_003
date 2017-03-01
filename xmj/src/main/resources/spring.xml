@@ -54,5 +54,7 @@
 	<!-- 以注解的方式把切入点与连接点关联起来 -->
 	<tx:annotation-driven transaction-manager="transactionManager" />
 	 <aop:aspectj-autoproxy/>
-	
+	 
+	 <bean id="sellerFilrer" class="com.yc.xmj.web.filter.SellerFilrer"></bean>
+	 
 </beans>

@@ -28,6 +28,16 @@
     <filter-name>hiddenHttpMethodFilter</filter-name>
     <url-pattern>/*</url-pattern>
   </filter-mapping>
+  
+  <filter>  
+    <filter-name>sellerFilrer</filter-name>  
+    <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>  
+  </filter>
+  <filter-mapping>
+    <filter-name>sellerFilrer</filter-name>
+    <url-pattern>/page/SellMode/*</url-pattern>
+  </filter-mapping>  
+  
   <listener>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   </listener>

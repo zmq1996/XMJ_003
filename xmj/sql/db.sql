@@ -48,9 +48,10 @@ create table address(
 select
 --3.店铺
 create table shop(
-		sid int primary key,
-		sname varchar2(20) not null unique,
-		suid int references users(u_id),
+		s_id int primary key,
+		s_name varchar2(20) not null unique,
+		su_id int references users(u_id),
+		sflag varchar2(100),
 		majorBusiness varchar2(100),
 		address varchar2(100),
 		introduce varchar2(200),
@@ -59,12 +60,13 @@ create table shop(
 		obligate1 varchar2(20),
 		obligate2 varchar2(20)
 );
+alter table shop rename column suid to su_id;
 delete  shop
 select * from shop
 update shop set sid =12345 where sid=1029
 drop table shop cascade constraints;
 select se_shop_sid.nextval current_sid from dual
-
+update shop set s_name='bb',sflag='aaa' where s_id=1063 
 create sequence se_shop_sid start with 1001 
 
 --4.店铺申请信息表

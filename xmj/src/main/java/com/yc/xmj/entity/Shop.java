@@ -3,54 +3,40 @@ package com.yc.xmj.entity;
 import java.util.Date;
 
 public class Shop {
-	private Integer sid;
-	private String sname ;
-	private Integer suid ;
+	private Integer s_id;
+	private String s_name ;
+	private Integer su_id ;
 	private String majorBusiness;
 	private String address;
 	private String introduce;
 	private Date sbirthday;
 	private Integer sstatus;
-	public Shop() {
-	}
+	private String sflag;
 	
-	public Shop(Integer sid, String sname, Integer suid, String majorBusiness, String address, String introduce,
-			Date sbirthday, Integer sstatus) {
-		super();
-		this.sid = sid;
-		this.sname = sname;
-		this.suid = suid;
-		this.majorBusiness = majorBusiness;
-		this.address = address;
-		this.introduce = introduce;
-		this.sbirthday = sbirthday;
-		this.sstatus = sstatus;
-	}
 
-	@Override
-	public String toString() {
-		return "Shop [sid=" + sid + ", sname=" + sname + ", suid=" + suid + ", majorBusiness=" + majorBusiness
-				+ ", address=" + address + ", introduce=" + introduce + ", sbirthday=" + sbirthday + ", sstatus="
-				+ sstatus + "]";
+	public String getSflag() {
+		return sflag;
 	}
-
-	public Integer getSid() {
-		return sid;
+	public void setSflag(String sflag) {
+		this.sflag = sflag;
 	}
-	public void setSid(Integer sid) {
-		this.sid = sid;
+	public Integer getS_id() {
+		return s_id;
 	}
-	public String getSname() {
-		return sname;
+	public void setS_id(Integer s_id) {
+		this.s_id = s_id;
 	}
-	public void setSname(String sname) {
-		this.sname = sname;
+	public String getS_name() {
+		return s_name;
 	}
-	public Integer getSuid() {
-		return suid;
+	public void setS_name(String s_name) {
+		this.s_name = s_name;
 	}
-	public void setSuid(Integer suid) {
-		this.suid = suid;
+	public Integer getSu_id() {
+		return su_id;
+	}
+	public void setSu_id(Integer su_id) {
+		this.su_id = su_id;
 	}
 	public String getMajorBusiness() {
 		return majorBusiness;
@@ -82,4 +68,29 @@ public class Shop {
 	public void setSstatus(Integer sstatus) {
 		this.sstatus = sstatus;
 	}
+	public Shop() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Shop(Integer s_id, String s_name, Integer su_id, String majorBusiness, String address, String introduce,
+			Date sbirthday, Integer sstatus,String sflag) {
+		super();
+		this.s_id = s_id;
+		this.s_name = s_name;
+		this.su_id = su_id;
+		this.majorBusiness = majorBusiness;
+		this.address = address;
+		this.introduce = introduce;
+		this.sbirthday = sbirthday;
+		this.sstatus = sstatus;
+		this.sflag=sflag;
+	}
+	@Override
+	public String toString() {
+		return "Shop [s_id=" + s_id + ", s_name=" + s_name + ", su_id=" + su_id + ", majorBusiness=" + majorBusiness
+				+ ", address=" + address + ", introduce=" + introduce + ", sbirthday=" + sbirthday + ", sstatus="
+				+ sstatus + ", sflag=" + sflag + "]";
+	}
+	
+	
 }
