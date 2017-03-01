@@ -120,11 +120,9 @@ function formSubmit(){
 	if(flag0 && flag1 && flag2 && flag3 && flag4 && flag5){
 		/*var params = $('#register-form').serialize()
 		console.info(params)*/
-		alert(flag0 + flag1 + flag2 + flag3 + flag4 + flag5)
 		var val1 = $("#form-account").val()
 		var val2 = $("#form-pwd").val()
 		var val3 = $("#form-phone").val()
-		console.info(val1+ val2 +val3)
 		$.post("user/register?u_name="+ val1+"&u_password="+val2+"&u_phone="+val3,null, function(data) {
 			if(data){
 				location.href = 'login.jsp'

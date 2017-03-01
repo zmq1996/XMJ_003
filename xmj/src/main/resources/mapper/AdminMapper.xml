@@ -3,7 +3,128 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.yc.xmj.mapper.AdminMapper">
+<<<<<<< HEAD
+=======
+	<!-- 结果集映射 -->
+	<!-- 使用嵌套查询 的方式，处理分页-->
+	<resultMap type="PaginationBean" id="PaginationBeanMap">
+		<result column="pageSize" property="pageSize"/>
+		<result column="currPage" property="currPage"/>
+		<collection property="rows" column="{pageSize=pageSize,currPage=currPage}"
+		ofType="User" select="getPaginationUsers"/>
+	</resultMap>
+	<!-- 用户详情 -->
+	<select id="getUsers" parameterType="PaginationBean" resultMap="PaginationBeanMap"> 
+		select count(1) total,ceil(count(1)/${pageSize}) totalPage,
+		${pageSize} pageSize,${currPage} currPage from users
+	</select>
+	<select id="getPaginationUsers" resultType="User">
+		select * from
+		(select n.*,rownum rn from
+		(select * from users)n where ${pageSize}*${currPage}>=rownum)
+		where rn>(${currPage}-1)*${pageSize}
+	</select>
+		
+>>>>>>> refs/remotes/origin/master
 	<select id="getAdmin" parameterType="Admin" resultType="Admin">
 	    select * from admin where a_name=#{a_name} and  a_password = #{a_password}
 	</select>
+	<update id="modifyUser" parameterType="User" flushCache="false">
+		update users set u_name=#{u_name},u_password=#{u_password},u_sex=#{u_sex},
+		idcard=#{idcard},u_phone=#{u_phone},email=#{email},u_root=#{u_root},realNameAuthentication=#{realNameAuthentication},payAuthentication=#{payAuthentication}
+		where u_id=#{u_id}
+	</update>
+	
+	<delete id="deleteUser" parameterType="User">
+		delete from users where u_id=#{u_id}
+	</delete>
+	
+	<!-- 使用嵌套查询 的方式，处理分页-->
+	<resultMap type="PaginationBean" id="PaginationBeanMap1">
+		<result column="pageSize" property="pageSize"/>
+		<result column="currPage" property="currPage"/>
+		<collection property="rows" column="{pageSize=pageSize,currPage=currPage}"
+		ofType="Shop" select="getPaginationShops"/>
+	</resultMap>
+	<!-- 店铺详情-->
+	<select id="getShops" parameterType="PaginationBean" resultMap="PaginationBeanMap1"> 
+		select count(1) total,ceil(count(1)/${pageSize}) totalPage,
+		${pageSize} pageSize,${currPage} currPage from shop
+	</select>
+	<select id="getPaginationShops" resultType="Shop">
+		select * from
+		(select n.*,rownum rn from
+		(select * from shop)n where ${pageSize}*${currPage}>=rownum)
+		where rn>(${currPage}-1)*${pageSize}
+	</select>
+	
+	<update id="modifyShop" parameterType="Shop" flushCache="false">
+		update shop set sname=#{sname},suid=#{suid},majorBusiness=#{majorBusiness},
+		address=#{address},introduce=#{introduce},sbirthday=#{sbirthday},sstatus=#{sstatus}
+		where sid=#{sid}
+	</update>
+	
+	<!-- 结果集映射 -->
+	<!-- 使用嵌套查询 的方式，处理分页-->
+	<resultMap type="PaginationBean" id="PaginationBeanMap2">
+		<result column="pageSize" property="pageSize"/>
+		<result column="currPage" property="currPage"/>
+		<collection property="rows" column="{pageSize=pageSize,currPage=currPage}"
+		ofType="Admin" select="getPaginationAdmin"/>
+	</resultMap>
+	<!-- 普通管理员详情 -->
+	<select id="getAdmins" parameterType="PaginationBean" resultMap="PaginationBeanMap2"> 
+		select count(1) total,ceil(count(1)/${pageSize}) totalPage,
+		${pageSize} pageSize,${currPage} currPage from Admin
+	</select>
+	<select id="getPaginationAdmin" resultType="Admin">
+		select * from
+		(select n.*,rownum rn from
+		(select * from Admin)n where ${pageSize}*${currPage}>=rownum)
+		where rn>(${currPage}-1)*${pageSize} and a_root=1
+	</select>
+	
+	<!-- 结果集映射 -->
+	<!-- 使用嵌套查询 的方式，处理分页-->
+	<resultMap type="PaginationBean" id="PaginationBeanMap3">
+		<result column="pageSize" property="pageSize"/>
+		<result column="currPage" property="currPage"/>
+		<collection property="rows" column="{pageSize=pageSize,currPage=currPage}"
+		ofType="Messages" select="getPaginationCertifications"/>
+	</resultMap>
+	<!-- 认证信息详情 -->
+	<select id="getCertifications" parameterType="PaginationBean" resultMap="PaginationBeanMap3"> 
+		select count(1) total,ceil(count(1)/${pageSize}) totalPage,
+		${pageSize} pageSize,${currPage} currPage from Messages
+	</select>
+	<select id="getPaginationCertifications" resultType="Messages">
+		select * from
+		(select n.*,rownum rn from
+		(select * from Messages)n where ${pageSize}*${currPage}>=rownum)
+		where rn>(${currPage}-1)*${pageSize} and m_type=0
+	</select>
+	
+	<!-- 结果集映射 -->
+	<!-- 使用嵌套查询 的方式，处理分页-->
+	<resultMap type="PaginationBean" id="PaginationBeanMap4">
+		<result column="pageSize" property="pageSize"/>
+		<result column="currPage" property="currPage"/>
+		<collection property="rows" column="{pageSize=pageSize,currPage=currPage}"
+		ofType="Messages" select="getPaginationCamplaints"/>
+	</resultMap>
+	<!-- 投诉信息详情 -->
+	<select id="getCamplaints" parameterType="PaginationBean" resultMap="PaginationBeanMap4"> 
+		select count(1) total,ceil(count(1)/${pageSize}) totalPage,
+		${pageSize} pageSize,${currPage} currPage from Messages
+	</select>
+	<select id="getPaginationCamplaints" resultType="Messages">
+		select * from
+		(select n.*,rownum rn from
+		(select * from Messages)n where ${pageSize}*${currPage}>=rownum)
+		where rn>(${currPage}-1)*${pageSize} and m_type=1
+	</select>
+	
+	<delete id="deleteCamplaints" parameterType="Messages">
+		delete from Messages where m_id=#{m_id} and m_type=1
+	</delete>
 </mapper>

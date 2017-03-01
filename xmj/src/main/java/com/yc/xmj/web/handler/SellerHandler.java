@@ -30,7 +30,7 @@ public class SellerHandler {
 		LogManager.getLogger().debug("用户"+user+"申请开店");
 		
 		//当两个认证满足条件，进行数据库插入
-		if(user.getpayAuthentication()>0 && user.getrealNameAuthentication()>0){
+		if(user.getPayAuthentication()>0 && user.getRealNameAuthentication()>0){
 			try {
 				return sellerService.createShop(user);
 			} catch (Exception e) {

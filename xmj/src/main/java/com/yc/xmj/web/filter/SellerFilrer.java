@@ -31,6 +31,7 @@ public class SellerFilrer extends AbstractFilter{
 		HttpServletResponse httpresponse =  (HttpServletResponse) response;
 		HttpSession session = httprequest.getSession();
 		
+<<<<<<< HEAD
 		User Testuser = new User();
 		Testuser.setU_name("xiaodan's father");
 		Testuser.setpayAuthentication(1);
@@ -39,6 +40,15 @@ public class SellerFilrer extends AbstractFilter{
 		Testuser.setU_id(1001);
 		Testuser.setU_root(1);
 		session.setAttribute("user", Testuser);
+=======
+		User user = new User();
+		user.setU_name("xiaodan's father");
+		user.setPayAuthentication(1);
+		user.setRealNameAuthentication(1);
+		user.setEmail("123456@heihei.com");
+		user.setU_id(1001);
+		session.setAttribute("user", user);
+>>>>>>> refs/remotes/origin/master
 		
 		if(session.getAttribute("user") == null){
 			httpresponse.sendRedirect("/xmj/page/login.jsp");

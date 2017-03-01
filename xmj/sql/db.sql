@@ -6,12 +6,13 @@ create table Admin(
 		a_name varchar2(20),
 		a_password varchar2(40),
 		a_root Integer ,
-		obligate1 varchar2(20),
+		obligate1 varchar2(20),--电话
 		obligate2 varchar2(20)
 );
-
+alter table Admin rename column obligate1 to tel
 create sequence seq_admin start with 1001;
 insert into ADMIN values(seq_admin.nextval,'张三','abc',0,null,null);
+insert into ADMIN values(seq_admin.nextval,'lisi','abc',1,null,null);
 --1.用户表
 drop table users cascade constraints;
 select * from users
@@ -34,7 +35,9 @@ insert into users (u_id,u_name) values(1001,'xiaodansfather');
 
 alter table users rename column obligate2 to payAuthentication
 alter table users modify realNameAuthentication integer
-
+update users set u_name='liujiasfather',u_password=null,u_sex=null,
+		idcard=null,u_phone=null,email=null,u_root=0,realNameAuthentication=0,payAuthentication=0
+		where u_id=1001
 
 --2.地址	
 

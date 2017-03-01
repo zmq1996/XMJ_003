@@ -32,6 +32,7 @@ public class VcodeFilter extends AbstractFilter{
 			System.out.println("这是在进行验证码校验...");
 			LogManager.getLogger().debug("过滤器VcodeFilter验证验证码通过.....");
 			System.out.println("验证码验证成功！！！");
+			session.setAttribute("errorMsg", "");
 			chain.doFilter(request, response);
 		}else{
 			LogManager.getLogger().debug("过滤器VcodeFilter验证验证码失败.....");

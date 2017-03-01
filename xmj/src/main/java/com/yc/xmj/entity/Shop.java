@@ -11,21 +11,47 @@ public class Shop {
 	private String introduce;
 	private Date sbirthday;
 	private Integer sstatus;
+<<<<<<< HEAD
 	private String sflag;
 	
 
 	public String getSflag() {
 		return sflag;
-	}
-	public void setSflag(String sflag) {
-		this.sflag = sflag;
+=======
+	public Shop() {
 	}
 	public Integer getS_id() {
 		return s_id;
 	}
 	public void setS_id(Integer s_id) {
 		this.s_id = s_id;
+>>>>>>> refs/remotes/origin/master
 	}
+<<<<<<< HEAD
+	public void setSflag(String sflag) {
+		this.sflag = sflag;
+=======
+	public String getS_name() {
+		return s_name;
+>>>>>>> refs/remotes/origin/master
+	}
+<<<<<<< HEAD
+	public Integer getS_id() {
+		return s_id;
+=======
+	public void setS_name(String s_name) {
+		this.s_name = s_name;
+>>>>>>> refs/remotes/origin/master
+	}
+<<<<<<< HEAD
+	public void setS_id(Integer s_id) {
+		this.s_id = s_id;
+=======
+	public Integer getSu_id() {
+		return su_id;
+>>>>>>> refs/remotes/origin/master
+	}
+<<<<<<< HEAD
 	public String getS_name() {
 		return s_name;
 	}
@@ -35,6 +61,8 @@ public class Shop {
 	public Integer getSu_id() {
 		return su_id;
 	}
+=======
+>>>>>>> refs/remotes/origin/master
 	public void setSu_id(Integer su_id) {
 		this.su_id = su_id;
 	}
@@ -68,6 +96,7 @@ public class Shop {
 	public void setSstatus(Integer sstatus) {
 		this.sstatus = sstatus;
 	}
+<<<<<<< HEAD
 	public Shop() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -93,4 +122,13 @@ public class Shop {
 	}
 	
 	
+=======
+	@Override
+	public String toString() {
+		return "Shop [s_id=" + s_id + ", s_name=" + s_name + ", su_id=" + su_id
+				+ ", majorBusiness=" + majorBusiness + ", address=" + address
+				+ ", introduce=" + introduce + ", sbirthday=" + sbirthday
+				+ ", sstatus=" + sstatus + "]";
+	}
+>>>>>>> refs/remotes/origin/master
 }

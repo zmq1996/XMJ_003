@@ -1,8 +1,13 @@
 package com.yc.xmj.service.impl;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
+import com.yc.xmj.entity.OrderDetail;
+import com.yc.xmj.entity.PaginationBean;
+import com.yc.xmj.entity.Trolley;
 import com.yc.xmj.entity.User;
 import com.yc.xmj.mapper.UserMapper;
 import com.yc.xmj.service.UserService;
@@ -15,17 +20,77 @@ public class UserServiceImpl implements UserService {
 	private UserMapper userMapper;
 	
 	@Override
-	public boolean login(User user) {
+	public User login(User user) {
 		user.setU_password(Encrypt.md5AndSha(user.getU_password()));
-		System.out.println(userMapper.getUser(user)); 
-		return userMapper.getUser(user) > 0;
+		return  userMapper.getUser(user);
+	}
+
+	@Override @Transactional
+	public boolean register(User user) {
+		int sum = 0;
+		user.setU_password(Encrypt.md5AndSha(user.getU_password()));
+		sum = userMapper.register(user) + userMapper.insertAddress(user) + userMapper.insertShoppingBakcet(user);
+		System.out.println(sum);
+		return sum >= 3;
 	}
 
 	@Override
-	public boolean register(User user) {
-		user.setU_password(Encrypt.md5AndSha(user.getU_password()));
-		return userMapper.register(user) > 0;
+	public PaginationBean<Trolley> getTrolley(String currPage, String pageSize,int u_id) {
+		PaginationBean<Trolley> trolleyBean = new PaginationBean<Trolley>();
+		if(currPage !=null){
+			trolleyBean.setCurrPage(Integer.parseInt(currPage));
+		}
+		if(pageSize !=null){
+			trolleyBean.setPageSize(Integer.parseInt(pageSize));
+		}
+		System.out.println(u_id);
+		if(u_id != 0){
+			trolleyBean.setU_id(u_id);
+		}
+		return userMapper.getTrolley(trolleyBean);
 	}
 
+	@Override
+	public int updateS_num(String p_id) {
+		// TODO Auto-generated method stub
+		return userMapper.updateS_num(Integer.parseInt(p_id));
+	}
+
+	@Override @Transactional
+	public int selectS_num(String p_id) {
+		// TODO Auto-generated method stub
+		int result = userMapper.selectS_num(Integer.parseInt(p_id));
+		if(result <= 0)
+			userMapper.deleteS_num(Integer.parseInt(p_id));
+		return result;
+	}
+
+	@Override
+	public int addS_num(String p_id) {
+		// TODO Auto-generated method stub
+		return userMapper.addS_num(Integer.parseInt(p_id));
+	}
+
+	@Override
+	public int deleteProduct(String p_id) {
+		// TODO Auto-generated method stub
+		return userMapper.deleteS_num(Integer.parseInt(p_id));
+	}
+
+	@Override
+	public PaginationBean<OrderDetail> getOrders(String currPage, String pageSize, int u_id) {
+		PaginationBean<OrderDetail> OrderDetail = new PaginationBean<OrderDetail>();
+		if(currPage !=null){
+			OrderDetail.setCurrPage(Integer.parseInt(currPage));
+		}
+		if(pageSize !=null){
+			OrderDetail.setPageSize(Integer.parseInt(pageSize));
+		}
+		System.out.println(u_id);
+		if(u_id != 0){
+			OrderDetail.setU_id(u_id);
+		}
+		return userMapper.getOrders(OrderDetail);
+	}
 
 }

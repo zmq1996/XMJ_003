@@ -1,6 +1,12 @@
 var flag6 = false
 var flag7 = false
 
+$(function() {
+	if($("#loginMsg-error").text() != ""){
+		$("#loginMsg-error").css("display","block")
+	}// 任何需要执行的js特效 
+});
+
 function loginnameCheck(){
 	var val = $("#loginname").val()
 	/*var rvg = /^1[34578]\d{9}$/;*/
@@ -40,15 +46,14 @@ function loginSubmit(){
 	var val2 = $('#nloginpwd').val()
 	var val3 = $('#authcode').val()
 	$.post("user/login?u_name="+ val1+"&u_password="+val2+"&vcode="+val3,null,function(data){
-		if(data){
+		console.info()
+		console.info(data)
+		if(data == true){
 			location.href = '../index.jsp'
 		}else{
-			alert("登陆失败1")
-			location.href = 'login.jsp'
-				alert("登陆失败2")
-			console.info($("#loginMsg-error"))
-				
-			$("#loginMsg-error").text("账号不存在")
+			/*location.href = 'login.jsp'*/
+			/*var msg = ${sessionScope.errorMsg}*/
+			$("#loginMsg-error").text("用户名或密码错误")
 			$("#loginMsg-error").css("display","block")
 		}
 	},"json")

@@ -10,8 +10,8 @@ public class User {
 	private String u_phone;
 	private String email;
 	private int u_root;
-	private Integer realNameAuthentication;
-	private Integer payAuthentication;
+	private int realNameAuthentication;
+	private int payAuthentication;
 
 	public int getU_id() {
 		return u_id;
@@ -77,35 +77,24 @@ public class User {
 		this.u_root = u_root;
 	}
 
-	public Integer getrealNameAuthentication() {
+	public Integer getRealNameAuthentication() {
 		return realNameAuthentication;
 	}
 
-	public void setrealNameAuthentication(Integer realNameAuthentication) {
+	public void setRealNameAuthentication(Integer realNameAuthentication) {
 		this.realNameAuthentication = realNameAuthentication;
 	}
 
-	public Integer getpayAuthentication() {
+	public Integer getPayAuthentication() {
 		return payAuthentication;
 	}
 
-	public void setpayAuthentication(Integer payAuthentication) {
+	public void setPayAuthentication(Integer payAuthentication) {
 		this.payAuthentication = payAuthentication;
 	}
 
-	@Override
-	public String toString() {
-		return "User [u_id=" + u_id + ", u_name=" + u_name + ", u_password=" + u_password + ", u_sex=" + u_sex
-				+ ", idcard=" + idcard + ", u_phone=" + u_phone + ", email=" + email + ", u_root=" + u_root
-				+ ", realNameAuthentication=" + realNameAuthentication + ", payAuthentication=" + payAuthentication + "]";
-	}
-
-	public User() {
-		// TODO Auto-generated constructor stub
-	}
-
 	public User(int u_id, String u_name, String u_password, String u_sex, String idcard, String u_phone, String email,
-			int u_root, Integer realNameAuthentication, Integer payAuthentication) {
+			int u_root, int realNameAuthentication, int payAuthentication) {
 		this.u_id = u_id;
 		this.u_name = u_name;
 		this.u_password = u_password;
@@ -118,5 +107,16 @@ public class User {
 		this.payAuthentication = payAuthentication;
 	}
 
-	
+	public User() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public String toString() {
+		return "User [u_id=" + u_id + ", u_name=" + u_name + ", u_password=" + u_password + ", u_sex=" + u_sex
+				+ ", idcard=" + idcard + ", u_phone=" + u_phone + ", email=" + email + ", u_root=" + u_root
+				+ ", realNameAuthentication=" + realNameAuthentication + ", payAuthentication=" + payAuthentication
+				+ "]";
+	}
+
 }
