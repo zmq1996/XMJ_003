@@ -40,9 +40,9 @@
 				    <div>
 				      <div class="content">
 				      	<ul>
-				      		<li><a>每日交易数量Top10</a></li>
-				      		<li><a>每月交易数量Top10</a></li>
-				      		<li><a>每年交易数量Top10</a></li>
+				      		<li><a>每日交易</a></li>
+				      		<li><a>每月交易</a></li>
+				      		<li><a>每年交易</a></li>
 				      	</ul>
 				      </div>
 				    </div>
@@ -60,7 +60,7 @@
 				    <div>
 				      <div class="content">
 				        <ul>
-				      		<li><a>管理员详情</a></li>
+				      		<li><a href="javascript:manageDetail()">管理员详情</a></li>
 				      		<li><a>添加管理员</a></li>
 				      	</ul>
 				      </div>
@@ -81,6 +81,7 @@
 			        });
   				</script> 				
 	 			<div class="right">
+	 				<table id="manageList"></table>
 	 				<div id="p" class="easyui-layout"    
 					        style="width:500px;height:150px;padding:10px;background:#fafafa;"   
 					        data-options="fit:true,border:false">   

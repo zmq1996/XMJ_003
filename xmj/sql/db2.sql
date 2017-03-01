@@ -31,8 +31,8 @@ create table users(
 		obligate1 varchar2(20),
 		obligate2 varchar2(20)
 )
-drop sequence users_seq
-create sequence users_seq start with 1000
+drop sequence users_seq;
+create sequence users_seq start with 1000;
 insert into users values(users_seq.nextval,'l44444','l44444',null,null,'15573481252',null,0,0,0,null,null);
 
 --2.地址	
@@ -45,6 +45,7 @@ create table address(
 		obligate2 varchar2(20)
 );
 select *from address;
+drop sequence address_seq;
 create sequence address_seq start with 1000;
 insert into ADDRESS values(address_seq.nextval,null,1000,null,null);
 
@@ -75,16 +76,18 @@ create sequence se_shop_sid start with 1001
 drop table messages
 create table messages(
 		m_id int primary key,
-		speaker int ,
-		listener int ,
+		speaker int ,--发起人
+		listener int ,--处理人
 		m_type int ,
-		m_rsn varchar2(100) not null,
+		m_rsn varchar2(100) not null,--申请理由
 		m_date varchar2(20),
 		obligate1 varchar2(20),
 		obligate2 varchar2(20)
-);
+); 
 select * from messages;
- 
+create sequence messages_seq start with 1000;
+insert into MESSAGES values(messages_seq.nextval,1001,0,0,'dvdhfhhfhj','2014/4/5',null,null)
+insert into MESSAGES values(messages_seq.nextval,1001,0,1,'dvdhfhhfhj','2014/4/5',null,null)
 
 --5.类型表
 drop table type

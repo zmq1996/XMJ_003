@@ -29,9 +29,9 @@ public class SellerServiceimpl implements SellerService {
 		//生存随机数范围 0~num-1 
 		String sname = RandomStringUtils.random(OrinNameLength,true,true);
 		Shop shop = new Shop();
-		shop.setSuid(user.getU_id());
+		shop.setSu_id(user.getU_id());
 		shop.setSstatus(1);
-		shop.setSname(sname);
+		shop.setS_name(sname);
 		shop.setSbirthday(new Date());
 		LogManager.getLogger().debug("创建新店"+shop);
 	

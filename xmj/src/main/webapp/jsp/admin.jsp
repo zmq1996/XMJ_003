@@ -41,7 +41,6 @@
 				      <div class="content">
 				      	<ul>
 				      		<li><a href="javaScript:userDetail()">用户详情</a></li>
-				      		<li><a>添加用户</a></li>
 				      	</ul>
 				      </div>
 				    </div>
@@ -49,8 +48,9 @@
 				    <div>
 				      <div class="content">
 				        <ul>
-				      		<li><a>店铺详情</a></li>
-				      		<li><a>添加店铺</a></li>
+				      		<li><a href="javaScript:shopDetail()">店铺详情</a></li>
+				      		<li><a href="javaScript:certification()">认证申请</a></li>
+				      		<li><a href="javaScript:camplaints()">投诉消息</a></li>
 				      	</ul>
 				      </div>
 				    </div>
@@ -70,27 +70,11 @@
 			        });
   				</script> 				
 	 			<div class="right">
-	 				<table id="userList"></table> 
+	 				<table id="userList" ></table> 
 	 				<div id="p" class="easyui-panel"    
 					        style="width:500px;height:150px;padding:10px;background:#fafafa;"   
 					        data-options="fit:true,border:false">   
 					    <div id="welcome">欢迎  <span style="color:green;"><%=session.getAttribute("manageName") %></span> 使用后台管理系统！</div> 
-					
-					         <div class="form">
-					          	   <form id="addUser" method="post" onsubmit="return false;" action="manage/addUser">
-					          	   		<ul>
-					          	   			<li>用户名：<input id="u_name" type="text"  name="u_name" required="required"/></li>
-					          	   			<li>密码：<input id="u_password" type="password"  name="u_password" required="required"/></li>
-					          	   			<li>性别：<input id="man" type="radio"  name="u_sex"/>男<input id="woman" type="radio"  name="u_sex"/>女</li>
-					          	   			<li>身份证：<input id="u_idcard" type="text"  name="idcard"required="required"/></li>
-					          	   			<li>电话：<input id="u_phone" type="text"  name="u_phone"required="required"/></li>
-					          	   			<li>邮箱：<input id="u_email" type="text"  name="email" required="required"/></li>
-					          	   			<li>买/卖家：<input id="u_root" type="text"  name="u_root" required="required"/></li>
-					          	   			<li>实名认证：<input id="u_real" type="text"  name="realNameAuthentication" required="required"/></li>
-					          	   			<li>支付认证：<input id="u_pay" type="text"  name="payAuthentication" required="required"/></li>
-					          	   		</ul>
-					              </form>
-					         </div>
 					    </div>
 			    </div>  
 	<div id="modifyDiv">
@@ -105,6 +89,20 @@
 				<p><input id="uroot" name="u_root"/></p>
 				<p><input id="ureal" name="realNameAuthentication"/></p>
 				<p><input id="upay" name="payAuthentication"/></p>
+				<p><a class="updateBtn" href="javaScript:void(0)">修改</a>&nbsp;
+				<a class="closeBtn" href="javaScript:void(0)">关闭</a></p>
+			</form>
+		</div>
+		 <div id="detailDiv">
+			<form id="detailForm" method="post">
+				<p><input id="did" name="sid"/></p>
+				<p><input id="dname" name="sname"/></p>
+				<p><input id="dsuid" name="suid"/></p>
+				<p><input id="dmajorBusiness" name="majorBusiness"/></p>
+				<p><input id="daddress" name="address" /></p>
+				<p><input id="dintroduce" name="introduce"/></p>
+				<p><input id="dsbirthday" name="sbirthday"/></p>
+				<p><input id="dsstatus" name="sstatus"/></p>
 				<p><a class="updateBtn" href="javaScript:void(0)">修改</a>&nbsp;
 				<a class="closeBtn" href="javaScript:void(0)">关闭</a></p>
 			</form>

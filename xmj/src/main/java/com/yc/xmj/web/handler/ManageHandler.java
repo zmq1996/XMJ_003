@@ -11,7 +11,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
 import com.yc.xmj.entity.Admin;
+import com.yc.xmj.entity.Messages;
 import com.yc.xmj.entity.PaginationBean;
+import com.yc.xmj.entity.Shop;
 import com.yc.xmj.entity.User;
 import com.yc.xmj.service.AdminService;
 
@@ -54,5 +56,45 @@ public class ManageHandler {
 	public boolean userdelete(int u_id){
 		LogManager.getLogger().debug("请求ManageHandler处理userdelete...");
 		return adminService.deleteUser(u_id);
+	}
+	
+	@RequestMapping("/shopList")
+	@ResponseBody
+	public PaginationBean<Shop> shoplist(String page,String rows){
+		LogManager.getLogger().debug("请求ManageHandler处理shoplist...");
+		return adminService.findShops(page,rows);
+	}
+	
+	@RequestMapping("/shopModify")
+	@ResponseBody
+	public boolean shopmodify(Shop shop){
+		LogManager.getLogger().debug("请求ManageHandler处理shopmodify...");
+		return adminService.modifyShop(shop);
+	}
+	@RequestMapping("/manageList")
+	public PaginationBean<Admin> managelist(String page,String rows){
+		LogManager.getLogger().debug("请求ManageHandler处理managelist...");
+		return adminService.findManage(page,rows);
+	}
+	
+	@RequestMapping("/certification")
+	@ResponseBody
+	public PaginationBean<Messages> certificationlist(String page,String rows){
+		LogManager.getLogger().debug("请求ManageHandler处理certificationlist...");
+		return adminService.findCertification(page,rows);
+	}
+	
+	@RequestMapping("/camplaints")
+	@ResponseBody
+	public PaginationBean<Messages> camplaintslist(String page,String rows){
+		LogManager.getLogger().debug("请求ManageHandler处理camplaintslist...");
+		return adminService.findCamplaints(page,rows);
+	}
+	
+	@RequestMapping("/camplaintsDelete")
+	public boolean camplaintsDelete(int m_id){
+		System.out.println(m_id);
+		LogManager.getLogger().debug("请求ManageHandler处理camplaintsDelete...");
+		return adminService.deleteCamplaints(m_id);
 	}
 }
