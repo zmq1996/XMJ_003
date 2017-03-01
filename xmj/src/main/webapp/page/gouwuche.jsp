@@ -6,7 +6,7 @@
 <meta name="renderer" content="webkit" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <title>我的购物车 - 京东商城</title>
-<link type="text/css" rel="stylesheet" href="../css/sevice.css" />
+
 <script type="text/javascript" src="../easyui/jquery.min.js"></script>
 <link source="widget" href="../css/no-login/no-login.css"
 	rel="stylesheet" type="text/css">
@@ -14,85 +14,7 @@
 	source="widget" />
 <link type="text/css" rel="stylesheet" href="../css/index.css"
 	source="widget" />
-
-<script type="text/javascript">
-$(function() {
-            var str = '<div class=" item-last item-item item-selected " id="product_'+'1000'+'">'
-			+'<div class="item-form">'
-			+'	<div class="cell p-checkbox">'
-			+'		<div class="cart-checkbox">'
-			+'			<input p-type="11151047032_11" manFanZeng="0" type="checkbox" name="checkItem" '
-			+'			value="11151047032_11_4025315760" checked="checked" class="jdcheckbox" data-bind="cbid" >'
-			+'				<label for="" class="checked">勾选商品</label> <span class="line-circle"></span>'
-			+'		</div>'
-			+'	</div>'
-			+'	<div class="cell p-goods">'
-			+'		<div class="goods-item">'
-			+'			<div class="p-img">'
-			+'				<a href="//item.jd.com/'+'1000'+'.html" target="_blank" class="J_zyyhq_'+'1000'+'">'
-			+'					<img alt="'+'书兰 卫衣男 2017春季新款韩版修身潮拼接连帽卡通绣花套头男士外套 绿色 M'+'"'
-			+'					src="'+'//img10.360buyimg.com/cms/s80x80_jfs/t4078/132/1596283745/189841/7018bff5/588077fdN1ffd20ca.jpg'+'"></a>'
-			+'			</div>'
-			+'			<div class="item-msg">'
-			+'				<div class="p-name">'
-			+'					<a clstag="clickcart|keycount|xincart|cart_sku_name" href="//item.jd.com/'+'1000'+'.html" target="_blank">'
-			+'						'+'书兰 卫衣男 2017春季新款韩版修身潮拼接连帽卡通绣花套头男士外套 绿色 M '+'</a>'
-			+'				</div>'
-			+'				<div class="p-extend"><span class="promise" _giftcard="giftcard_'+'1000'+'"> </span>'
-			+'					<span class="promise" _yanbao="yanbao_'+'1000'+'_4025315760"><i class="jd-service-icon"></i></span>'
-			+'				</div>'
-			+'			</div>'
-			+'		</div>'
-			+'	</div>'
-			+'	<div class="cell p-props p-props-new">'
-			+'		<div class="props-txt" title="'+'绿色'+'">颜色：'+' 绿色'+'</div>'
-			+'		<div class="props-txt" title="'+'M'+'">尺码：'+'M'+'</div>'
-			+'	</div>'
-			+'	<div class="cell p-price">'
-			+'		<strong>¥148.00</strong> <a class="sales-promotion" href="#none" data-tips="更多促销"> 更多促销<b></b></a>'
-			+'		<div id="sales-promotion_'+'1000'+'" class="promotion-tips">'
-			+'			<div class="promotion-tit"> 促销信息<b></b> </div>'
-			+'			<div class="promotion-cont">'
-			+'				<ul>'
-			+'					<li><input type="radio" multiPromotion="0" name="radioPromotion_'+'1000'+'"'
-			+'						value="636237_4025315760_11151047032_11_4025315760" title="满2件总价9.0折，满3件总价8.5折，满4件总价8.0折"'
-			+'						checked="checked">满2件总价9.0折，满3件总价8.5折，满4件总价8.0折</li>'
-			+'					<li><input type="radio" multiPromotion="0" name="radioPromotion_11151047032"'
-			+'						value="636237_-300_11151047032_11_4025315760" title="不使用活动优惠">不使用活动优惠</li>'
-			+'				</ul>'
-			+'				<div class="op-btns ac mt20">'
-			+'					<a href="#none" class="btn-1 select-promotion" >确定</a>'
-			+'					<a href="#none" class="btn-9 ml10 del cancel-promotion">取消</a>'
-			+'				</div>'
-			+'			</div>'
-			+'		</div>'
-			+'	</div>'
-			+'	<div class="cell p-quantity">'
-			+'		<div class="quantity-form" promoid="4025315760">'
-			+'			<a href="javascript:void(0);" class="decrement disabled" id="decrement_636237_'+'1000'+'_1_11_4025315760">-</a>'
-			+'			<input autocomplete="off" type="text" class="itxt" value="1"'
-			+'				id="changeQuantity_636237_11151047032_1_11_0_4025315760" minnum="1" /> '
-			+'				<a href="javascript:void(0);" class="increment" id="increment_636237_'+'1000'+'_1_11_0_4025315760">+</a>'
-			+'		</div>'
-			+'		<div class="ac ftx-03 quantity-txt" _stock="stock_'+'1000'+'"></div>'
-			+'	</div>'
-			+'	<div class="cell p-sum"> <strong>¥'+'148.00'+'</strong> </div>'
-			+'	<div class="cell p-ops">'
-			+'		<a id="remove_636237_11151047032_11_4025315760" data-name="'+'书兰 卫衣男 2017春季新款韩版修身潮拼接连...'+'"'
-			+'			data-more="removed_148.00_1" class="cart-remove" href="javascript:void(0);">删除</a> '
-			+'			<a href="javascript:void(0);" class="cart-follow" id="follow_636237_11151047032_11_4025315760">移到我的关注</a>'
-			+'	</div>'
-			+'</div>'
-			+'<div class="item-extra mb10">'
-			+'	<div class="unmarket-items" _unmarket="unmarket_1=='+'1000'+'" data="1315;1342;9732;11151047032;1487389195855"></div>'
-			+'</div>'
-			+'<div class="item-line"></div>'
-			+'</div>'
-			
-			$('#product_promo_4025315760').append(str)
-     });
-	
-</script>
+<script type="text/javascript" src="../js/gouwuche.js" ></script>
 
 <style type="text/css">
 .v {
@@ -127,7 +49,7 @@ $(function() {
 				<li class="spacer"></li>
 				<li class="fore3 dorpdown" id="ttbar-myjd" >
 					<div class="dt cw-icon">
-						<a target="_blank" href="page/myxmj.jsp">我的晓米佳</a>
+						<a target="_blank" href="/xmj/page/order.jsp">我的晓米佳</a>
 						<i class="ci-right"></i>
 					</div>
 					<div class="dd dorpdown-layer">
@@ -386,128 +308,7 @@ $(function() {
 												</div>
 											</div> -->
 											<!-- 单品-->
-											<div class=" item-last item-item item-selected  "
-												id="product_11151047032">
-												<div class="item-form">
-													<div class="cell p-checkbox">
-														<div class="cart-checkbox">
-															<!-- 满减 -->
-															<input p-type="11151047032_11" manFanZeng="0"
-																type="checkbox" name='checkItem'
-																value="11151047032_11_4025315760" checked="checked"
-																class="jdcheckbox" data-bind="cbid"
-																clstag="clickcart|keycount|xincart|cart_checkOn_sku">
-															<label for="" class="checked">勾选商品</label> <span
-																class="line-circle"></span>
-														</div>
-													</div>
-													<div class="cell p-goods">
-														<div class="goods-item">
-															<div class="p-img">
-																<a href="//item.jd.com/11151047032.html" target='_blank'
-																	class="J_zyyhq_11151047032"><img
-																	alt="书兰 卫衣男 2017春季新款韩版修身潮拼接连帽卡通绣花套头男士外套 绿色 M"
-																	clstag="clickcart|keycount|xincart|cart_sku_pic"
-																	src="//img10.360buyimg.com/cms/s80x80_jfs/t4078/132/1596283745/189841/7018bff5/588077fdN1ffd20ca.jpg"></a>
-															</div>
-															<div class="item-msg">
-																<div class="p-name">
-																	<a clstag="clickcart|keycount|xincart|cart_sku_name"
-																		href="//item.jd.com/11151047032.html" target='_blank'>
-																		书兰 卫衣男 2017春季新款韩版修身潮拼接连帽卡通绣花套头男士外套 绿色 M </a>
-																</div>
-																<div class="p-extend">
-																	<span class="promise" _giftcard="giftcard_11151047032">
-																	</span>
-																	<!-- 满减 -->
-																	<span class="promise"
-																		_yanbao="yanbao_11151047032_4025315760"> <!--<i class="jd-service-icon"></i>
-								<a href="#none" class="ftx-03 jd-service" clstag="clickcart|keycount|xincart|cart_fuWu" data-tips="购买京东服务">购买京东服务</a>-->
-																	</span>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div class="cell p-props p-props-new">
-														<div class="props-txt" title=" 绿色">颜色： 绿色</div>
-														<div class="props-txt" title="M">尺码：M</div>
-													</div>
-													<div class="cell p-price">
-														<strong>¥148.00</strong> <a class="sales-promotion"
-															href="#none"
-															clstag="clickcart|keycount|xincart|cart_youHui"
-															data-tips="更多促销"> 更多促销<b></b>
-														</a>
-														<div id="sales-promotion_11151047032"
-															class="promotion-tips">
-															<div class="promotion-tit">
-																促销信息<b></b>
-															</div>
-															<div class="promotion-cont">
-																<ul>
-																	<!-- 满减 -->
-																	<li><input type="radio" multiPromotion="0"
-																		name="radioPromotion_11151047032"
-																		value="636237_4025315760_11151047032_11_4025315760"
-																		title="满2件总价9.0折，满3件总价8.5折，满4件总价8.0折"
-																		checked="checked">满2件总价9.0折，满3件总价8.5折，满4件总价8.0折</li>
-																	<!-- 满减 -->
-																	<li><input type="radio" multiPromotion="0"
-																		name="radioPromotion_11151047032"
-																		value="636237_-300_11151047032_11_4025315760"
-																		title="不使用活动优惠">不使用活动优惠</li>
-																</ul>
-																<div class="op-btns ac mt20">
-																	<a href="#none" class="btn-1 select-promotion"
-																		clstag="clickcart|keycount|xincart|cart_youHuiChange">确定</a>
-																	<a href="#none" class="btn-9 ml10 del cancel-promotion">取消</a>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div class="cell p-quantity">
-														<!-- 满减 -->
-														<div class="quantity-form" promoid="4025315760">
-															<a href="javascript:void(0);"
-																clstag="clickcart|keycount|xincart|cart_num_down"
-																class="decrement disabled"
-																id="decrement_636237_11151047032_1_11_4025315760">-</a>
-															<input autocomplete="off" type="text" class="itxt"
-																value="1"
-																id="changeQuantity_636237_11151047032_1_11_0_4025315760"
-																minnum="1" /> <a href="javascript:void(0);"
-																clstag="clickcart|keycount|xincart|cart_num_up"
-																class="increment"
-																id="increment_636237_11151047032_1_11_0_4025315760">+</a>
-														</div>
-														<div class="ac ftx-03 quantity-txt"
-															_stock="stock_11151047032"></div>
-													</div>
-													<div class="cell p-sum">
-														<strong>¥148.00</strong>
-													</div>
-													<div class="cell p-ops">
-														<!-- 满减 -->
-														<a id="remove_636237_11151047032_11_4025315760"
-															clstag="clickcart|keycount|xincart|cart_sku_del"
-															data-name="书兰 卫衣男 2017春季新款韩版修身潮拼接连..."
-															data-more="removed_148.00_1" class="cart-remove"
-															href="javascript:void(0);">删除</a> <a
-															href="javascript:void(0);" class="cart-follow"
-															id="follow_636237_11151047032_11_4025315760"
-															clstag="clickcart|keycount|xincart|cart_sku_guanzhu">移到我的关注</a>
-													</div>
-												</div>
-												<div class="item-extra mb10">
-													<!-- 落地配服务 -->
-													<div class="unmarket-items"
-														_unmarket="unmarket_11151047032"
-														data="1315;1342;9732;11151047032;1487389195855"></div>
-												</div>
-												<div class="item-line"></div>
-											</div>
-											<input type="hidden" id="select-skus_promo_4025315760"
-												value='11151047032' />
+											
 										</div>
 									</div>
 								</div>
@@ -536,8 +337,8 @@ $(function() {
 										class="remove-batch">删除选中的商品</a> <a href="#none"
 										class="follow-batch"
 										clstag="clickcart|keycount|xincart|cart_somesku_guanzhu">移到我的关注</a>
-									<a class="J_clr_nosale" href="#none"
-										clstag="pageclick|keycount|201508251|23">清除下柜商品</a>
+									<!-- <a class="J_clr_nosale" href="#none"
+										clstag="pageclick|keycount|201508251|23">清除下柜商品</a> -->
 								</div>
 								<div class="clr"></div>
 								<div class="toolbar-right">
@@ -584,7 +385,7 @@ $(function() {
 											<div class="price-sum">
 												<div>
 													<span class="txt txt-new">总价：</span> <span
-														class="price sumPrice"><em>¥148.00</em></span> <b
+														class="price sumPrice"><em id="totalPrice">¥148.00</em></span> <b
 														class="ml5 price-tips"></b>
 													<div class="price-tipsbox"
 														style="display: none; left: 159.85px;">
