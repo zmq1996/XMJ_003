@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+<body>
+    <div id="test"></div>
+</body>
+</html>
+<script type="text/javascript" src="jquery-1.9.1.js"></script>
+<script type="text/javascript">
+$.getJSON('test.json',function(data){
+	alert('加载完毕');
+	var strHtml='';
+	$.each(data,function(infoIndex,info){ 
+		strHtml += "inpro："+info["inpro"]+"<br>"; 
+		strHtml += "pName："+info["pName"]+"<br>"; 
+		strHtml += "data："+info["data"]+"<br>"; 
+		strHtml += "<hr>" 
+	}) 
+	var objs = data[0].data;
+	$.each(objs,function(infoIndex,info){ 
+		strHtml += "expand："+info["expand"]+"<br>"; 
+		strHtml += "name："+info["name"]+"<br>"; 
+		strHtml += "id："+info["id"]+"<br>"; 
+		strHtml += "data：<ul>"; 
+		$.each(info["data"],function(infoIndex,info){ 
+			strHtml += "<li>spell："+info["spell"]+"</li>"; 
+			strHtml += "<li>name："+info["name"]+"</li>";
+			strHtml += "<li>spuid："+info["spuid"]+"</li>"; 
+			strHtml += "<li>leaf："+info["leaf"]+"</li>"; 
+			strHtml += "<li>sid："+info["sid"]+"</li>"; 
+			strHtml += "<li>status："+info["status"]+"</li><hr>"; 
+		}) 
+		strHtml += "</ul><hr>" 
+	}) 
+	
+	
+	$("#test").html(strHtml);
+}) ;	
+</script>

@@ -28,8 +28,8 @@ public class OptenStoreFilter extends AbstractFilter{
 		
 		User testuser = new User();
 		testuser.setU_name("xiaodan's father");
-		testuser.setpayAuthentication(1);
-		testuser.setrealNameAuthentication(1);
+		testuser.setPayAuthentication(1);
+		testuser.setRealNameAuthentication(1);
 		testuser.setEmail("123456@heihei.com");
 		testuser.setU_id(1001);
 		session.setAttribute("user", testuser);

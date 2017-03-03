@@ -77,8 +77,6 @@
                         <div class="menu-bd" role="menu" aria-hidden="true" id="menu-101">
                             <div class="menu-bd-panel">
                                 <div>
-                                    <a href="#" >千牛手机管店</a>
-                                    <br>
                                     <a href="#" >已卖出的宝贝</a>
                                     <br>
                                     <a href="#" >出售中的宝贝</a>

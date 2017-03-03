@@ -3,16 +3,9 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.yc.xmj.mapper.UserMapper">
-<<<<<<< HEAD
-	<select id="getAdmin" parameterType="Admin" resultType="Admin">
-	    select * from admin where a_name=#{aname} and  a_password = #{apassword}
-	</select>
-	<select id="getUser" parameterType="com.yc.xmj.entity.User" resultType="int">
-	    select u_id from users where u_name=#{u_name} and  u_password = #{u_password}
-=======
+
 	<select id="getUser" parameterType="com.yc.xmj.entity.User" resultType="com.yc.xmj.entity.User">
 	    select u_id,u_name,u_root from users where u_name=#{u_name} and  u_password = #{u_password}
->>>>>>> refs/remotes/origin/master
 	</select>
 	
 	<insert id="register" parameterType="com.yc.xmj.entity.User">
@@ -87,7 +80,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		update shdetail set s_num = s_num +1 where p_id = #{p_id} and s_num > 0
 	</update>
 	
-	<resultMap type="PaginationBean2" id="PaginationBeanMap">
+	<resultMap type="PaginationBean" id="PaginationBeanMap2">
 		<result column="pageSize" property="pageSize"/>
 		<result column="currPage" property="currPage"/>
 		<result column="u_id" property="u_id"/>

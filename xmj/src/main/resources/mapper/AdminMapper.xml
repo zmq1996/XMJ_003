@@ -3,8 +3,7 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.yc.xmj.mapper.AdminMapper">
-<<<<<<< HEAD
-=======
+
 	<!-- 结果集映射 -->
 	<!-- 使用嵌套查询 的方式，处理分页-->
 	<resultMap type="PaginationBean" id="PaginationBeanMap">
@@ -25,7 +24,6 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		where rn>(${currPage}-1)*${pageSize}
 	</select>
 		
->>>>>>> refs/remotes/origin/master
 	<select id="getAdmin" parameterType="Admin" resultType="Admin">
 	    select * from admin where a_name=#{a_name} and  a_password = #{a_password}
 	</select>

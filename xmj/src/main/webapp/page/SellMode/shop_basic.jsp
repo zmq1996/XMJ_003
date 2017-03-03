@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="css/SellMode/eshop_openbusiness.css">
     <link id="yui__dyn_0" type="text/css" charset="utf-8" rel="stylesheet" href="css/SellMode/tbra.css">
     <link href="css/SellMode/base-min.css" rel="stylesheet" charset="utf-8">
-    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
     <script type="text/javascript" src="easyui/jquery.easyui.min.js"></script>
 	<script type="text/javascript" src="easyui/locale/easyui-lang-zh_CN.js"></script>
 </head>
